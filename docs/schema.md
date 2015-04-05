@@ -1,39 +1,41 @@
 # Schema Information
 
-## blogs
+## comments
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-owner_id    | integer   | not null, foreign key (references users)
-title       | string    | not null
+pattern_id  | integer   | not null, foreign key (references patterns)
+body        | string    | not null
 
 ## followings
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-blog_id     | integer   | not null, foreign key (references blogs)
 follower_id | integer   | not null, foreign key (references users)
+followee_id | integer   | not null, foreign key (references users)
 
-## posts
+## learnings
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-author_id   | integer   | not null, foreign key (references users)
+user_id     | integer   | not null, foreign key (references users)
+pattern_id  | integer   | not null, foreign key (references patterns)
+status      | string    | not null
+
+## patterns
+column name | data type | details
+------------|-----------|-----------------------
+id          | integer   | not null, primary key
 title       | string    | not null
-body        | string    |
+body        | string    | not null
 
-## tags
+[//]: # (practices table stores dates of learnings, without having to create a new learning each time)
+
+## practices
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-label       | string    | not null, unique
-
-## taggings
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-post_id     | integer   | not null, foreign key (references posts)
-tag_id      | integer   | not null, foreign key (references tags)
+learning_id | integer   | not null, foreign key (references patterns)
 
 ## users
 column name     | data type | details

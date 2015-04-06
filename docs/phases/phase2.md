@@ -2,28 +2,22 @@
 
 ## Rails
 ### Models
+* Followings
 
 ### Controllers
-Api::BlogsController (create, destroy, index, show)
-Api::PostsController (create, destroy, show, update)
+* API::FollowingsController (create, index)
 
 ### Views
-* blogs/show.json.jbuilder
 
 ## Backbone
 ### Models
-* Blog (parses nested `posts` association)
-* Post
+* Following
 
 ### Collections
-* Blogs
-* Posts
+* Followings
 
 ### Views
-* BlogForm
-* BlogShow (composite view, contains PostsIndex subview)
-* PostsIndex (composite view, contains PostsIndexItem subviews)
-* PostsIndexItem
-* PostShow
+* UserShow
+* UserSearch
 
 ## Gems/Libraries

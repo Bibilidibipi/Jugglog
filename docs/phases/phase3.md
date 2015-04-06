@@ -2,20 +2,24 @@
 
 ## Rails
 ### Models
+* Patterns
+* Pre_req
 
 ### Controllers
+* API::PatternsController
 
 ### Views
 
 ## Backbone
 ### Models
+* Pattern
 
 ### Collections
+* Patterns
 
 ### Views
-* PostForm
+* PatternsIndex (composite view, contains PatternIndexItem subviews)
+* PatternIndexItem
+* PatternShow
 
 ## Gems/Libraries
-* Filepicker
-* Markdown-js
-* Bootstrap Markdown

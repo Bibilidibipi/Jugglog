@@ -2,27 +2,27 @@
 
 ## Rails
 ### Models
-* User
-* Blog
-* Post
+* Users
+* Followings
 
 ### Controllers
 * UsersController (create, new)
 * SessionsController (create, new, destroy)
-* BlogsController (create, new, show)
-* PostsController (create, new, show)
+* API::UsersController (index)
 
 ### Views
 * users/new.html.erb
 * session/new.html.erb
-* blogs/new.html.erb
-* blogs/show.html.erb
 
 ## Backbone
 ### Models
+* User
 
 ### Collections
+* Users
 
 ### Views
+* UsersIndex (composite view, contains UserSearch subview and UserIndexItem subviews)
+* UserIndexItem
 
 ## Gems/Libraries

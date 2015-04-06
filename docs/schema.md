@@ -29,13 +29,12 @@ id          | integer   | not null, primary key
 title       | string    | not null
 body        | string    | not null
 
-## pre-req
+## pre_req
 colunm name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 parent_id   | integer   | not null, foreign key (references patterns)
 child_id    | integer   | not null, foreign key (references patterns)
-
 
 [//]: # (practices table stores dates of learnings, without having to create a new learning each time)
 
@@ -50,7 +49,6 @@ column name     | data type | details
 ----------------|-----------|-----------------------
 id              | integer   | not null, primary key
 name            | string    | not null, unique
-email           | string    | not null, unique
 password_digest | string    | not null
 session_token   | string    | not null, unique
 

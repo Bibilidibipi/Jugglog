@@ -33,20 +33,20 @@ Backbone. Its design is inspired by Duolingo. Users can:
 
 ### Phase 1: User Authentication, Users index (~1 day)
 I will implement user authentication in Rails based on the practices learned at
-App Academy. By the end of this phase, users will be able to view an index of 
-other users in a Rails view. The most important part of this phase will be 
-pushing the app to Heroku and ensuring that everything works before moving on
-to phase 2.
+App Academy. I'll add an API route to serve users data as JSON, then add a 
+Backbone model and collection to fetch data from that route. A composite view 
+will display the user index data, with subviews for individual users. By the end
+of this phase, users will be able to view an index of other users. The most
+important part of this phase will be pushing the app to Heroku and ensuring that
+everything works before moving onto phase 2.
 
 [Details][phase-one]
 
 ### Phase 2: Follow and search for other users (~2 days)
-I'll add API routes to serve user data as JSON, then add a Backbone model and
-collection to fetch data from those routes. A composite view will display the 
-user index data, with subviews for individual users. There will also be a view 
-for a single user model. I'll add a Backbone controller with a 'search' route 
-that will alternatively populate the user index. By the end of this phase, users
-will be able to search for other users by name and email, and follow them.
+I'll add a view for a single user model. I'll add a Backbone controller with a 
+'search' route that will alternatively populate the user index. The user show 
+page will include following information. By the end of this phase, users will be 
+able to search for other users by name and email, and follow them.
 
 [Details][phase-two]
 
@@ -54,7 +54,7 @@ will be able to search for other users by name and email, and follow them.
 I'll add rails and Backbone models for patterns, as well as a Backbone pattern 
 index view and a show view. I'll also take some time to input patterns to the 
 tree. By the end of this phase, users will be able to view the pattern tree and 
-click on idividual patterns to view their show page.
+click on individual patterns to view their show page.
 
 [Details][phase-three]
 
@@ -62,7 +62,7 @@ click on idividual patterns to view their show page.
 This will require a Backbone model and collection. I'll have a composite view of
 comments as a subview of the pattern show page, and individual subviews of that 
 comments composite view for each comment. Comments will be ordered 
-chronologically By the end of this phase, users will be able to view and add
+chronologically. By the end of this phase, users will be able to view and add
 comments from the pattern show page.
 
 [Details][phase-four]
@@ -70,14 +70,15 @@ comments from the pattern show page.
 ### Phase 5: Log Practice and Learning, View History (~3 days)
 Practice and learning information will require a database migration and rails 
 associations. For history viewing, I'll add a Backbone view that's populated by
-the last week of practice associations. By the end of this phase, users will be able to log practice and learning of 
-patterns from the pattern show page, and view a history of the days they've 
-practiced.
+the last week of practice associations. By the end of this phase, users will be 
+able to log practice and learning of patterns from the pattern show page, and 
+view a history of the days they've practiced.
 
 [Details][phase-five]
 
 ### Bonus Features (TBD)
 - [ ] User avatars
+- [ ] User bio
 - [ ] 'Streak' indicator (consecutive days of logged practice)
 - [ ] User rank based on logged practice among those they follow
 - [ ] Infinite scroll for other users index

@@ -1,3 +1,20 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.new-user {
+  .username {
+
+  }
+  .password {
+
+  }
+  .submit {
+    width: 320px;
+    height: 55px;
+    background: green;
+    border-radius: 60px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+  }
+}

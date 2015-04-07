@@ -1,0 +1,26 @@
+#navbar {
+  background: rgba(32, 166, 231, 0.8);
+  border-radius: 0px;
+  font-family: "Varela Round", sans-serif;
+
+  a {
+    color: white;
+  }
+
+  .navbar-left a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 0px;
+    border-radius: 100px;
+
+    &:hover {
+      color: white;
+      background: rgb(20, 147, 209);
+    }
+  }
+
+  .dropdown-menu a {
+    color: black;
+  }
+}

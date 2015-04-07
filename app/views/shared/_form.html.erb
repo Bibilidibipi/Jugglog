@@ -1,0 +1,6 @@
+<form class="<%= css_class %>" action="<%= action_url %>" method="post">
+  <%= render 'shared/csrf' %>
+  <input class="username" type="text" name="user[username]">
+  <input class="password" type="password" name="user[password]">
+  <input class="submit" type="submit" value="<%= action_text %>">
+</form>

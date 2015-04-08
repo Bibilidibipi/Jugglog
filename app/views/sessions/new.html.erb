@@ -1,1 +1,6 @@
-<%= render 'shared/form', css_class: "new-session", action_url: session_url, action_text: "Log In" %>
+<%= render 'shared/form',
+  css_class: "new-session",
+  action_url: session_url,
+  action_text: "Log In",
+  user: @user
+%>

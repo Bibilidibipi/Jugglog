@@ -1,4 +1,5 @@
 Jugglog.Views.UserIndexItem = Backbone.View.extend({
+  className: 'user-list-item',
   template: JST['users/indexItem'],
 
   render: function () {

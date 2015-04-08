@@ -1,0 +1,13 @@
+.user-list-item {
+  list-style-type: none;
+  height: 60px;
+  color: #1caff6;
+  font-size: 24px;
+
+  .username {
+
+    &:hover {
+    text-decoration: underline;
+    }
+  }
+}

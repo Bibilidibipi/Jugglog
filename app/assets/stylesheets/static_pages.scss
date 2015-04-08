@@ -1,3 +1,42 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.new-session, .new-user {
+  .username, .password {
+    width: 320px;
+    height: 55px;
+    border: none;
+    color: #4b4b4b;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 2px;
+    border-radius: 5px;
+    font-family: 'Varela Round', sans-serif;
+    padding-left: 10px;
+  }
+
+  .submit {
+    width: 320px;
+    height: 55px;
+    background: rgb(126, 181, 48);
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+
+    &:hover {
+      background: #8ee000;
+    }
+  }
+}
+
+#main {
+
+}
+
+#sidebar-top {
+
+}
+
+#sidebar-bottom {
+
+}

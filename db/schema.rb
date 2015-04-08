@@ -11,15 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150407023255) do
+ActiveRecord::Schema.define(version: 20150408161514) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "users", force: true do |t|
-    t.string   "username",        null: false
-    t.string   "password_digest", null: false
-    t.string   "session_token",   null: false
+  create_table "followings", force: :cascade do |t|
+    t.integer  "follower_id", null: false
+    t.integer  "followee_id", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "followings", ["followee_id"], name: "index_followings_on_followee_id", using: :btree
+  add_index "followings", ["follower_id"], name: "index_followings_on_follower_id", using: :btree
+
+  create_table "users", force: :cascade do |t|
+    t.string   "username",        limit: 255, null: false
+    t.string   "password_digest", limit: 255, null: false
+    t.string   "session_token",   limit: 255, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

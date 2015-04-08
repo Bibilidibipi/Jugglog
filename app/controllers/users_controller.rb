@@ -22,7 +22,13 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    render json: @user
+    render :show, formats: :json
+  end
+
+  def update
+    @user = User.find(params[:id])
+    @user.save!
+    render :show, formats: :json
   end
 
   private

@@ -1,1 +1,3 @@
 <%= user.escape('username') %>
+<% var following_text = Jugglog.currentUser.isFollowing(user) ? "Following!" : "Follow!" %>
+<button class="switch-follow"><%= following_text %></button>

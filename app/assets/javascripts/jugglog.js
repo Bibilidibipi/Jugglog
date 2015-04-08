@@ -5,7 +5,9 @@ window.Jugglog = {
   Routers: {},
   initialize: function() {
     var $rootEl = $('div#main');
-    new Jugglog.Routers.Router({ $rootEl: $rootEl });
+    var users = new Jugglog.Collections.Users();
+    users.fetch();
+    new Jugglog.Routers.Router({ $rootEl: $rootEl, users: users });
     Backbone.history.start();
   }
 };

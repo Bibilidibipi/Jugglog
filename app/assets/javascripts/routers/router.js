@@ -1,12 +1,12 @@
 Jugglog.Routers.Router = Backbone.Router.extend({
   routes: {
-    '': 'usersIndex'
+    '': 'usersIndex',
+    'users/:id': 'userShow'
   },
 
   initialize: function (options) {
     this.$rootEl = options.$rootEl;
-    this.users = new Jugglog.Collections.Users();
-    this.users.fetch();
+    this.users = options.users;
   },
 
   _swapView: function (view) {
@@ -17,6 +17,12 @@ Jugglog.Routers.Router = Backbone.Router.extend({
 
   usersIndex: function () {
     var view = new Jugglog.Views.UsersIndex({ collection: this.users });
+    this._swapView(view);
+  },
+
+  userShow: function (id) {
+    var user = this.users.getOrFetch(id);
+    var view = new Jugglog.Views.UserShow({ model: user });
     this._swapView(view);
   }
 });

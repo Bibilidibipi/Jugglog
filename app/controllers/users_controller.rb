@@ -31,6 +31,16 @@ class UsersController < ApplicationController
     render :show, formats: :json
   end
 
+  def search
+    if params[:query].present?
+      @users = User.where("username ~ ?", params[:query])
+    else
+      @users = User.none
+    end
+
+    render json: @users
+  end
+
   private
 
   def user_params

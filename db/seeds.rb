@@ -14,3 +14,7 @@ numUsers = User.all.length
     retry
   end
 end
+
+Pattern.create(title: 'cascade', body: 'juggling!')
+Pattern.create(title: 'shower', body: 'more juggling')
+PreReq.create(parent_id: 1, child_id: 2)

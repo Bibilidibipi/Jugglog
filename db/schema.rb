@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150408161514) do
+ActiveRecord::Schema.define(version: 20150409174234) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,23 @@ ActiveRecord::Schema.define(version: 20150408161514) do
 
   add_index "followings", ["followee_id"], name: "index_followings_on_followee_id", using: :btree
   add_index "followings", ["follower_id"], name: "index_followings_on_follower_id", using: :btree
+
+  create_table "patterns", force: :cascade do |t|
+    t.string   "title",      null: false
+    t.string   "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pre_reqs", force: :cascade do |t|
+    t.integer  "parent_id",  null: false
+    t.integer  "child_id",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "pre_reqs", ["child_id"], name: "index_pre_reqs_on_child_id", using: :btree
+  add_index "pre_reqs", ["parent_id"], name: "index_pre_reqs_on_parent_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "username",        limit: 255, null: false

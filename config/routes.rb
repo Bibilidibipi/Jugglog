@@ -8,5 +8,6 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     resources :followings, only: [:create, :destroy]
+    resources :patterns, only: [:create, :index, :show]
   end
 end

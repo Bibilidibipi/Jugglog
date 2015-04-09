@@ -2,35 +2,47 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   template: JST['users/index'],
 
   events: {
-    'input .search': 'handleInput'
+    'input .search': 'handleSearchInput'
   },
 
   initialize: function (options) {
-    this.listenTo(this.collection, 'sync', this.render);
+    this.collection.each(this.addUserIndexItem.bind(this));
+    this.listenTo(this.collection, 'add', this.addUserIndexItem);
+    this.listenTo(this.collection, 'remove', this.removeUserIndexItem);
   },
 
-  render: function (users) {
-    if(users === undefined) { users = this.collection };
-    var that = this;
-    this.$el.html() || this.$el.html(this.template());
-
-    this.subviews('.users').forEach(function (subview) {
-      subview.remove();
-    })
-    users.each(function (user) {
-      var indexItemView = new Jugglog.Views.UserIndexItem({ model: user });
-      that.addSubview('.users', indexItemView);
-    })
+  render: function () {
+    this.$el.html(this.template());
+    this.attachSubviews();
 
     return this;
   },
 
-  handleInput: function (event) {
+  addUserIndexItem: function (user) {
+    var view = new Jugglog.Views.UserIndexItem({ model: user });
+    this.addSubview('.users', view);
+  },
+
+  removeUserIndexItem: function (user) {
+    this.subviews('.users').each( function (view) {
+      if(view.model === user) {
+        that.removeSubview('.users', view);
+      }
+    });
+  },
+
+  handleSearchInput: function (event) {
     var that = this;
     var string = $(event.currentTarget).val();
 
     if(string === '') {
-      this.render(this.collection);
+      var allUsers = new Jugglog.Collections.Users();
+      allUsers.fetch({ success: function () {
+        while(that.subviews('.users').length > 0) {
+          that.removeSubview('.users', that.subviews('.users')[0]);
+        }
+        allUsers.each(that.addUserIndexItem.bind(that));
+      }});
     } else {
       $.ajax({
         url: '/users/search',
@@ -39,7 +51,10 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
         data: { query: string },
         success: function(users) {
           var foundUsers = new Jugglog.Collections.Users(users);
-          that.render(foundUsers);
+          while(that.subviews('.users').length > 0) {
+            that.removeSubview('.users', that.subviews('.users')[0]);
+          }
+          foundUsers.each(that.addUserIndexItem.bind(that));
         }
       });
     }

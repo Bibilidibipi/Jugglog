@@ -1,18 +1,32 @@
 Jugglog.Routers.Router = Backbone.Router.extend({
   routes: {
-    '': 'usersIndex',
+    '': 'patternsIndex',
+    'patterns/:id': 'patternShow',
+    'users': 'usersIndex',
     'users/:id': 'userShow'
   },
 
   initialize: function (options) {
     this.$rootEl = options.$rootEl;
     this.users = options.users;
+    this.patterns = options.patterns;
   },
 
   _swapView: function (view) {
     this._currentView && this._currentView.remove();
     this._currentView = view;
     this.$rootEl.html(view.render().$el);
+  },
+
+  patternsIndex: function () {
+    var view = new Jugglog.Views.PatternsIndex({ collection: this.patterns });
+    this._swapView(view);
+  },
+
+  patternShow: function (id) {
+    var pattern = this.patterns.get(id);
+    var view = new Jugglog.Views.PatternShow({ model: pattern });
+    this._swapView(view);
   },
 
   usersIndex: function () {

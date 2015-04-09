@@ -82,7 +82,7 @@ view a history of the days they've practiced.
 - [ ] 'Streak' indicator (consecutive days of logged practice)
 - [ ] User rank based on logged practice among those they follow
 - [ ] Infinite scroll for other users index
-- [ ] Typeahead search bar
+- [x] Typeahead search bar
 - [ ] Search for patterns by name
 - [ ] Submission of alternate names for patterns
 - [ ] Users can view patterns they're learning

@@ -1,6 +1,6 @@
 Jugglog.Collections.Users = Backbone.Collection.extend({
   model: Jugglog.Models.User,
-  url: 'users',
+  url: '/users',
 
   initialize: function (users, options) {
     if(options && options.follower) { this.follower = options.follower; }

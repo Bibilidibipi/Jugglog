@@ -1,11 +1,6 @@
 Jugglog.Models.Pattern = Backbone.Model.extend({
   urlRoot: '/api/patterns',
 
-  initialize: function (options) {
-    this.title = options.title;
-    if(options && options.body) { this.body = options.body; }
-  },
-
   parse: function (payload) {
     if(payload.parents) {
       this.parents().set(payload.parents);

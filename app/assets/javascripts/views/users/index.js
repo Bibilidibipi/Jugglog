@@ -52,9 +52,7 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
         data: { query: string },
         success: function(users) {
           var foundUsers = new Jugglog.Collections.Users(users);
-          while(that.subviews('.users').length > 0) {
-            that.removeSubview('.users', that.subviews('.users')[0]);
-          }
+          that.removeSubviews('.users');
           foundUsers.each(that.addUserIndexItem.bind(that));
         }
       });

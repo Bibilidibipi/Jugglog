@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150409174234) do
+ActiveRecord::Schema.define(version: 20150409222655) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,11 +27,14 @@ ActiveRecord::Schema.define(version: 20150409174234) do
   add_index "followings", ["follower_id"], name: "index_followings_on_follower_id", using: :btree
 
   create_table "patterns", force: :cascade do |t|
-    t.string   "title",      null: false
+    t.string   "title",                    null: false
     t.string   "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.integer  "num_jugglers", default: 1, null: false
   end
+
+  add_index "patterns", ["num_jugglers"], name: "index_patterns_on_num_jugglers", using: :btree
 
   create_table "pre_reqs", force: :cascade do |t|
     t.integer  "parent_id",  null: false

@@ -24,7 +24,7 @@ Jugglog.Routers.Router = Backbone.Router.extend({
   },
 
   patternShow: function (id) {
-    var pattern = this.patterns.get(id);
+    var pattern = this.patterns.getOrFetch(id);
     var view = new Jugglog.Views.PatternShow({ model: pattern });
     this._swapView(view);
   },

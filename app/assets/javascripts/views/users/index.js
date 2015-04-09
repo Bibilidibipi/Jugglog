@@ -24,6 +24,7 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   },
 
   removeUserIndexItem: function (user) {
+    var that = this;
     this.subviews('.users').each( function (view) {
       if(view.model === user) {
         that.removeSubview('.users', view);

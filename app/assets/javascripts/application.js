@@ -18,6 +18,7 @@
 //= require jugglog
 //= require_tree ../templates
 //= require_tree ./utils
+//= require ./models/user
 //= require_tree ./models
 //= require_tree ./collections
 //= require_tree ./views

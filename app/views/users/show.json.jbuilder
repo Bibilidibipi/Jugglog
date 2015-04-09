@@ -5,3 +5,6 @@ end
 json.followees @user.followees do |followee|
   json.(followee, :id, :created_at, :updated_at, :username)
 end
+json.isFollowerFollowings @user.is_follower_followings do |following|
+  json.(following, :id, :follower_id, :followee_id)
+end

@@ -1,5 +1,5 @@
 Jugglog.Models.Following = Backbone.Model.extend({
-  url: '/api/followings',
+  urlRoot: '/api/followings',
 
   initialize: function (options) {
     this.follower_id = options.follower_id;

@@ -1,6 +1,7 @@
 class Api::FollowingsController < ApplicationController
   def create
     @following = Following.new(following_params)
+
     if @following.save
       render json: @following
     else
@@ -9,10 +10,8 @@ class Api::FollowingsController < ApplicationController
   end
 
   def destroy
-    @following = Following.find_by(
-      follower_id: following_params[:follower_id],
-      followee_id: following_params[:followee_id],
-    )
+    @following = Following.find(params[:id])
+
     if @following.destroy
       render json: @following
     else

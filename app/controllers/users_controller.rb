@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all
+    @users = User.where('id <> ?', current_user.id)
     render json: @users
   end
 
@@ -33,7 +33,9 @@ class UsersController < ApplicationController
 
   def search
     if params[:query].present?
-      @users = User.where("username ~ ?", params[:query])
+      @users = User
+        .where("username ~ ?", params[:query])
+        .where('id <> ?', current_user.id)
     else
       @users = User.none
     end

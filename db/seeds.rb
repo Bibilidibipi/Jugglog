@@ -1,3 +1,4 @@
+User.create(username: 'pipit', password: 'password')
 100.times do
   begin
     User.create(username: Faker::Internet.user_name, password: 'password')

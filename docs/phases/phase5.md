@@ -1,4 +1,4 @@
-# Phase 5: Searching for Blogs and Posts
+# Phase 5: Log Practice and Learning, View History
 
 ## Rails
 ### Models

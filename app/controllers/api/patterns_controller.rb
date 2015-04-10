@@ -17,6 +17,11 @@ class Api::PatternsController < ApplicationController
     @pattern = Pattern.find(params[:id])
   end
 
+  def groups
+    @patterns = Pattern.where('num_jugglers = ?', params[:id])
+    render :index
+  end
+
   private
 
   def pattern_params

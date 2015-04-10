@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     resources :followings, only: [:create, :destroy]
-    resources :patterns, only: [:create, :index, :show]
+    resources :patterns, only: [:create, :index, :show] do
+      get 'groups/:id', on: :collection, to: 'patterns#groups'
+    end
   end
 end

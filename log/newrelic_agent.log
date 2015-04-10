@@ -727,3 +727,61 @@ DETAIL:  Key (username)=(pipit) already exists.
 [04/09/15 15:22:22 -0700 Apps-Mac-mini-90.local (42638)] INFO : Installing Rails 4 view instrumentation
 [04/09/15 15:22:22 -0700 Apps-Mac-mini-90.local (42638)] INFO : Installing Rails 4 Error instrumentation
 [04/09/15 15:22:22 -0700 Apps-Mac-mini-90.local (42638)] INFO : Finished instrumentation
+[04/09/15 16:40:03 -0700 Apps-Mac-mini-90.local (39580)] INFO : Starting Agent shutdown
+[04/10/15 09:27:14 -0700 Apps-Mac-mini-90.local (44681)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/15 09:27:14 -0700 Apps-Mac-mini-90.local (44681)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/15 09:27:14 -0700 Apps-Mac-mini-90.local (44681)] WARN : No configuration file found. Working directory = /Users/appacademy/Desktop/Jugglog
+[04/10/15 09:27:14 -0700 Apps-Mac-mini-90.local (44681)] WARN : Looked in these locations (based on defaults): /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[04/10/15 09:27:14 -0700 Apps-Mac-mini-90.local (44681)] INFO : Environment: development
+[04/10/15 09:27:14 -0700 Apps-Mac-mini-90.local (44681)] INFO : Dispatcher: webrick
+[04/10/15 09:27:14 -0700 Apps-Mac-mini-90.local (44681)] INFO : Application: development
+[04/10/15 09:27:14 -0700 Apps-Mac-mini-90.local (44681)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[04/10/15 09:27:14 -0700 Apps-Mac-mini-90.local (44681)] INFO : Installing ActiveJob instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Installing ActiveRecord 4 instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Installing Net instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Installing deferred Rack instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Installing Rack::Builder middleware instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Installing Rails 3+ middleware instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Installing Rails 4 Controller instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Installing Rails 4 view instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Installing Rails 4 Error instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Finished instrumentation
+[04/10/15 09:27:15 -0700 Apps-Mac-mini-90.local (44681)] INFO : Doing deferred dependency-detection before Rack startup
+[04/10/15 09:27:23 -0700 Apps-Mac-mini-90.local (44681)] ERROR : Invalid license key, please contact support@newrelic.com
+[04/10/15 09:27:23 -0700 Apps-Mac-mini-90.local (44681)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] WARN : No configuration file found. Working directory = /Users/appacademy/Desktop/Jugglog
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] WARN : Looked in these locations (based on defaults): /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Environment: development
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : No known dispatcher detected.
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Application: development
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Installing ActiveJob instrumentation
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Installing ActiveRecord 4 instrumentation
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Installing Net instrumentation
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Installing deferred Rack instrumentation
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Installing Rack::Builder middleware instrumentation
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Installing Rails 3+ middleware instrumentation
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Installing Rails 4 Controller instrumentation
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Installing Rails 4 view instrumentation
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Installing Rails 4 Error instrumentation
+[04/10/15 10:04:09 -0700 Apps-Mac-mini-90.local (45088)] INFO : Finished instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Starting the New Relic agent in "development" environment.
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] WARN : No configuration file found. Working directory = /Users/appacademy/Desktop/Jugglog
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] WARN : Looked in these locations (based on defaults): /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Environment: development
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : No known dispatcher detected.
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Application: development
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing ActiveJob instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing ActiveRecord 4 instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing Net instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing deferred Rack instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing Rack::Builder middleware instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing Rails 3+ middleware instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing Rails 4 Controller instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing Rails 4 view instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing Rails 4 Error instrumentation
+[04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Finished instrumentation

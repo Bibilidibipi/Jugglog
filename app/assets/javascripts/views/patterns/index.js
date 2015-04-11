@@ -6,6 +6,8 @@ Jugglog.Views.PatternsIndex = Backbone.CompositeView.extend({
   },
 
   initialize: function (options) {
+    $('.active').removeClass('active');
+    $('.patterns').addClass('active');
     this.showPatternsFromNum(1);
     // this.listenTo(this.patterns, 'add', this.addPatternIndexItem);
     // this.listenTo(this.patterns, 'remove', this.removePatternIndexItem);
@@ -21,7 +23,7 @@ Jugglog.Views.PatternsIndex = Backbone.CompositeView.extend({
 
   setTemplateTiers: function() {
     for(var i = 1; i <= this.highTier; i++) {
-      var elString = "<ul class='tier-" + i + "'></ul>"
+      var elString = "<ul class='tier tier-" + i + "'></ul>"
       this.$el.append(elString);
     };
   },

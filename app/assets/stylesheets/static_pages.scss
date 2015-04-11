@@ -1,42 +1,113 @@
-.new-session, .new-user {
-  .username, .password {
-    width: 320px;
-    height: 55px;
-    border: none;
-    color: #4b4b4b;
-    font-size: 20px;
-    border-style: solid;
-    border-color: #ebebeb;
-    border-width: 2px;
-    border-radius: 5px;
-    font-family: 'Varela Round', sans-serif;
-    padding-left: 10px;
-  }
+#all {
+  width: 1060px;
+  display: block;
+  margin: 110px auto;
+  font-size: 15px;
+  font-weight: 500px;
+  font-family: 'Varela Round', sans-serif;
 
-  .submit {
-    width: 320px;
-    height: 55px;
-    background: rgb(126, 181, 48);
-    border: none;
-    border-radius: 100px;
-    color: white;
-    font-size: 20px;
-    font-family: 'Varela Round', sans-serif;
-
-    &:hover {
-      background: #8ee000;
-    }
+  > div {
+    display: block;
+    border: 2px solid rgb(218, 218 ,218);
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    padding: 30px;
   }
 }
 
 #main {
+  width: 680px;
+  float: left;
+  padding: 35px 40px 40px 40px;
 
+  .title {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .heading {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .show-parents {
+    width: 50%;
+    padding: 15px;
+    display: block;
+    float: left;
+
+    li {
+      display: inline-block;
+      width: 33%;
+    }
+  }
+
+  .show-children {
+    width: 50%;
+    padding: 15px;
+    display: block;
+    float: right;
+
+    li {
+      display: inline-block;
+      width: 33%;
+    }
+  }
+
+  ul {
+    padding: 0;
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .num-jugglers-select {
+    text-align: justify;
+
+    .num-juggler {
+      width: 20%;
+      display: inline-block;
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  .tier {
+    margin-bottom: 25px;
+  }
+
+  .body {
+    display: block;
+    clear: both;
+  }
+
+  .users {
+    text-align: left;
+  }
 }
 
 #sidebar-top {
-
+  width: 340px;
+  height: 211px;
+  float: right;
+  margin: 0 0 40px 0;
 }
 
 #sidebar-bottom {
-
+  background-color: rgb(233, 233, 233);
+  width: 340px;
+  height: 232px;
+  float: right;
+  clear: right;
 }

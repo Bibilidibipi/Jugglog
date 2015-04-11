@@ -6,6 +6,7 @@ window.Jugglog = {
   initialize: function() {
     var $rootEl = $('div#main');
     if(currentUserId !== -1) {
+      $('body').css('background-image', "url('assets/main_page_background.png')");
       var patterns = new Jugglog.Collections.Patterns();
       patterns.fetch();
       var users = new Jugglog.Collections.Users();

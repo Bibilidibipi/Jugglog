@@ -1,5 +1,6 @@
 Jugglog.Views.PatternIndexItem = Backbone.View.extend({
   template: JST['patterns/indexItem'],
+  tagName: 'li',
 
   events: {
     'click .pattern-show': 'patternShow'

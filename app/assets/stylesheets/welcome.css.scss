@@ -1,0 +1,72 @@
+body {
+  background-image: url('welcome_page_background.png');
+  background-color: #cccccc;
+  background-size: 2000px;
+  background-repeat: no-repeat;
+}
+
+.all {
+  text-align: justify;
+  width: 1000px;
+  margin: auto;
+  margin-top: 20vh;
+  position: relative;
+
+  img {
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  form {
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+    input {
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  &:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.new-session, .new-user {
+  .username, .password {
+    width: 320px;
+    height: 55px;
+    border: none;
+    color: #4b4b4b;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 2px;
+    border-radius: 5px;
+    font-family: 'Varela Round', sans-serif;
+    padding-left: 10px;
+  }
+
+  .submit {
+    width: 320px;
+    height: 55px;
+    background: rgb(126, 181, 48);
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+
+    &:hover {
+      background: #8ee000;
+    }
+  }
+}

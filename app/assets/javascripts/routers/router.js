@@ -1,9 +1,12 @@
 Jugglog.Routers.Router = Backbone.Router.extend({
   routes: {
-    '': 'patternsIndex',
+    '': 'redirect',
+    'activity': 'activity',
+    'patterns': 'patternsIndex',
     'patterns/:id': 'patternShow',
     'users': 'usersIndex',
-    'users/:id': 'userShow'
+    'users/:id': 'userShow',
+    'profile': 'profile'
   },
 
   initialize: function (options) {
@@ -38,5 +41,18 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     var user = this.users.getOrFetch(id);
     var view = new Jugglog.Views.UserShow({ model: user });
     this._swapView(view);
-  }
+  },
+
+  redirect: function () {
+    Backbone.history.navigate('patterns', { trigger: true });
+  },
+
+  profile: function () {
+    Jugglog.currentUser;
+  },
+
+  activity: function () {
+    Backbone.history.navigate('users', { trigger: true });
+  },
+
 });

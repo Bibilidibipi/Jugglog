@@ -6,6 +6,8 @@ Jugglog.Views.UserShow = Backbone.View.extend({
   },
 
   initialize: function () {
+    $('.active').removeClass('active');
+    $('.friends').addClass('active');
     this.listenTo(this.model, 'sync', this.render);
     this.listenTo(Jugglog.currentUser.followees(), 'add remove', this.render);
   },

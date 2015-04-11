@@ -6,6 +6,8 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   },
 
   initialize: function (options) {
+    $('.active').removeClass('active');
+    $('.friends').addClass('active');
     this.collection.each(this.addUserIndexItem.bind(this));
     this.listenTo(this.collection, 'add', this.addUserIndexItem);
     this.listenTo(this.collection, 'remove', this.removeUserIndexItem);

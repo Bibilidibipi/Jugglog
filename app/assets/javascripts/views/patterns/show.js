@@ -2,6 +2,8 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
   template: JST['patterns/show'],
 
   initialize: function () {
+    $('.active').removeClass('active');
+    $('.patterns').addClass('active');
     this.model.parents().each(this.addParentSubview.bind(this));
     this.model.children().each(this.addChildSubview.bind(this));
     this.listenTo(this.model, 'sync', this.render);

@@ -1,9 +1,14 @@
-#navbar {
+.navbar {
   height: 70px;
   background: rgba(32, 166, 231, 0.8);
   border-radius: 0px;
   font-family: "Varela Round", sans-serif;
   font-size: 15px;
+  line-height: 0px;
+
+  .container-fluid {
+    max-width: 1140px;
+  }
 
   a {
     color: white;
@@ -14,17 +19,51 @@
     height: 40px;
     line-height: 0px;
     font-size: 32px;
-  }
-
-  .navbar-left a {
-    margin: 15px 0;
-    height: 40px;
-    line-height: 0px;
-    border-radius: 100px;
 
     &:hover {
       color: white;
+    }
+
+    &:focus {
+      color: white;
+    }
+  }
+
+  .navbar-left {
+    a {
+      margin: 15px 0;
+      height: 40px;
+      border-radius: 100px;
+      line-height: 10px;
+
+      &:hover {
+        color: white;
+        background: rgb(20, 147, 209);
+      }
+    }
+
+    .active a {
+      color: white;
       background: rgb(20, 147, 209);
+    }
+  }
+
+  .navbar-right {
+    a {
+      margin: 15px 0;
+      height: 40px;
+      border-radius: 100px;
+      line-height: 10px;
+
+      &:hover {
+        color: white;
+        background: inherit;
+      }
+    }
+
+    .open .dropdown-toggle {
+      color: white;
+      background: inherit;
     }
   }
 

@@ -785,3 +785,43 @@ DETAIL:  Key (username)=(pipit) already exists.
 [04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing Rails 4 view instrumentation
 [04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Installing Rails 4 Error instrumentation
 [04/10/15 10:37:40 -0700 Apps-Mac-mini-90.local (45498)] INFO : Finished instrumentation
+[04/10/15 14:39:37 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "NaN"
+LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+                                                                 ^
+: SELECT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+[04/10/15 14:39:40 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "NaN"
+LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+                                                                 ^
+: SELECT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+[04/10/15 14:40:32 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "NaN"
+LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+                                                                 ^
+: SELECT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+[04/10/15 14:40:33 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "NaN"
+LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+                                                                 ^
+: SELECT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+[04/10/15 14:40:33 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "NaN"
+LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+                                                                 ^
+: SELECT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+[04/10/15 14:40:34 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "NaN"
+LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+                                                                 ^
+: SELECT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+[04/10/15 14:40:34 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "NaN"
+LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+                                                                 ^
+: SELECT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+[04/10/15 14:40:35 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "NaN"
+LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+                                                                 ^
+: SELECT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+[04/10/15 14:40:35 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "NaN"
+LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+                                                                 ^
+: SELECT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
+[04/10/15 14:49:16 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after ".num-juggler.": expected class name, was "1-juggler"
+[04/10/15 14:49:28 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after ".num-juggler .": expected class name, was "1-juggler"
+[04/10/15 14:49:46 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after ".num-juggler .": expected class name, was "1-juggler"
+[04/10/15 15:01:36 -0700 Apps-Mac-mini-90.local (44681)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `reset_token!' for nil:NilClass

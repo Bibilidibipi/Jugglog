@@ -1,6 +1,10 @@
-<%= pattern.escape('title') %><br>
-Prerequisites:
-<ul class="parents"></ul>
-Continuations:
-<ul class="children"></ul>
-<%= pattern.escape('body') %>
+<div class="title"><%= pattern.escape('title') %></div>
+<div class="show-parents">
+  <p class="heading">Prerequisites</p>
+  <ul class="parents"></ul>
+</div>
+<div class="show-children">
+  <p class="heading">Continuation Patterns</p>
+  <ul class="children"></ul>
+</div>
+<div class="body"><%= pattern.escape('body') %></div>

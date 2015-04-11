@@ -12,6 +12,8 @@
 - [ ] add logo
 - [ ] add pictures to patterns
 - [ ] add diagrams to patterns
+- [ ] add log-in-as-guest to log in and sign in page
+- [ ] add log-in and sign-up links on opposing pages
 
 In the patterns index:
 - [x] abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize

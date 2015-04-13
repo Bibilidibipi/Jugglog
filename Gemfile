@@ -13,12 +13,16 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'backbone-on-rails'
 gem 'faker'
 
-gem 'spring',        group: :development
 
 gem 'bcrypt', '~> 3.1.7'
 
 group :development do
+  gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'newrelic_rpm'
+end
+
+group :production do
+  gem 'rails_12factor'
 end

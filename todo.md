@@ -5,10 +5,13 @@
 - [x] make username dropdown hover-activated
 - [x] add log-in and sign-up links on opposing pages
 - [x] add user gravatars
-- [ ] link to all user from users show
+- [x] link to all user from users show
+- [ ] patterns should show up right away!
+- [ ] delineate pattern tiers
+- [ ] useful, styled error messages
+- [ ] add pictures to patterns
 - [ ] add carat to username dropdown
 - [ ] links to followers and followees on users index page (and link back)
-- [ ] useful, styled error messages
 - [ ] recommended patterns (top sidebar)
 - [ ] leaderboard (bottom sidebar)
 - [ ] add animated loading icon
@@ -17,7 +20,6 @@
 - [ ] write profile and activity route functions
 - [ ] take and add background photos, find welcome page picture
 - [ ] add logo
-- [ ] add pictures to patterns
 - [ ] add diagrams to patterns
 - [ ] user edit profile pic ability
 - [ ] interesting seed profile pics

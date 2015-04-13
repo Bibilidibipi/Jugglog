@@ -1,9 +1,9 @@
-User.create(username: 'pipit', password: 'password')
-User.create(username: 'Guest', password: 'password')
+User.create!(username: 'pipit', password: 'password', email: Faker::Internet.safe_email)
+User.create!(username: 'Guest', password: 'password', email: Faker::Internet.safe_email)
 
 100.times do
   begin
-    User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.safe_email)
+    User.create!(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.safe_email)
   rescue
     retry
   end
@@ -12,13 +12,13 @@ end
 numUsers = User.all.length
 50.times do
   begin
-    Following.create(follower_id: rand(numUsers) + 1, followee_id: rand(numUsers) + 1)
+    Following.create!(follower_id: rand(numUsers) + 1, followee_id: rand(numUsers) + 1)
   rescue
     retry
   end
 end
 # 1  1.1
-Pattern.create(
+Pattern.create!(
   title: 'Cascade',
   num_jugglers: 1,
   num_clubs: 3,
@@ -35,7 +35,7 @@ Pattern.create(
         to repeat it to juggle a three-club cascade."
 )
 # 2  1.2
-Pattern.create(
+Pattern.create!(
   title: 'Doubles',
   num_jugglers: 1,
   num_clubs: 3,
@@ -52,7 +52,7 @@ Pattern.create(
         double self throw."
 )
 # 3  1.3
-Pattern.create(
+Pattern.create!(
   title: "423",
   num_jugglers: 1,
   num_clubs: 3,
@@ -73,7 +73,7 @@ Pattern.create(
         hand."
 )
 # 4  1.4
-Pattern.create(
+Pattern.create!(
   title: "441",
   num_jugglers: 1,
   num_clubs: 3,
@@ -92,7 +92,7 @@ Pattern.create(
         heff, heff, zip. Then practice running the sequence."
 )
 # 5  1.5
-Pattern.create(
+Pattern.create!(
   title: "531",
   num_jugglers: 1,
   num_clubs: 3,
@@ -115,7 +115,7 @@ Pattern.create(
         from the left as well."
 )
 # 6  2.1
-Pattern.create(
+Pattern.create!(
   title: "Fountain",
   num_jugglers: 1,
   num_clubs: 4,
@@ -140,7 +140,7 @@ Pattern.create(
         height so that they can be caught at the same time."
 )
 # 7  2.2
-Pattern.create(
+Pattern.create!(
   title: "Half-Shower (Doubles)",
   num_jugglers: 1,
   num_clubs: 4,
@@ -165,7 +165,7 @@ Pattern.create(
         timing, throw both the double and single a little bit lofty."
 )
 # 8  2.3
-Pattern.create(
+Pattern.create!(
   title: "Half-Shower (Triples)",
   num_jugglers: 1,
   num_clubs: 4,
@@ -180,7 +180,7 @@ Pattern.create(
         throw. The tempo should be even and relaxed."
 )
 # 9
-Pattern.create(
+Pattern.create!(
   title: "Passing a Club",
   num_jugglers: 2,
   num_clubs: 1,
@@ -212,7 +212,7 @@ Pattern.create(
 )
 
 # 10  3.1
-Pattern.create(
+Pattern.create!(
   title: "Ultimates (5 Club)",
   num_jugglers: 2,
   num_clubs: 5,
@@ -242,7 +242,7 @@ Pattern.create(
         siteswap 744."
 )
 # 11  3.2
-Pattern.create(
+Pattern.create!(
   title: "Two Count",
   num_jugglers: 2,
   num_clubs: 5,
@@ -264,7 +264,7 @@ Pattern.create(
         right hand and catch your self throw. Continue by repeating the rhythm."
 )
 # 12  3.3
-Pattern.create(
+Pattern.create!(
   title: "672",
   num_jugglers: 2,
   num_clubs: 5,
@@ -294,7 +294,7 @@ Pattern.create(
         with a pass in response to juggler B’s opening pass."
 )
 # 13  3.4
-Pattern.create(
+Pattern.create!(
   title: "Parsnip",
   num_jugglers: 2,
   num_clubs: 5,
@@ -309,7 +309,7 @@ Pattern.create(
         partner’s first and second throws. Parsnip is four hand siteswap 77722."
 )
 # 14  4.1
-Pattern.create(
+Pattern.create!(
   title: "Passing From a Cascade",
   num_jugglers: 2,
   num_clubs: 6,
@@ -317,7 +317,7 @@ Pattern.create(
         same time and speed. Make right hand throws at the same time and make
         left hand throws at the same time. On a passing beat, your right hand
         passes a club to your partner’s left hand and your partner’s right hand
-        passes to your left hand. The hole that you create in your cascade by
+        passes to your left hand. The hole that you create! in your cascade by
         passing a club gets filled by the club that your partner passes to you.
         In this way, you can continue your three club cascade after the passing
         beat. The pass replaces a single self throw, so it must spend the same
@@ -340,7 +340,7 @@ Pattern.create(
         right hand pass."
 )
 # 15  4.1.1
-Pattern.create(
+Pattern.create!(
   title: "Four Count",
   num_jugglers: 2,
   num_clubs: 6,
@@ -353,7 +353,7 @@ Pattern.create(
         left self."
 )
 # 16  4.1.2
-Pattern.create(
+Pattern.create!(
   title: "Three Count",
   num_jugglers: 2,
   num_clubs: 6,
@@ -366,7 +366,7 @@ both juggle right pass, left self, right self, left pass, right self,
 left self."
 )
 # 17  4.1.3
-Pattern.create(
+Pattern.create!(
   title: "Two Count",
   num_jugglers: 2,
   num_clubs: 6,
@@ -380,7 +380,7 @@ four count because you do not have time to stabilize your
 cascade between passes; every right hand throw is a pass."
 )
 # 18  4.1.4
-Pattern.create(
+Pattern.create!(
   title: "Double Three Count",
   num_jugglers: 2,
   num_clubs: 6,
@@ -400,7 +400,7 @@ club. In the same way, you want passes from your left hand
 to travel just to the right of incoming clubs."
 )
 # 19  4.1.5
-Pattern.create(
+Pattern.create!(
   title: "Ultimates (6 Club)",
   num_jugglers: 2,
   num_clubs: 6,
@@ -416,7 +416,7 @@ the outside so that your partner has room to make his or
 her throws in the same manner."
 )
 # 20  4.2
-Pattern.create(
+Pattern.create!(
   title: "78474",
   num_jugglers: 2,
   num_clubs: 6,
@@ -445,7 +445,7 @@ beats. When your partner throws a pass to your left hand,
 start the sequence again with a left hand heff."
 )
 # 21  4.3
-Pattern.create(
+Pattern.create!(
   title: "WhyNot",
   num_jugglers: 2,
   num_clubs: 6,
@@ -466,7 +466,7 @@ and second throws.
 WhyNot is four hand siteswap 77862."
 )
 # 22  4.4
-Pattern.create(
+Pattern.create!(
   title: "NotWhy",
   num_jugglers: 2,
   num_clubs: 6,
@@ -488,7 +488,7 @@ B as in NotWhy (or vice versa).
 NotWhy is four hand siteswap 77286."
 )
 # 23  4.5
-Pattern.create(
+Pattern.create!(
   title: "Maybe",
   num_jugglers: 2,
   num_clubs: 6,
@@ -506,7 +506,7 @@ way between your partner’s first and second throws.
 Maybe is four hand siteswap 78672."
 )
 # 24  4.6
-Pattern.create(
+Pattern.create!(
   title: "77772",
   num_jugglers: 2,
   num_clubs: 6,
@@ -525,7 +525,7 @@ Make your first throw half way between your partner’s first
 and second throws."
 )
 # 25  4.7
-Pattern.create(
+Pattern.create!(
   title: "75666",
   num_jugglers: 2,
   num_clubs: 6,
@@ -547,7 +547,7 @@ left hand. Make your first throw half way between your
 partner’s first and second throws."
 )
 # 26  4.8
-Pattern.create(
+Pattern.create!(
   title: "756",
   num_jugglers: 2,
   num_clubs: 6,
@@ -569,7 +569,7 @@ your partner has time deal with two clubs arriving in the
 same hand."
 )
 # 27  4.4
-Pattern.create(
+Pattern.create!(
   title: "972",
   num_jugglers: 2,
   num_clubs: 6,
@@ -589,7 +589,7 @@ your first throw half way between your partner’s first and
 second throws."
 )
 # 28  4.4
-Pattern.create(
+Pattern.create!(
   title: "Joe",
   num_jugglers: 2,
   num_clubs: 1,
@@ -605,7 +605,7 @@ Pattern.create(
         spin them. Try and throw the joe with almost no rotation at all."
 )
 # 29  4.4
-# Pattern.create(
+# Pattern.create!(
 #   title: "",
 #   num_jugglers: 2,
 #   num_clubs: 6,
@@ -613,44 +613,44 @@ Pattern.create(
 # )
 
 
-PreReq.create(parent_id: 1, child_id: 2)
-PreReq.create(parent_id: 2, child_id: 3)
-PreReq.create(parent_id: 2, child_id: 4)
-PreReq.create(parent_id: 1, child_id: 5)
+PreReq.create!(parent_id: 1, child_id: 2)
+PreReq.create!(parent_id: 2, child_id: 3)
+PreReq.create!(parent_id: 2, child_id: 4)
+PreReq.create!(parent_id: 1, child_id: 5)
 
-PreReq.create(parent_id: 4, child_id: 6)
-PreReq.create(parent_id: 2, child_id: 7)
-PreReq.create(parent_id: 7, child_id: 8)
-PreReq.create(parent_id: 5, child_id: 8)
+PreReq.create!(parent_id: 4, child_id: 6)
+PreReq.create!(parent_id: 2, child_id: 7)
+PreReq.create!(parent_id: 7, child_id: 8)
+PreReq.create!(parent_id: 5, child_id: 8)
 
-PreReq.create(parent_id: 9, child_id: 10)
-PreReq.create(parent_id: 1, child_id: 11)
-PreReq.create(parent_id: 9, child_id: 11)
-PreReq.create(parent_id: 10, child_id: 12)
-PreReq.create(parent_id: 12, child_id: 13)
-PreReq.create(parent_id: 18, child_id: 13)
+PreReq.create!(parent_id: 9, child_id: 10)
+PreReq.create!(parent_id: 1, child_id: 11)
+PreReq.create!(parent_id: 9, child_id: 11)
+PreReq.create!(parent_id: 10, child_id: 12)
+PreReq.create!(parent_id: 12, child_id: 13)
+PreReq.create!(parent_id: 18, child_id: 13)
 
-PreReq.create(parent_id: 1, child_id: 14)
-PreReq.create(parent_id: 9, child_id: 14)
-PreReq.create(parent_id: 1, child_id: 15)
-PreReq.create(parent_id: 10, child_id: 15)
-PreReq.create(parent_id: 11, child_id: 15)
-PreReq.create(parent_id: 15, child_id: 16)
-PreReq.create(parent_id: 15, child_id: 17)
-PreReq.create(parent_id: 16, child_id: 18)
-PreReq.create(parent_id: 17, child_id: 18)
-PreReq.create(parent_id: 18, child_id: 19)
-PreReq.create(parent_id: 4, child_id: 20)
-PreReq.create(parent_id: 12, child_id: 20)
-PreReq.create(parent_id: 18, child_id: 20)
-PreReq.create(parent_id: 13, child_id: 21)
-PreReq.create(parent_id: 20, child_id: 21)
-PreReq.create(parent_id: 21, child_id: 22)
-PreReq.create(parent_id: 21, child_id: 23)
-PreReq.create(parent_id: 13, child_id: 24)
-# PreReq.create(parent_id: (5.4), child_id: 24)
-# PreReq.create(parent_id: (5.2), child_id: 25)
-PreReq.create(parent_id: 28, child_id: 25)
-PreReq.create(parent_id: 25, child_id: 26)
-PreReq.create(parent_id: 24, child_id: 27)
-# PreReq.create(parent_id: (5.3), child_id: 27)
+PreReq.create!(parent_id: 1, child_id: 14)
+PreReq.create!(parent_id: 9, child_id: 14)
+PreReq.create!(parent_id: 1, child_id: 15)
+PreReq.create!(parent_id: 10, child_id: 15)
+PreReq.create!(parent_id: 11, child_id: 15)
+PreReq.create!(parent_id: 15, child_id: 16)
+PreReq.create!(parent_id: 15, child_id: 17)
+PreReq.create!(parent_id: 16, child_id: 18)
+PreReq.create!(parent_id: 17, child_id: 18)
+PreReq.create!(parent_id: 18, child_id: 19)
+PreReq.create!(parent_id: 4, child_id: 20)
+PreReq.create!(parent_id: 12, child_id: 20)
+PreReq.create!(parent_id: 18, child_id: 20)
+PreReq.create!(parent_id: 13, child_id: 21)
+PreReq.create!(parent_id: 20, child_id: 21)
+PreReq.create!(parent_id: 21, child_id: 22)
+PreReq.create!(parent_id: 21, child_id: 23)
+PreReq.create!(parent_id: 13, child_id: 24)
+# PreReq.create!(parent_id: (5.4), child_id: 24)
+# PreReq.create!(parent_id: (5.2), child_id: 25)
+PreReq.create!(parent_id: 28, child_id: 25)
+PreReq.create!(parent_id: 25, child_id: 26)
+PreReq.create!(parent_id: 24, child_id: 27)
+# PreReq.create!(parent_id: (5.3), child_id: 27)

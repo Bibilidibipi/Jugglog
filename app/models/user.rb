@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  validates :username, :session_token, presence: true, uniqueness: true
+  validates :username, :session_token, :email, presence: true, uniqueness: true
   validates :password_digest, presence: true
   validates :password, length: { minimum: 6, allow_nil: true }
   before_validation :ensure_session_token
@@ -31,6 +31,11 @@ class User < ActiveRecord::Base
     self.session_token = generate_session_token
     self.save!
     self.session_token
+  end
+
+  def gravatar_url
+    gravatar_id = Digest::MD5::hexdigest(email.downcase)
+    "https://secure.gravatar.com/avatar/#{gravatar_id}"
   end
 
   private

@@ -2,7 +2,8 @@ Jugglog.Views.UserShow = Backbone.View.extend({
   template: JST['users/show'],
 
   events: {
-    'click .switch-follow': 'switchFollow'
+    'click .switch-follow': 'switchFollow',
+    'click .all-users': 'usersIndex'
   },
 
   initialize: function () {
@@ -23,5 +24,9 @@ Jugglog.Views.UserShow = Backbone.View.extend({
     } else {
       Jugglog.currentUser.follow(this.model);
     }
+  },
+
+  usersIndex: function (event) {
+    Backbone.history.navigate('users', { trigger: true });
   }
 });

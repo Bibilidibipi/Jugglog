@@ -1,7 +1,9 @@
 User.create(username: 'pipit', password: 'password')
+User.create(username: 'Guest', password: 'password')
+
 100.times do
   begin
-    User.create(username: Faker::Internet.user_name, password: 'password')
+    User.create(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.safe_email)
   rescue
     retry
   end

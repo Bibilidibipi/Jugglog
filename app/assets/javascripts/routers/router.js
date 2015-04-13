@@ -2,8 +2,8 @@ Jugglog.Routers.Router = Backbone.Router.extend({
   routes: {
     '': 'redirect',
     'activity': 'activity',
-    'patterns': 'patternsIndex',
-    'patterns/:id': 'patternShow',
+    'patterns/:numJugglers': 'patternsIndex',
+    'pattern/:id': 'patternShow',
     'users': 'usersIndex',
     'users/:id': 'userShow',
     'profile': 'profile'
@@ -21,8 +21,8 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     this.$rootEl.html(view.render().$el);
   },
 
-  patternsIndex: function () {
-    var view = new Jugglog.Views.PatternsIndex({ collection: this.patterns });
+  patternsIndex: function (numJugglers) {
+    var view = new Jugglog.Views.PatternsIndex({ collection: this.patterns, numJugglers: numJugglers });
     this._swapView(view);
   },
 

@@ -1,0 +1,19 @@
+#main {
+  .pattern-tree {
+    padding: 6px 12px;
+    line-height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    color: white;
+    background: rgb(32, 166, 231);
+
+    &:hover {
+      color: white;
+      background: rgb(26, 133, 185);
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

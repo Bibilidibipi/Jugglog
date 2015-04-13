@@ -40,6 +40,11 @@
         color: white;
         background: rgb(20, 147, 209);
       }
+
+      &:focus {
+        background: inherit;
+        color: white;
+      }
     }
 
     .active a {
@@ -57,6 +62,11 @@
 
       &:hover {
         background-color: inherit;
+        color: white;
+      }
+
+      &:focus {
+        background: inherit;
         color: white;
       }
     }

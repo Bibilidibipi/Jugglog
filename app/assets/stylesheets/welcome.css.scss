@@ -18,7 +18,7 @@ body {
     vertical-align: middle;
   }
 
-  form {
+  .forms {
     width: 400px;
     display: inline-block;
     text-align: center;
@@ -54,19 +54,19 @@ body {
     font-family: 'Varela Round', sans-serif;
     padding-left: 10px;
   }
+}
 
-  .submit {
-    width: 320px;
-    height: 55px;
-    background: rgb(126, 181, 48);
-    border: none;
-    border-radius: 100px;
-    color: white;
-    font-size: 20px;
-    font-family: 'Varela Round', sans-serif;
+.submit {
+  width: 320px;
+  height: 55px;
+  background: rgb(126, 181, 48);
+  border: none;
+  border-radius: 100px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
 
-    &:hover {
-      background: #8ee000;
-    }
+  &:hover {
+    background: #8ee000;
   }
 }

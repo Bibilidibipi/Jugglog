@@ -13,6 +13,6 @@ Jugglog.Views.PatternIndexItem = Backbone.View.extend({
 
   patternShow: function (event) {
     event.preventDefault();
-    Backbone.history.navigate('/patterns/' + this.model.id, { trigger: true });
+    Backbone.history.navigate('/pattern/' + this.model.id, { trigger: true });
   }
 });

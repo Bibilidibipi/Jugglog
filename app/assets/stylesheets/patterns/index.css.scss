@@ -1,0 +1,33 @@
+#main {
+  .num-jugglers-select {
+    text-align: justify;
+    color: white;
+
+    .num-juggler {
+      width: 20%;
+      display: inline-block;
+      background: rgb(35, 182, 254);
+      border-radius: 100px;
+
+      &:hover {
+        background: rgb(26, 133, 185);
+        color: white;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .selected {
+      background: rgb(26, 133, 185);
+      color: white;
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}

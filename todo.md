@@ -1,20 +1,26 @@
-- [ ] paginate users index (limit number of shown users for index and search)
-- [ ] randomize users shown on null search
-- [ ] links to followers and followees on users index page (and link back)
 - [x] infinite background (repeat image)
+- [x] link back to pattern tiers from pattern show page
+- [x] fix back button leaving 'active' class on navbar li elements
+- [x] add log-in-as-guest to log in and sign in page
+- [x] make username dropdown hover-activated
+- [x] add log-in and sign-up links on opposing pages
+- [x] add user gravatars
+- [ ] link to all user from users show
+- [ ] add carat to username dropdown
+- [ ] links to followers and followees on users index page (and link back)
+- [ ] useful, styled error messages
 - [ ] recommended patterns (top sidebar)
 - [ ] leaderboard (bottom sidebar)
-- [ ] link back to pattern tiers from pattern show page
-- [ ] fix back button leaving 'active' class on navbar li elements
+- [ ] add animated loading icon
+- [ ] paginate users index (limit number of shown users for index and search)
+- [ ] randomize users shown on null search
 - [ ] write profile and activity route functions
-- [ ] make username dropdown hover-activated
 - [ ] take and add background photos, find welcome page picture
 - [ ] add logo
 - [ ] add pictures to patterns
 - [ ] add diagrams to patterns
-- [ ] add log-in-as-guest to log in and sign in page
-- [x] add log-in and sign-up links on opposing pages
-- [ ] add animated loading icon
+- [ ] user edit profile pic ability
+- [ ] interesting seed profile pics
 
 In the patterns index:
 - [x] abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize

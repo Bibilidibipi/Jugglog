@@ -34,8 +34,6 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
 
   treeShow: function (event) {
     var numJugglers = this.model.get('num_jugglers');
-    // var view = new Jugglog.Views.PatternsIndex();
-    // view.showPatternsFromNum(numJugglers);
-    Backbone.history.navigate('patterns', { trigger: true });
+    Backbone.history.navigate('patterns/' + numJugglers, { trigger: true });
   }
 });

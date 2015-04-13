@@ -1,7 +1,7 @@
 - [ ] paginate users index (limit number of shown users for index and search)
 - [ ] randomize users shown on null search
 - [ ] links to followers and followees on users index page (and link back)
-- [ ] infinite background (repeat image)
+- [x] infinite background (repeat image)
 - [ ] recommended patterns (top sidebar)
 - [ ] leaderboard (bottom sidebar)
 - [ ] link back to pattern tiers from pattern show page
@@ -13,7 +13,8 @@
 - [ ] add pictures to patterns
 - [ ] add diagrams to patterns
 - [ ] add log-in-as-guest to log in and sign in page
-- [ ] add log-in and sign-up links on opposing pages
+- [x] add log-in and sign-up links on opposing pages
+- [ ] add animated loading icon
 
 In the patterns index:
 - [x] abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize

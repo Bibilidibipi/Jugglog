@@ -56,14 +56,56 @@
       line-height: 10px;
 
       &:hover {
+        background-color: inherit;
         color: white;
-        background: inherit;
       }
     }
 
-    .open .dropdown-toggle {
-      color: white;
-      background: inherit;
+    .dropdown {
+      &:hover {
+        > a {
+          background-color: inherit;
+          color: white;
+        }
+
+        > .dropdown-menu {
+          display: block;
+          margin-top: 0px;
+          border-radius: 10px;
+          border: none;
+          transform: translateY(-10px);
+          left: 0px;
+
+          li {
+            height: 30px;
+            padding: 0;
+            margin: 0;
+
+            a {
+              height: 30px;
+              padding: 0 20px;
+              margin: 0;
+              line-height: 30px;
+
+              &:hover {
+                background-color: #1caff6;
+                border-radius: 0;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .welcome a {
+    background-color: white;
+    color: rgb(11, 65, 118);
+
+    &:hover {
+      color: rgb(11, 65, 118);
+      background-color: rgb(230, 230, 230);
     }
   }
 

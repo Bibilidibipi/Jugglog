@@ -1,6 +1,10 @@
 Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
   template: JST['patterns/show'],
 
+  events: {
+    'click .pattern-tree': 'treeShow'
+  },
+
   initialize: function () {
     $('.active').removeClass('active');
     $('.patterns').addClass('active');
@@ -27,4 +31,11 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
     var view = new Jugglog.Views.PatternIndexItem({ model: child });
     this.addSubview('.children', view);
   },
+
+  treeShow: function (event) {
+    var numJugglers = this.model.get('num_jugglers');
+    // var view = new Jugglog.Views.PatternsIndex();
+    // view.showPatternsFromNum(numJugglers);
+    Backbone.history.navigate('patterns', { trigger: true });
+  }
 });

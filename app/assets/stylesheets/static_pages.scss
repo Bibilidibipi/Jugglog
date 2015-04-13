@@ -95,6 +95,16 @@
   .users {
     text-align: left;
   }
+
+  .pattern-tree {
+    border: 1px solid rgb(218, 218 ,218);
+    border-radius: 100px;
+    background: rgb(32, 166, 231);
+
+    &:hover {
+      background: rgb(20, 147, 209);
+    }
+  }
 }
 
 #sidebar-top {

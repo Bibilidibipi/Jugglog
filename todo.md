@@ -36,7 +36,8 @@
 - [ ] popcorn in info pages (also, info pages!)
 - [ ] clean up pattern show texts
 - [ ] fix url on sign-in redirect
-
+- [ ] make comments form expandable; activate 'cancel' button
+- [ ] comment avatars should link to user show
 
 In the patterns index:
 - [x] abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize

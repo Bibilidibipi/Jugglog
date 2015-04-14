@@ -70,7 +70,8 @@ Jugglog.Views.PatternsIndex = Backbone.CompositeView.extend({
     }
 
     this.patterns.each(function (pattern) {
-      if(pattern.parents().length === 0) {
+      // if(pattern.parents().length === 0) {
+      if(pattern.tier === undefined) {
         assignTier(pattern, 1);
       }
     });

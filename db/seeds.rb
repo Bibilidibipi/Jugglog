@@ -568,7 +568,7 @@ that the pass be thrown with enough extra height so that
 your partner has time deal with two clubs arriving in the
 same hand."
 )
-# 27  4.4
+# 27  4.9
 Pattern.create!(
   title: "972",
   num_jugglers: 2,
@@ -588,7 +588,7 @@ with a right hand pass to your partner’s right hand. Make
 your first throw half way between your partner’s first and
 second throws."
 )
-# 28  4.4
+# 28
 Pattern.create!(
   title: "Joe",
   num_jugglers: 2,
@@ -604,25 +604,1621 @@ Pattern.create!(
         you put joes into a passing rhythm, you will have a tendency to over
         spin them. Try and throw the joe with almost no rotation at all."
 )
-# 29  4.4
+# 29  5.1
+Pattern.create!(
+  title: "Two Count (Doubles)",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Two count in doubles is the rhythm to start with for
+passing seven clubs and getting comfortable throwing double
+passes. This might be the first time you throw a double
+pass. With a club in your right hand, make the same throwing
+motion as for a single pass, but release the club later
+in the swing of your arm so that it flies up in an arc before
+coming back down to your partner’s left hand. The club
+should make two full rotations and arrive in your partner’s
+left hand with the handle pointing down. A double pass
+spends the same amount of time in the air as a heff.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is double pass, single self. Start with a right hand double pass.
+Your right hand always throws a double pass and your left
+hand always throws a self.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is single
+self, double pass, starting with the left. Start with a left
+hand self as your partner makes his or her first throw. On
+the next beat, your partner throws a self and you throw a
+right hand double pass.1 Your right hand always throws a
+double pass and your left hand always throws a self."
+)
+# 30  5.2
+Pattern.create!(
+  title: "Two Count (Singles)",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Seven club singles uses a galloped tempo, similar to the
+tempo for juggling four clubs in a half shower with doubles. The time between two right hand passes does not
+change, but the time after a right hand pass before the next
+left hand self is half as long. Throw right-left in rapid succession,
+and then pause for a moment before doing it again.
+Both the pass and the self throw need to be lofty.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Start with a right hand pass
+quickly followed by a left hand self. Make your next right
+hand pass after a short delay and just in time to catch your
+first self throw. You can also start with two clubs in your right hand and one club in
+your left hand; skip the first self throw and make your first pass as your
+partner makes his or her second throw. As juggler B, start with two clubs in your right hand and
+one club in your left hand. Start with a right hand pass
+quickly followed by a left hand self. Make your first pass
+right after your partner makes his or her first left hand self.
+Try to fit both your pass and your self in the time between
+your partner’s self throw and his or her next pass."
+)
+# 31  5.3
+Pattern.create!(
+  title: "Three Count (Doubles)",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Seven clubs in three count with doubles uses a lofty double
+pass.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, self. The pass is a lofty crossing double pass. Start with
+a right hand double pass to your partner’s right hand.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+pass, self. The pass is a lofty straight double pass. Start
+with a right hand self. Make your first throw half way between
+your partner’s first and second throws.
+There is an alternate way to start this pattern that many
+jugglers may find easier. Juggler A starts as before but
+makes straight passes. Juggler B makes crossing passes
+and starts with a right hand pass half way between juggler
+A’s second and third throws.
+Seven club three count with doubles is four hand siteswap
+966."
+)
+# 32  5.4
+Pattern.create!(
+  title: "Ultimates",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Passing seven club ultimtes can be an intimidating pattern
+but it is pretty accessible and very satisfying to juggle.
+Every throw is a lofty single pass.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. All of your throws are lofty
+straight passes. Start with a right hand pass to your partner’s
+left hand.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. All of your throws are lofty crossing
+passes. Start with a right hand pass to your partner’s
+right hand. Make your first throw half way between your
+partner’s first and second throws.
+Seven club ultimates is four hand siteswap 7."
+)
+# 33  5.5
+Pattern.create!(
+  title: "Four Count (Triples)",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Passing seven clubs in four count is a good rhythm for
+learning to make a triple pass. Just as a double pass spends
+an extra beat in the air and makes one additional rotation compared to a single pass, the triple pass spends two additional
+beats in the air and makes three full rotations before
+arriving at your partner’s hand. You will need to put noticeably
+more power on your triple pass to get it high enough.
+Be sure not to put too much spin on the club; it should rotate
+at the same speed as a single pass or a double pass. As
+you and your partner practice throwing a good triple pass
+be sure to give each other feedback on how the club arrives.
+Good feedback makes it easier to make corrections to these
+very high passes.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, self, self. The pass is a straight triple pass. Start with a
+right hand triple pass to your partner’s left hand.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+self, pass, self. The pass is a straight triple pass. Start with
+a right hand self throw as your partner makes his or her
+first throw."
+)
+# 34  5.6.1
+Pattern.create!(
+  title: "Six Count Popcorn",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Six count Popcorn is a visually interesting rhythm and it
+is a lot of fun to juggle. It should also be pretty easy to pick
+up with just a little bit of practice. Your left hand always
+makes single self throws so you only need to keep track of
+what your right hand does. The passes are all right hand
+straight double passes.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is double
+pass, self, self, self, triple self, self. Just counting the right
+hand, throw double pass, single self, triple self. Start with
+a double pass from your right hand to your partner’s left
+hand.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is self,
+triple self, self, double pass, self, self, starting with the left.
+Just counting the right hand, throw triple self, double pass,
+single self. Start with a left hand self. Make your first throw
+as your partner makes his or her first throw."
+)
+# 35  5.6.2
+Pattern.create!(
+  title: "Five Count Popcorn",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Five count Popcorn is very similar to six count Popcorn
+except you must use both your right hand and left hand to
+make self triples and passes.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, self, triple, self. The pass is a lofty straight single pass.
+The triple is a triple self. Start with a right hand pass to
+your partner’s left hand.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is triple,
+self, pass, self, self. The triple is a triple self. The pass is a
+lofty crossing single pass. Start with a right hand triple self.
+Make your first throw half way between your partner’s first
+and second throws.
+Five count Popcorn is four hand siteswap 7A666"
+)
+# 36  5.6.3
+Pattern.create!(
+  title: "Four Count Popcorn",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Four count Popcorn offers a particular challenge because
+your right hand alternates between throwing a triple self
+and a single pass. Your tendency will be to put your pass
+much higher than a single pass. Focus on keeping your pass
+low and you should not have much trouble.
+As juggler A, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is triple,
+self, pass, self. The triple is a right hand triple self. The pass
+is a right hand straight single pass. Start with a right hand triple self.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, triple, self. The pass is a right hand straight single pass.
+The triple is a right hand triple self. Start with a right hand
+pass to your partner’s left hand. Make your first throw as
+your partner makes his or her first throw."
+)
+# 37  5.6.4
+Pattern.create!(
+  title: "Three Count Popcorn",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Three count Popcorn is also called French three count. It
+does not use the triple-single pair of throws. The extra club
+goes back and forth so often that each juggler only throws a
+heff and a single self throw in addition to the pass on each
+cycle.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is heff,
+pass, self. The pass is a lofty straight single pass. Start with
+a right hand heff.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+heff, pass. The pass is a lofty crossing single pass. Start with
+a right hand self. Make your first throw half way between
+your partner’s first and second throws.
+Three count Popcorn is four hand siteswap 867."
+)
+# 38  5.7
+Pattern.create!(
+  title: "Techno",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "Techno is a simultaneous rhythm. You need to throw a
+pass and a self at the same time on every other beat.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is right
+pass and left self, right self, left pass and right self, left self.
+The passes are straight. All throws are singles. Start with
+a right pass and left self.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is left
+self, right pass and left self, right self, left pass and right self.
+The passes are crossing. All throws are singles. Start with
+a left self. Make your first throw at the same time as your
+partner makes his or her first pair of throws.
+When you are starting to work on Techno, make the pass
+a moment earlier than the simultaneous self. This slight
+gallop will make it easier to manage the rhythm. As you get
+more comfortable, work on removing the gallop and making
+the throws at the same time."
+)
+# 39  5.8
+Pattern.create!(
+  title: "885",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is heff,
+joe, heff. The joe is crossing. Start with a right hand heff.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is heff,
+heff, joe. The joe is straight. Start with a right hand heff.
+Make your first throw half way between your partner’s first
+and second throws.
+You may find a tendency to over-spin your joes as the
+rest of your throws are so much higher. You can try to focus
+on throwing your joes almost flat to take off the extra
+spin. Being very comfortable with 756 will help reduce this
+tendency"
+)
+# 40  5.9
+Pattern.create!(
+  title: "894",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "As juggler A, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is heff,
+hold, pass. The pass is a lofty crossing double pass. Start
+with a right hand heff.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+heff, hold. The pass is a lofty straight double pass. Start
+with a right hand pass to your partner’s left hand. Make
+your first throw a moment after your partner makes his or
+her first heff."
+)
+# 41  5.10
+Pattern.create!(
+  title: "96677",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is double
+pass, self, single pass, self, single pass. The double pass
+is a lofty crossing double pass. The single pass is a lofty
+straight single pass. Start with a right hand double pass to
+your partner’s right hand.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+single pass, double pass, self, single pass. The double pass
+is a lofty straight double pass. The single pass is a lofty
+crossing single pass. Start with a right hand self. Make
+your first throw half way between your partner’s first and
+second throws.
+If you are comfortable with 972, you will be familiar with
+the combinations of crossing and straight, double and single
+passes that are challenging with this rhythm. The remaining
+challenge is simply remembering your sequence of
+throws and developing the correct muscle memory."
+)
+# 42  5.11
+Pattern.create!(
+  title: "975",
+  num_jugglers: 2,
+  num_clubs: 7,
+  body: "975 can be hard to get your head around at first. All of the throws are passes and there are three very different
+passing throws, some of which cross and some of which are
+straight. Once you get it down, it is a fun rhythm.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is double,
+joe, single. The double is a lofty crossing double pass.
+The joe is crossing. The single is a lofty straight single pass.
+Start with a right hand double pass to your partner’s right
+hand. You may find it easier after you have made your first
+double pass to think about throwing joe, single, double, all
+to your partner’s left hand, and then again throwing to your
+partner’s right hand.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is single,
+double, joe. The single is a lofty crossing single pass. The
+double is a lofty straight double pass. The joe is straight.
+Start with a right hand single pass to your partner’s right
+hand. Make your first throw half way between your partner’s
+first and second throws. You may find it easier after
+you have thrown your first two passes to think about throwing
+joe, single, double all to your partner’s left hand, and
+then again throwing to your partner’s right hand.
+If you can keep your joes low and your double passes lofty
+then you should be able to pull off 975."
+)
+# 43  6.1
+Pattern.create!(
+  title: "Two Count (Doubles)",
+  num_jugglers: 2,
+  num_clubs: 8,
+  body: "Passing eight clubs in two count with doubles is the first
+rhythm to learn for passing eight clubs. You need to throw
+lofty double passes and lofty single self throws in a galloped
+tempo. Both jugglers do the same thing at the same time.
+Start with two clubs in your right hand and two clubs
+in your left hand. Your right hand throws a lofty straight
+double pass. Your left hand throws a lofty single self. Start
+with a right hand pass to your partner’s left hand. Quickly
+follow your pass with a left hand self and then pause for a
+moment before making your next double pass.
+The galloped rhythm is identical to juggling four clubs in a half shower with doubles, but you should be able to
+learn this rhythm even if you struggle with a four club half
+shower."
+)
+# 44  6.2
+Pattern.create!(
+  title: "Two Count (Triples)",
+  num_jugglers: 2,
+  num_clubs: 8,
+  body: "Passing eight clubs in two count with triples is more
+challenging than using doubles, but the even tempo can be
+more relaxing. Once you get comfortable with this rhythm,
+you may be surprised that there can be so much time while
+you keep eight clubs in the air. Both jugglers do the same
+thing at the same time.
+Start with two clubs in your right hand and two clubs
+in your left hand. Your right hand throws a straight triple
+pass. Your left hand throws a single self. Start with a right
+hand pass."
+)
+# 45  6.3
+Pattern.create!(
+  title: "Singles",
+  num_jugglers: 2,
+  num_clubs: 8,
+  body: "Eight club singles is a fun rhythm where all four hands
+throw at the same time. The synchronous rhythm can be
+challenging. Both jugglers do the same thing at the same
+time.
+Start with two clubs in your right hand and two clubs in
+your left hand. Your right hand throws a lofty single pass.
+Your left hand throws a lofty self. Your right and left hands
+both throw on every beat. All four thrown clubs should
+reach the same height on every beat. As your partner’s
+pass and your self arrive in your hands, make the next pair
+of throws. If the rhythm feels too fast, make your throws
+loftier so you have more time. Make sure your right hand
+passes are underneath your left hand self throws and inside.
+If your clubs collide when you try to pass underneath your
+self, make all of your throws loftier to make more space."
+)
+# 46  6.4
+Pattern.create!(
+  title: "Double Three Count (Doubles)",
+  num_jugglers: 2,
+  num_clubs: 8,
+  body: "Double three count with doubles is similar to seven clubs
+in three count with doubles but significantly more challenging.
+You need to have much more consistent double passes
+out of both your left and right hands as you and your partner
+now have one self to recover from two passes instead of
+two selves to recover from one pass.
+As juggler A, start with two clubs in your right hand and two clubs in your left hand. Your sequence of throws is pass,
+self, pass. The passes are lofty crossing doubles. Start with
+a right hand pass to your partner’s right hand.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+pass, self. The passes are lofty straight doubles. Start with
+a right hand pass to your partner’s left hand. Make your
+first throw half way between your partner’s first and second
+throws.
+Eight clubs in double three count with doubles is four
+hand siteswap 996."
+)
+# 47  6.5
+Pattern.create!(
+  title: "978",
+  num_jugglers: 2,
+  num_clubs: 8,
+  body: "978 is just like 975 except instead of throwing a joe you
+throw a heff. You might find this easier than 975 if you have
+trouble keeping your joes from getting over spun but more
+likely you’ll find it more challenging as there is yet another
+club up high in the air to keep track of.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is double
+pass, heff, single pass. The double pass is a lofty crossing
+double pass. The single pass is a lofty straight pass. Start
+with a right hand double pass to your partner’s right hand.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is single
+pass, double pass, heff. The double pass is a lofty straight
+double pass. The single pass is a lofty crossing pass. Start with a single pass from your right hand to your partner’s
+right hand. Make your first throw halfway between your
+partner’s first and second throws."
+)
+# 48  7.1
+Pattern.create!(
+  title: "Double-Single",
+  num_jugglers: 2,
+  num_clubs: 9,
+  body: "Nine clubs double-single requires you to make a simultaneous
+pair of throws from your two hands. Your right hand
+makes a double pass to your partner’s left hand as your left
+hand makes a single self throw to your right hand. The simultaneous
+throw is difficult and it will take some practice,
+but the double pass is a little bit easier to make consistently
+than the triple pass required for nine clubs triple-single.
+The key to this pattern is making a high self throw so that
+you have enough time to make the next pair of throws.
+As juggler A, start with two clubs in your right hand and three clubs in your left hand. Your right hand makes lofty
+straight double passes. Your left hand makes lofty single
+self throws. Both hands throw at the same time. Start with
+a right hand double pass and a left hand single self. An alternate start is to put three clubs in your right hand and two clubs
+in your left hand. On your first pass, only make a double pass with your
+right hand and do not make a self throw with your left hand. On every
+following beat, throw both a double pass and a single self.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your right hand makes lofty
+straight double passes. Your left hand makes lofty single
+self throws. Both hands throw at the same time. Start with
+a right hand double pass and a left hand single self. Make
+your first pair of throw half way between your partner’s first
+and second pair of throws."
+)
+# 49  7.2
+Pattern.create!(
+  title: "Triple-Single",
+  num_jugglers: 2,
+  num_clubs: 9,
+  body: "You may find nine club triple-single to be easier than
+nine club double-single if you are very comfortable with
+triple passes. This rhythm does not require a simultaneous
+pair of throws. The tempo for nine club triple-single is
+galloped, as in eight club two count with doubles or seven
+club two count with singles.
+As juggler A, start with two clubs in your right hand and
+three clubs in your left hand. Your right hand throws a
+lofty straight triple pass. Your left hand throws a lofty self. Start with a right hand pass and quickly follow it with a left
+hand self. Pause for a moment and then throw your next
+right hand pass. An alternate start is to put three clubs in your right hand and two clubs
+in your left hand. After your first triple pass, skip the first self throw. After
+that, throw a triple pass and follow it with a single self as usual.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your right hand throws a lofty
+straight triple pass. Your left hand throws a lofty self. Start
+with a right hand pass and quickly follow it with a left hand
+self. Make your first pass just after your partner throws his
+or her first self. Try and fit both your pass and your self in
+the time between your partner’s left hand self and his or her
+following right hand pass."
+)
+# 50  7.3
+Pattern.create!(
+  title: "Ultimates",
+  num_jugglers: 2,
+  num_clubs: 9,
+  body: "Nine club ultimates is the natural progression from 7
+club three count and eight club double three count.
+It is a visually spectacular rhythm with a lot of clubs flying
+between you and your partner. It is also a fairly simple
+rhythm; every throw is a lofty double pass. One juggler
+makes crossing passes while the other makes straight
+passes.
+As juggler A, start with three clubs in your right hand
+and two clubs in your left hand. All of your throws are lofty
+crossing double passes. Start with a right hand pass to your
+partner’s right hand.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. All of your throws are lofty
+straight double passes. Start with a right hand pass to your
+partner’s left hand. Make your first throw half way between your partner’s first two throws.
+Nine club ultimtes is four hand siteswap 9"
+)
+# 51  8.1
+Pattern.create!(
+  title: "Ultimates",
+  num_jugglers: 3,
+  num_clubs: 8,
+  body: "Eight club ultimates with three people is a fun and relatively
+easy rhythm for getting the feel of passing with three
+people. Every throw is a crossing single pass to the juggler
+on your left. Orient yourselves counter-clockwise in order:
+juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+one club in your left hand. Start with a right hand pass
+to juggler C’s right hand. As soon as juggler B’s first pass
+is incoming to your left hand, make a left hand throw to
+the left hand of juggler C. Continue to make a pass out of alternating hands to juggler C as juggler B sends clubs to
+you.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Start with a left hand pass to
+juggler A’s left hand half way between juggler A’s first throw
+and juggler C’s first throw. As soon as juggler C’s first pass
+is incoming to your right hand, make a pass from your right
+hand to juggler A’s right hand. Continue to make a pass out
+of alternating hands to juggler A as juggler C sends clubs to
+you.
+As juggler C, start with one club in your right hand and
+one club in your left hand. Juggler A will start with a pass
+to your right hand. Respond to that pass with a right hand
+pass to juggler B’s right hand. Do the same thing as the
+next pass comes to your left hand.
+Once you’ve gotten comfortable passing eight ultimates,
+try a slight variation. Instead of making single passes,
+throw joe passes instead. The rhythm will get faster but
+you can practice putting a little bit of loft on your joes to
+slow it down.
+Eight club ultimates is six hand siteswap 8."
+)
+# 52  8.2
+Pattern.create!(
+  title: "9689",
+  num_jugglers: 3,
+  num_clubs: 8,
+  body: "9689 is a good pattern for incorporating the subtle differences
+in throw height between a lofted joe and a self. Orient
+yourselves counter-clockwise in order: juggler A, juggler B,
+juggler C. As juggler A, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+self, joe, hold. The joe is slightly lofty and crossing to juggler
+C. Start with a right hand self. After your hold, juggler B
+throws you a joe. Respond to it by making a right hand self
+so that you can catch the club and restart the sequence.
+As juggler B, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is self,
+self, joe, hold. The joe is slight lofty and crossing to juggler
+A. To start, wait for juggler C to throw a joe to your right
+hand. Respond to it by making a right hand self so that you
+can catch the club and pick up the sequence.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is joe,
+hold, self, self. The joe is slightly lofty and crossing to juggler
+B. Start with a right hand joe to juggler B’s right hand.
+Make your first throw a moment before juggler A makes his
+or her second throw. Then wait for juggler A to throw a joe
+to your right hand. Respond to it with a right hand self so
+that your can catch the club. Make a left hand self and then
+throw another right hand joe to restart the sequence.
+Once you’re gotten comfortable with 9689, try throwing
+quick single passes instead of joes. If that makes the
+rhythm too fast, loft your self throws to slow down the whole
+rhythm. Run the rhythm in the left handed variation by
+switching left and right hands."
+)
+# 53  8.3
+Pattern.create!(
+  title: "96889",
+  num_jugglers: 3,
+  num_clubs: 8,
+  body: "96889 is very similar to 9689 but there is an additional
+pass which makes the rhythm ambidextrous. Orient yourselves
+counter-clockwise in order: juggler A, juggler B, juggler
+C.
+As juggler A, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+joe, hold, self, joe. The joes are slightly lofty crossing joes to
+juggler C. Start with a right hand self.
+As juggler B, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is self,
+joe, self, joe, hold. The joes are slightly lofty crossing joes to
+juggler A. Start with a right hand self throw in response to
+juggler C’s first joe to your right hand.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is joe,
+self, joe, hold, self. The joes are slightly lofty crossing joes
+to juggler B. Start with a right hand joe to juggler B’s right
+hand. Make your first throw just a moment before juggler A
+makes his or her second throw."
+)
+# 54  8.4
+Pattern.create!(
+  title: "86C86",
+  num_jugglers: 3,
+  num_clubs: 8,
+  body: "Orient yourselves counter-clockwise in order: juggler A,
+juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+pass, hold, hold, heff. The passes are quick single crossing
+passes to juggler C. After the two passes, wait until you have a club incoming to one of your hands. Throw a heff from that
+hand and catch the incoming club.
+As juggler B, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is heff,
+pass, pass, hold, hold, starting with the left. The passes are
+quick single crossing passes to juggler A. Throw your first
+heff from your left hand as a response to juggler C’s first
+pass to your left hand. After the two passes, wait until juggler
+C passes you a club; throw your next heff as a response.
+As juggler C, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is heff,
+pass, pass, hold, hold. The passes are quick single crossing
+passes to juggler B. Throw your first heff from your right
+hand as a response to juggler A’s first pass to your right
+hand. After the two passes, wait until juggler A throws you
+a club; throw your heff as a response."
+)
+# 55  8.5
+Pattern.create!(
+  title: "Three Person WhyNot",
+  num_jugglers: 3,
+  num_clubs: 8,
+  body: "Three person WhyNot is the same sequence of throws as
+WhyNot except for the pass which must be made as a quick
+pass or a lofty joe. Orient yourselves counter-clockwise in
+order: juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+pass, heff, zip, pass. The passes are crossing single passes to
+juggler C; they need to be a little bit quicker than your self
+throws. Start with a right hand self. As juggler B, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is heff,
+zip, pass, self, pass, starting with the left. The passes are
+crossing single passes to juggler A; they need to be a little
+bit quicker than your self throws. Start with a left hand heff
+just a moment after juggler A’s first throw.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is pass,
+self, pass, heff, zip. The passes are crossing single passes
+to juggler B; they need to be a little bit quicker than your
+self throws. Start with a right hand pass half way between
+juggler B’s first throw and juggler A’s second throw.
+Three person WhyNot is six hand siteswap 9C883."
+)
+# 56  8.6
+Pattern.create!(
+  title: "Three Person NotWhy",
+  num_jugglers: 3,
+  num_clubs: 8,
+  body: "Three person NotWhy is the same sequence of throws as
+NotWhy except for the pass which must be made as a quick
+pass or a lofty joe. Orient yourselves counter-clockwise in
+order: juggler A, juggler B, juggler C.
+As juggler A, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+zip, self, pass, heff. The passes are crossing single passes to
+juggler C; they need to be a little bit quicker than your self
+throws. Start with a right hand pass.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is self,
+pass, heff, pass, zip, starting with the left. The passes are
+crossing single passes to juggler A; they need to be a little bit quicker than your self throws. Start with a left hand
+self. Make your first throw a moment after juggler A’s first
+throw.
+As juggler C, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is heff,
+pass, zip, self, pass. The passes are crossing single passes
+to juggler B; they need to be a little bit quicker than your
+self throws. Start with a right hand heff. Make your first
+throw half way between juggler B’s first throw and juggler
+A’s second throw.
+Individual jugglers can switch between WhyNot and
+NotWhy, just like the two person versions. If you’re juggling
+WhyNot as pass, self, pass, heff, zip you can switch to
+NotWhy by juggling pass, heff, pass, zip, self.
+Three person NotWhy is six hand siteswap 89C38."
+)
+# 57  8.7
+Pattern.create!(
+  title: "Three Person Maybe",
+  num_jugglers: 3,
+  num_clubs: 8,
+  body: "Three person Maybe is the same sequence of throws as
+Maybe except for the pass which must be made as a quick
+pass or a lofty joe. Orient yourselves counter-clockwise in
+order: juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+pass, self, zip, heff. The passes are crossing single passes to
+juggler C; they need to be a little bit quicker than your self
+throws. Start with a right hand pass.
+As juggler B, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is self, zip, heff, pass, pass, starting with the left. The passes are
+crossing single passes to juggler A; they need to be a little
+bit quicker than your self throws. Start with a left hand
+self. Make your first throw a moment after juggler A’s first
+throw.
+As juggler C, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is heff,
+pass, pass, self, zip. The passes are crossing single passes
+to juggler B; they need to be a little bit quicker than your
+self throws. Start with a right hand heff. Make your first
+throw half way between juggler B’s first throw and juggler
+A’s second throw.
+Three person Maybe is six hand siteswap 89C83."
+)
+# 58  9.1
+Pattern.create!(
+  title: "Passing From A Cascade",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "Passing clubs with three people adds another level of
+complexity. With two people, for any given pass you generally
+have two choices: pass to your partner’s left hand or
+right hand. With three people, for any given pass you have
+four choices corresponding to your two partners’ four hands.
+In addition to the new options, you have a physically wider
+area you need to be able to pass to. The juggler on your left
+and the juggler on your right are standing in two different
+places and you must be able to make good passes to both of
+those locations. Before diving into the complicated rhythms,
+explore the different hands that you can throw to.
+Start by orienting yourself and your partners in a triangle,
+all facing the center of the triangle. With a club in
+each hand, hold your arms out to your partners, pointing
+the heads of your clubs at your partners; your clubs should
+just touch. As you juggle, you may decide you are more comfortable
+with a larger or smaller triangle, adjust as needed but try to keep your triangle even. No two jugglers should
+be closer or further from each other than they are from the
+third juggler.
+There are two varieties of straight passes.
+An outside pass is made from your left hand to the right
+hand of the juggler to your left or it is made from your right
+hand to the left hand of the juggler to your right. Outside
+passes travel along the outside edges of the triangle formed
+by you and your partners. You can all make right hand outside
+passes at the same time in a four count or two count
+rhythm. You can alternate right hand and left hand outside
+passes in a three count or one count rhythm.
+An inside pass is made from your left hand to the right
+hand of the juggler on your right or it is made from your
+right hand to the left hand of the juggler on your left. Inside
+passes travel through the inside of the triangle formed by
+you and your partners. You can all make right hand inside
+passes at the same time in a four count or two count rhythm.
+You can alternate right hand and left hand inside passes in
+a three count or one count rhythm. When the three of you
+make inside passes at the same time, the timing of your
+throws is critical. You must throw at exactly the same time
+in order to avoid collisions between your passes. The path
+of each club crosses the paths of the other two clubs so if it
+is ahead or behind, it will most likely collide with another
+club.
+There are also two varieties of crossing passes.
+An extreme pass is made from your right hand to the
+right hand of the juggler on your left or from your left hand
+to the left hand of the juggler on your right.
+An inside crossing pass is made from your right hand to
+the right hand of the juggler on your right or from your left
+hand to the left hand of the juggler on your left.
+The three of you can juggle inside and outside passes in
+the same timing as the rhythms in section 4.1. On a passing
+beat, all three jugglers throws an inside pass or all three
+jugglers throw an outside pass."
+)
+# 59  9.2
+Pattern.create!(
+  title: "Pass Pass Self",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "Pass pass self is a slightly ambiguous name for this
+rhythm. With three people you can all throw insides (or
+all throw outsides) at the same time in a pass, pass, self
+rhythm. This rhythm is more interesting. All three of you
+are still doing the same sequence of throws as each other
+but you are offset. The basic sequence is inside, inside,
+self, outside, outside, self. On every pass, two jugglers pass
+to each other; one juggler throws an inside pass and the
+other throws an outside pass. The third juggler makes a
+self throw. Orient yourselves clockwise in order: juggler A,
+juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is inside,
+self, outside, outside, self, inside. Start with a right hand
+inside pass to juggler B. All of the passes are straight passes,
+so you can remember the sequence as juggler-to-the-left, self,
+juggler-to-the-right.
+As juggler B, start with two clubs in your right hand
+and one club in your left hand. Your sequence of throws
+is outside, outside, self, inside, inside, self. Start with a right
+hand outside pass to juggler A. All of the passes are straight
+passes, so you can remember the sequence as juggler-to-theright,
+juggler-to-the-left, self.
+As juggler C, start with two clubs in your right hand and one club in your left hand. Your sequence of throws is self,
+inside, inside, self, outside, outside. Start with a right hand
+self. All of the passes are straight passes so you can remember
+the sequence as self, juggler-to-the-right, juggler-to-theleft."
+)
+# 60  9.3
+Pattern.create!(
+  title: "A899",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "A899 is a good first siteswap to explore with three people
+and nine clubs. Everyone has a slightly lofty crossing single
+pass and a lofty crossing joe, along with two self throws. Orient
+yourselves counter-clockwise in order: juggler A, juggler
+B, juggler C.
+As juggler A, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is pass,
+self, self, joe. The pass is a slightly lofty crossing right hand
+pass to juggler B’s right hand. The joe is a lofty crossing left
+hand joe to juggler C’s left hand. Start with a right hand
+pass.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is joe,
+pass, self, self, starting with the left. The joe is a lofty crossing
+left hand joe to juggler A’s left hand. The pass is a lofty
+crossing right hand pass to juggler C’s right hand. Start
+with a left hand joe. Make your first throw a moment after
+juggler A makes his or her first throw.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self joe, pass, self. The joe is a lofty crossing left hand pass to
+juggler B’s left hand. The pass is a slightly lofty crossing
+right hand pass to juggler A’s right hand. Start with a right
+hand self. Make your first throw half way between juggler
+B’s first throw and juggler A’s second throw."
+)
+# 61  9.4
+Pattern.create!(
+  title: "A8999",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "A8999 is just like A899, but this is an ambidextrous pattern.
+Orient yourselves counter-clockwise in order: juggler
+A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is pass,
+self, joe, self, self. The joes are lofty and crossing and they always
+go to juggler C. The passes are slightly lofty and crossing
+and they always go to juggler B. Start with a right hand
+pass.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is joe,
+self, self, pass, self, starting with the left. The joes are lofty
+and crossing and they always go to juggler A. The passes
+are slightly lofty and crossing and they always go to juggler
+C. Start with a left hand joe. Make your first throw a moment
+after juggler A makes his or her first pass to your right
+hand. You should have enough time to make your first joe,
+and then your first right hand self in time to catch juggler
+A’s pass.
+As juggler C, start with two clubs in your right hand
+and one club in your left hand. Your sequence of throws is self, pass, self, joe, self. The joes are lofty and crossing and
+they always go to juggler B. The passes are slightly lofty and
+crossing and they always go to juggler A. Start with a right
+hand self. Make your first throw half way between juggler
+B’s first throw and juggler A’s second throw."
+)
+# 62  9.5
+Pattern.create!(
+  title: "A8",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "A8 is just like A899 but without any self throws. Throw
+lofty crossing joes with your left hand and lofty single passes
+with your right hand. Orient yourselves counter-clockwise
+in order: juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is pass,
+joe. The pass is a lofty crossing single pass from your right
+hand to juggler B’s right hand. The joe is lofty and crossing
+from your left hand to juggler C’s left hand. Start with a
+right hand pass.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is joe,
+pass, starting with the left. The joe is lofty and crossing
+from your left hand to juggler A’s left hand. The pass is a
+lofty crossing single pass from your right hand to juggler
+C’s right hand. Start with a left hand joe. Make your first
+throw a moment after juggler A makes his or her first pass
+to your right hand. You should have enough time to make
+your first joe and then your first right hand self in time to catch juggler A’s first pass.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is pass,
+joe. The pass is a lofty crossing single pass from your right
+hand to juggler A’s right hand. The joe is lofty and crossing
+from your left hand to juggler B’s left hand. Start with a
+right hand pass. Make your first throw half way between
+juggler B’s first throw and juggler A’s second throw."
+)
+# 63  9.6
+Pattern.create!(
+  title: "89A8A",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "89A8A is a cross between A8 and A8999. Every one
+makes the same throws, but now every one throws two joes
+in a row and two passes in a row, and there is a self every
+fifth throw. Orient yourselves counter-clockwise in order:
+juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is joe,
+joe, self, pass, pass. The joes are lofty and crossing to juggler
+C. The passes are lofty crossing single passes to juggler B.
+Start with a right hand joe to juggler C’ right hand.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is self,
+pass, pass, joe, joe, starting with the left. The passes are
+lofty crossing single passes to juggler C. The joes are lofty
+and crossing to juggler A. Start with a left hand self. Make
+your first throw half way between juggler A’s first throw and
+juggler C’s first throw.
+As juggler C, start with one club in your right hand and one club in your left hand. Your sequence of throws is pass,
+joe, joe, self, pass. The passes are lofty crossing single passes
+to juggler A. The joes are lofty and crossing to juggler B.
+Start with a right hand pass. Make your first throw in response
+to juggler A’s first joe to your right hand.
+89A8A is not trivial! You may have to spend some time
+nailing down the throw timing and figuring out exactly
+which throws are made in response to which club. Make
+sure that your joes are faster than your self throws and
+that your passes are loftier than your self throws."
+)
+# 64  9.7
+Pattern.create!(
+  title: "ADA39",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "Orient yourselves clockwise in order: juggler A, juggler
+B, juggler C.
+As juggler A, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is single,
+zip, double, self, single. The singles are crossing lofty
+single passes to juggler B. The double is a straight lofty double
+pass to juggler B. Start with a right hand pass to juggler
+B’s right hand. When you do your first zip, you have two
+clubs in your left hand; only zip one of those two clubs.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is double,
+self, single, single, zip, starting with the left. The singles
+are crossing lofty single passes to juggler C. The double is a
+straight lofty double pass to juggler C. Start with a left hand
+double pass to juggler C’s right hand. Make your first throw
+a moment after juggler A makes his or her first throw. As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is single,
+single, zip, double, self. The singles are crossing lofty single
+passes to juggler A. The double is a straight lofty double
+pass to juggler A. Start with a right hand pass to juggler A’s
+right hand. Make your first throw halfway between juggler
+B’s first throw and juggler A’s second throw."
+)
+# 65  9.8
+Pattern.create!(
+  title: "B9CA3",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "B9CA3 is similar to three person maybe except instead of
+throwing your passes as quick single passes, you alternate
+between slightly lofty single passes and loftier single passes.
+Orient yourselves clockwise in order: juggler A, juggler B,
+juggler C.
+As juggler A, start with two clubs in your right hand
+and two clubs in your left hand. Your sequence of throws is
+pass right, pass left, self, zip, heff. The passes to your right
+are lofty straight single passes to juggler C. The passes to
+your left are slightly lofty crossing single passes to juggler
+B. Start with a right hand pass to your right to juggler C’s
+left hand.
+As juggler B, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is self,
+zip, heff, pass right, pass left, starting with the left. The
+passes to your right are lofty straight single passes to juggler
+A. The passes to your left are slightly lofty crossing single
+passes to juggler C. Start with a left hand self. Make
+your first throw a moment after juggler A makes his or her first throw. Your first left hand heff should be a response to
+juggler A’s pass to your left hand.
+As juggler C, start with two clubs in your right hand
+and one club in your left hand. Your sequence of throws is
+heff, pass right, pass left, self, zip. The passes to your right
+are lofty straight single passes to juggler B. The passes to
+your left are slightly lofty crossing single passes to juggler
+A. Start with a right hand heff. Make your first throw a moment
+before juggler A makes his or her second throw. Your
+second throw should be a response to juggler A’s first past to
+your left hand."
+)
+# 66  9.9
+Pattern.create!(
+  title: "F8A3",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "This rhythm combines a self triple throw with a
+joe. Make sure the triple is high and the joe is low to
+maximize your success with F8A3. Orient yourselves
+counter-clockwise in order: juggler A, juggler B, juggler C.
+As juggler A, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is triple,
+zip, pass, joe. The triple is a triple self. The pass is a crossing
+single pass from your right hand to juggler B’s right hand.
+The joe is crossing from your left hand to juggler C’s left
+hand. Start with a right hand triple and then a left hand
+zip in time to catch juggler B’s first throw to your left hand.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is joe, triple, zip, pass, starting with the left. The joe is crossing
+from your left hand to juggler A’s left hand. The triple is
+a triple self. The pass is a crossing single pass from your
+right hand to juggler C’s right hand. Start with a left hand
+joe to juggler A’s left. Make your first throw a moment after
+juggler A makes his or her first throw.
+As juggler C, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+joe, triple, zip. The pass is a crossing single pass from your
+right hand to juggler A’s right hand. The joe is crossing from
+your left hand to juggler B’s left hand. The triple is a triple
+self. Start with a right hand pass to juggler A’s right hand.
+Make your first throw a moment after juggler B makes his
+or her first throw.
+F8A3 has four throws so it is can be done right handed
+or left handed. This is the right handed version; try it out
+in the left handed version."
+)
+# 67  9.10
+Pattern.create!(
+  title: "F8A39",
+  num_jugglers: 3,
+  num_clubs: 9,
+  body: "F8A39 is very similar to F8A3, but there is an extra
+self throw which makes this rhythm alternate sides. Orient
+yourselves counter-clockwise in order: juggler A, juggler
+B, juggler C.
+As juggler A, start with one club in your right hand and
+one club in your left hand. Your sequence of throws is triple,
+zip, joe, self, pass. The triple is a triple self. The joe is crossing
+to juggler C. The pass is a slightly lofty crossing single pass to juggler B. Start with a right hand triple and then a
+left hand zip in time to catch juggler B’s first throw to your
+left hand.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is joe,
+self, pass, triple, zip starting with your left. The joe is crossing
+to juggler A. The pass is a slightly lofty crossing single
+pass to juggler C. The triple is a triple self. Start with a left
+hand joe to juggler A’s left hand. Make your first throw a
+moment after juggler A makes his or her first throw.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is pass,
+triple, zip, joe, self. The pass is a slightly lofty crossing single
+pass to juggler A. The triple is a triple self. The joe is
+crossing to juggler B. Start with a right hand pass to juggler
+A’s right hand. Make your first throw a moment after
+juggler B makes his or her first throw."
+)
+# 68  10.1
+Pattern.create!(
+  title: "Four Count (Doubles)",
+  num_jugglers: 3,
+  num_clubs: 10,
+  body: "Ten clubs in four count with doubles makes an excellent
+introduction to numbers club passing with three people.
+Orient yourselves clockwise in order: juggler A, juggler
+B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, self, self. The pass is a right hand double pass to juggler
+B’s left hand. Start with a right hand pass.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is self,
+pass, self, self, starting with the left. The pass is a right hand double pass to juggler C’s left hand. Start with a left
+hand self. Make your first throw a moment after juggler A
+makes his or her first throw. You can also start with two clubs in your right hand and one club in
+your left hand. Skip the first left hand self and start with a right hand
+pass a moment after juggler A makes his or her second throw.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+self, pass, self. The pass is a right hand double pass to juggler
+A’s left hand. Start with a right hand self. Make your
+first throw a moment before juggler A makes his or her second
+throw. You can also start by skipping the first two self throws and starting
+with a right hand pass a moment after juggler B’s first pass gets half way
+to you.
+If you have issues with collisions or space, throw your
+passes deeper to make more room."
+)
+# 69  10.2
+Pattern.create!(
+  title: "Three Count (Doubles)",
+  num_jugglers: 3,
+  num_clubs: 10,
+  body: "Everyone starts at the same time with a right hand
+throw. Every third throw is a crossing double pass. Orient
+yourselves clockwise in order: juggler A, juggler B, juggler
+C.
+As juggler A, start with two clubs in your right hand and two clubs in your left hand. Your sequence of throws is pass,
+self, self. The pass is a crossing double pass to juggler B.
+Start with a right hand pass to juggler B’s right hand.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+pass, self. The pass is a crossing double pass to juggler C.
+Start with a right hand self. Make your first throw as juggler
+A makes his or her first throw.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+self, pass. The pass is a crossing double pass to juggler A.
+Start with a right hand self. Make your first throw as juggler
+A makes his or her first throw."
+)
+# 70  10.3
+Pattern.create!(
+  title: "Two Count (Singles)",
+  num_jugglers: 3,
+  num_clubs: 10,
+  body: "Ten clubs in two count with singles is a quick, fun,
+rhythm, with lots of clubs flying through the air. All of the
+passes are lofty straight right hand single passes. Orient
+yourselves counter-clockwise in order: juggler A, juggler B,
+juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self. The pass is a lofty straight single pass to juggler C.
+Start with a right hand pass to juggler C’s left hand.
+As juggler B, start with one club in your right hand and two clubs in your left hand. Your sequence of throws is self,
+pass, starting with the left. The pass is a lofty straight single
+pass to juggler A. Start with a left hand self. Make your
+first throw a moment after juggler A makes his or her first
+throw. Alternatively, you can start with two clubs in your
+right hand and one club in your left hand and skip the first
+self throw. Make your first pass from your right hand just a
+moment after juggler A makes his or her first left hand self
+throw.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is pass,
+self. The pass is a lofty straight single pass to juggler B.
+Start with a right hand pass to juggler B’s left hand. Make
+your first throw a moment before juggler A makes his or her
+second throw.
+Ten club two count is six hand siteswap B9."
+)
+# 71  10.4
+Pattern.create!(
+  title: "Ultimates",
+  num_jugglers: 3,
+  num_clubs: 10,
+  body: "Everyone throws lofty crossing single passes to the juggler
+on his or her left. Orient yourselves clockwise in order:
+juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand
+and two clubs in your left hand. Throw lofty crossing single
+passes to juggler B. Start with a right hand pass to juggler
+B’s right hand. As juggler B, start with one club in your right hand and
+two clubs in your left hand. Throw lofty crossing single
+passes to juggler C. Start with a left hand pass to juggler
+C’s left hand. Make your first throw a moment after juggler
+A makes his or her first throw. Make your second throw
+in time to catch the first pass that juggler A makes to your
+right hand.
+As juggler C, start with two clubs in your right hand
+and one club in your left hand. Throw lofty crossing single
+passes to juggler A. Start with a right hand pass to juggler
+A’s right hand. Make your first throw halfway between juggler
+B’s first throw and juggler A’s second throw. Make your
+second throw in time to catch the first pass that juggler B
+makes to your left hand.
+If this rhythm feels too fast just make your passes loftier
+and slow it down.
+Ten club ultimates is six hand siteswap A."
+)
+# 72  10.5
+Pattern.create!(
+  title: "Rotating Ten Club Feed",
+  num_jugglers: 3,
+  num_clubs: 10,
+  body: "This rhythm is a ten club feed in singles while rotating
+the feeder as frequently as possible. This is a right handed
+rhythm. Every left hand throw is a self. The descriptions
+below are right hand counting; they only describe what to do
+with your right hand. Orient yourselves clockwise in order:
+juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and two clubs in your left hand. Your sequence of throws is single,
+single, self, double. The singles are straight lofty single
+passes to juggler C’s left hand. The double is a straight lofty
+double pass to juggler B’s left hand. Start with a right hand
+pass.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is self,
+double, single, single, starting with the left. The singles are
+straight, lofty single passes juggler A’s left hand. The double
+is a straight lofty double pass to juggler C’s left hand. Start
+with a left hand self. Make your first throw a moment after
+juggler A makes his or her first throw. Start this rhythm with a left hand self. The indicated sequence of
+throws starts with the following right hand self.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is double,
+self, single, single. The singles are straight, lofty single
+passes to juggler B’s left hand. The double is a straight lofty
+double pass to juggler A’s left hand. Start with a right hand
+double pass to juggler A. Make your first throw a moment
+before juggler A makes his or her second throw.
+The rotating ten club feed is six hand siteswap
+B9D999B9."
+)
+# 73  10.6
+Pattern.create!(
+  title: "C99AA",
+  num_jugglers: 3,
+  num_clubs: 10,
+  body: "C99AA is similar to 96889 except the passes are lofty and
+there is a heff instead of a hold. Orient yourselves clockwise
+in order: juggler A, juggler B, juggler C. As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is heff,
+pass, self, pass, self. The passes are lofty crossing single
+passes to juggler B. Start with a right hand heff.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is self,
+pass, self, heff, pass, starting with the left. The passes are
+lofty crossing single passes to juggler C. Start with a left
+hand self. Make your first throw a moment after juggler A
+makes his or her first throw.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+heff, pass, self, pass. The passes are lofty crossing single
+passes to juggler A. Start with a right hand self. Make your
+first throw halfway between juggler B’s first throw and juggler
+A’s second throw."
+)
+# 74  10.7
+Pattern.create!(
+  title: "B9CA8",
+  num_jugglers: 3,
+  num_clubs: 10,
+  body: "B9CA8 is very similar to B9CA3 with a quick single pass
+instead of a zip. Orient yourselves clockwise in order: juggler
+A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is lofty
+pass, pass, self, joe, heff. The lofty pass is a lofty straight single
+pass to juggler C. The passes are crossing single passes
+to juggler B. The joe is crossing to juggler C. Start with a
+right hand double pass to juggler C’s left hand.
+As juggler B, start with one club in your right hand and two clubs in your left hand. Your sequence of throws is self,
+joe, heff, lofty pass, pass, starting with the left. The joe is
+crossing to juggler A. The lofty pass is a lofty straight single
+pass to juggler A. The passes are crossing single passes to
+juggler C. Start with a left hand self. Make your first throw
+a moment after juggler A makes his or her first throw.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is heff,
+lofty pass, pass, self, joe. The lofty pass is a lofty straight single
+pass to juggler B. The passes are crossing single passes
+to juggler A. The joe is crossing to juggler B. Start with a
+right hand heff. Make your first throw halfway between
+juggler B’s first throw and juggler A’s second throw. Your
+second throw is a response to juggler A’s first pass to your
+left hand."
+)
+# 75  11.1
+Pattern.create!(
+  title: "Two Count (Doubles)",
+  num_jugglers: 3,
+  num_clubs: 11,
+  body: "Passing eleven clubs in two count with doubles is the
+natural step up from ten clubs in four count. Orient yourselves
+clockwise in order: juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self. The pass is a straight double pass to juggler B. Start
+with a right hand pass to juggler B’s left hand.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is self pass, starting with the left. The pass is a straight double
+pass to juggler C. Start with a left hand self. Make your
+first throw a moment after juggler A makes his or her first
+throw. Alternately, start with two clubs in your right hand
+and one club in your left hand and skip the first self throw.
+As juggler C, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self. The pass is a straight double pass to juggler A. Start
+with a right hand pass to juggler A’s left hand. Make your
+first throw a moment before juggler A makes his or her second
+throw.
+Keep your passes a little bit lofty to even out the timing
+and throw your passes a little bit deep to avoid collisions.
+Two count in doubles with eleven clubs is six hand siteswap
+D9."
+)
+# 76  11.2
+Pattern.create!(
+  title: "Three Count (Triples)",
+  num_jugglers: 3,
+  num_clubs: 11,
+  body: "Everyone starts at the same time with right hand
+throws. Orient yourselves counter-clockwise in order:
+juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, self. The pass is a straight triple pass to juggler C. Start
+with a right hand triple pass to the left hand of juggler C. As juggler B, start with three clubs in your right hand
+and one club in your left hand. Your sequence of throws is
+self, pass, self. The pass is a straight triple pass to juggler
+A. Start with a right hand self. You can also start with two
+clubs in your right hand and two clubs in your left and skip
+the first self throw. Your first throw would then be a left
+hand triple to juggler A’s right hand thrown at the same
+time as jugglers A and C make their first left hand throws.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+self, pass. The pass is a straight triple pass to juggler B.
+Start with a right hand self."
+)
+# 77  11.3
+Pattern.create!(
+  title: "Double Three Count (Doubles)",
+  num_jugglers: 3,
+  num_clubs: 11,
+  body: "Everyone starts at the same time with right hand
+throws. Orient yourselves clockwise in order: juggler A,
+juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+pass, self. The passes are crossing double passes to juggler
+B. Start with a right hand pass to juggler B’s right hand.
+As juggler B, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+pass, pass. The passes are crossing double passes to juggler
+C. Start with a right hand self. As juggler C, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, pass. The passes are crossing double passes to juggler
+A. Start with a right hand pass to juggler A’s right hand."
+)
+# 78  11.4
+Pattern.create!(
+  title: "Ultimates",
+  num_jugglers: 3,
+  num_clubs: 11,
+  body: "Everyone throws very lofty straight single passes. Orient
+yourselves counter-clockwise in order: juggler A, juggler
+B, juggler C.
+As juggler A, start with two clubs in your right hand
+and two clubs in your left hand. Throw lofty straight single
+passes to juggler C. Start with a right hand pass juggler
+C’s left hand.
+As juggler B, start with two clubs in your right hand
+and two clubs in your left hand. Throw lofty straight single
+passes to juggler A. Start with a left hand pass to juggler A’s
+right hand. Make your first throw a moment after juggler A
+makes his or her first throw.
+As juggler C, start with two clubs in your right hand
+and one club in your left hand. Throw lofty straight single
+passes to juggler B. Start with a right hand pass to juggler
+B’s left hand. Make your first throw a moment before juggler
+A makes his or her second throw."
+)
+# 79  11.5.1
+Pattern.create!(
+  title: "Six Count Popcorn",
+  num_jugglers: 3,
+  num_clubs: 11,
+  body: "Six count Popcorn with eleven clubs is very similar to the
+seven club variety except all left hand throws are self throws
+and the pass is a triple pass. The sequence of throws indicated
+is right hand counting; all left hand throws are single
+self throws. Every starts at the same time with a right hand
+throw. Orient yourselves clockwise in order: juggler A, juggler
+B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is triple
+self, triple pass, self. The triple pass is straight to juggler B.
+Start with a right hand triple self.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is triple
+pass, self, triple self. The triple pass is straight to juggler C.
+Start with a right hand triple pass to juggler C’s left hand.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+triple self, triple pass. The triple pass is straight to juggler
+A. Start with a right hand self."
+)
+# 80  11.5.2
+Pattern.create!(
+  title: "Five Count Popcorn",
+  num_jugglers: 3,
+  num_clubs: 11,
+  body: "Five count Popcorn with eleven clubs will feel very similar
+to five count Popcorn with seven clubs except the passes
+are double passes. Orient yourselves clockwise in order: juggler
+A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand
+and two clubs in your left hand. Your sequence of throws
+is triple, self, pass, self, self. The triple is a triple self. The
+pass is a straight double pass to juggler B. Start with a right
+hand triple self.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, self, triple, self, starting with the left. The pass is a
+straight double pass to juggler C. The triple is a triple self.
+Start with a left hand double pass to juggler C’s right hand.
+Make your first throw a moment after juggler A makes his
+or her first throw.
+As juggler C, start with two clubs in your right hand and
+one club in your left hand. Your sequence of throws is self,
+triple, self, pass, self. The triple is a triple self. The pass is
+a straight double pass to juggler A. Start with a right hand
+self. Make your first throw halfway between juggler B’s first
+throw and juggler A’s second throw.
+Five count Popcorn with eleven clubs is six hand siteswap
+FD999."
+)
+# 81  11.5.3
+Pattern.create!(
+  title: "Four Count Popcorn",
+  num_jugglers: 3,
+  num_clubs: 11,
+  body: "Eleven club four count Popcorn is similar to seven club
+four count Popcorn except the pass is a very lofty single. Orient
+yourselves counter-clockwise in order: juggler A, juggler
+B, juggler C.
+As juggler A, start with two clubs in your right hand
+and two clubs in your left hand. Your sequence of throws
+is triple, self, pass, self. The triple is a right hand triple self.
+The pass is a very lofty straight single pass from your right
+hand to juggler C’s left hand. Start with a right hand triple
+self.
+As juggler B, start with one club in your right hand and
+two clubs in your left hand. Your sequence of throws is self,
+triple, self, pass, starting with the left. The triple is a right
+hand triple self. The pass is a very lofty straight single pass
+from your right hand to juggler A’s left hand. Start with a
+left hand self. Make your first throw a moment after juggler
+A makes his or her first throw.
+As juggler C, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, triple, self. The pass is a very lofty straight single pass
+from your right hand to juggler B’s left hand. The triple is
+a right hand triple self. Start with a right hand pass to juggler
+B’s left hand. Make your first throw halfway between
+juggler B’s first throw and juggler A’s second throw.
+Four count Popcorn is six hand siteswap F9B9."
+)
+# 82  12.1
+Pattern.create!(
+  title: "Two Count (Doubles)",
+  num_jugglers: 3,
+  num_clubs: 12,
+  body: "Twelve club two count in doubles is identical to eight club
+two count in doubles. With three people, pass to a different
+person than passes to you. Everyone does the same thing
+at the same time. Orient yourselves counter-clockwise in
+order: juggler A, juggler B, juggler C.
+Start with two clubs in your right hand and two clubs in
+your left hand. Your sequence of throws is pass, self, pause.
+The pass is a lofty straight double pass from your right hand
+to the left hand of the juggler on your left. The self is a lofty single self from your left hand to your right hand. The
+time between the pass and the self is about half the amount
+of time that you normally have between two throws. The
+pause makes up for the difference in time. This is a galloped
+tempo."
+)
+# 83  12.2
+Pattern.create!(
+  title: "Two Count (Triples)",
+  num_jugglers: 3,
+  num_clubs: 12,
+  body: "Twelve clubs in two count with triples is identical to
+eight clubs in two count with triples. With three people,
+pass to a different person than passes to you. Everyone
+does the same thing at the same time. Orient yourselves
+counter-clockwise in order: juggler A, juggler B, juggler C.
+Start with two clubs in your right hand and two clubs in
+your left hand. Your sequence of throws is pass, self. The
+pass is a straight triple pass from your right hand to the left
+hand of the juggler on your left. The self is a left hand single
+self. Start with a right hand pass."
+)
+# 84  12.3
+Pattern.create!(
+  title: "Singles",
+  num_jugglers: 3,
+  num_clubs: 12,
+  body: "Twelve club singles is identical to eight clubs in singles.
+With three people, pass to a different person than passes to
+you. Everyone does the same thing at the same time. Orient
+yourselves counter-clockwise in order: juggler A, juggler B,
+juggler C.
+Start with two clubs in your right hand and two clubs
+in your left hand. Your right hand throws a straight lofty
+single pass to the juggler on your left. Your left hand throws
+a lofty self. On every beat, make a right hand pass and a left
+hand self at the same time. Your pass and your self should
+be lofty enough for you to have the time and space to make
+another pair of throws before those clubs land."
+)
+# 85  12.4
+Pattern.create!(
+  title: "Ultimates",
+  num_jugglers: 3,
+  num_clubs: 12,
+  body: "Everyone does the same thing at the same time. Orient
+yourselves clockwise in order: juggler A, juggler B, juggler
+C.
+Start with two clubs in your right hand and two clubs in
+your left hand. Throw crossing double passes to the juggler
+on your left. Start with a right hand pass to the right hand
+of the juggler on your left."
+)
+# 86  12.5
+Pattern.create!(
+  title: "Triple Four Count",
+  num_jugglers: 3,
+  num_clubs: 12,
+  body: "Triple four count uses double passes and single selves in
+a pass, pass, pass, self sequence. Orient yourselves counterclockwise
+in order: juggler A, juggler B, juggler C.
+As juggler A, start with two clubs in your right hand and
+two clubs in your left hand. Your sequence of throws is pass,
+self, pass, pass. The passes are straight lofty double passes
+to juggler B. The self is a left hand single self. Start with a
+right hand pass to juggler B’s left hand.
+As juggler B, start with two clubs in your right hand
+and two clubs in your left hand. Your sequence of throws
+is pass, pass, self, pass, starting with the left. The passes
+are straight lofty double passes to juggler C. The self is a
+left hand single self. Start with a left hand pass to juggler
+C’s right hand. Make your first pass a moment after juggler
+A makes his or her first throw.
+As juggler C, start with two clubs in your right hand and two clubs in your left hand. Your sequence of throws is pass,
+pass, pass, self. The passes are straight lofty double passes
+to juggler A. The self is a left hand single self. Start with a
+right hand pass to juggler A’s left hand. Make your first pass
+a moment before juggler A makes his or her second throw.
+Triple four count is six hand siteswap DDD9."
+)
+# 87  13.1
+Pattern.create!(
+  title: "Ultimates",
+  num_jugglers: 3,
+  num_clubs: 13,
+  body: "Orient yourselves counter-clockwise in order: juggler A,
+juggler B, juggler C.
+As juggler A, start with three clubs in your right hand
+and two clubs in your left hand. Your throws are lofty
+straight double passes to juggler B. Start with a right hand
+pass to juggler B’s left hand.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your throws are lofty straight
+double passes to juggler C. Start with a left hand pass to
+juggler C’s right hand. Make your first throw a moment
+after juggler A makes his or her first throw. As juggler C, start with two clubs in your right hand and
+two clubs in your left hand. Your throws are lofty straight
+double passes to juggler A. Start with a right hand pass to
+juggler A’s left hand. Make your first throw half way between
+juggler B’s first throw and juggler A’s second throw.
+Thirteen club ultimates is six hand siteswap D."
+)
+# 88  13.2
+Pattern.create!(
+  title: "Double-Single",
+  num_jugglers: 3,
+  num_clubs: 13,
+  body: "Passing thirteen clubs in double-singles requires simultaneous
+throws from your right and left hands. You may notice that the causal diagram indicates heavily galloped
+but non-simultaneous throws. I describe the rhythm using simultaneous
+throws but you may choose to pass thirteen club double-singles with
+a heavy gallop. Orient
+yourselves counter-clockwise in order: juggler A, juggler B,
+juggler C.
+As juggler A, start with two clubs in your right hand and
+three clubs in your left hand. Your right hand throws a lofty
+double pass to juggler B’s left hand. Your left hand throws a
+lofty self. Both hands throw at the same time. Start with a
+right hand double pass and a left hand single self. An alternate start is to put three clubs in your right hand and two
+clubs in your left hand. On the first beat, make a double pass with your
+right hand and do not make a self throw with your left hand. On every
+following beat, throw both a double pass and a single self.
+As juggler B, start with two clubs in your right hand and
+two clubs in your left hand. Your right hand throws a lofty double pass to juggler C’s left hand. Your left hand throws
+a lofty self. Both hands throw at the same time. Start with
+a right hand double pass and a left hand single self. Make
+your first pair of throws a moment after juggler A makes his
+or her first pair of throws.
+As juggler C, start with two clubs in your right hand and
+two clubs in your left hand. Your right hand throws a lofty
+double pass to juggler A’s left hand. Your left hand throws
+a lofty self. Both hands throw at the same time. Start with
+a right hand double pass and a left hand single self. Make
+your first pair of throws a moment before juggler A makes
+his or her second pair of throws."
+)
+# 89  13.1
 # Pattern.create!(
 #   title: "",
-#   num_jugglers: 2,
-#   num_clubs: 6,
+#   num_jugglers: 3,
+#   num_clubs: 13,
 #   body: ""
 # )
 
 
+
+
+# chapter 1
 PreReq.create!(parent_id: 1, child_id: 2)
 PreReq.create!(parent_id: 2, child_id: 3)
 PreReq.create!(parent_id: 2, child_id: 4)
 PreReq.create!(parent_id: 1, child_id: 5)
 
+# chapter 2
 PreReq.create!(parent_id: 4, child_id: 6)
 PreReq.create!(parent_id: 2, child_id: 7)
 PreReq.create!(parent_id: 7, child_id: 8)
 PreReq.create!(parent_id: 5, child_id: 8)
 
+# chapter 3
 PreReq.create!(parent_id: 9, child_id: 10)
 PreReq.create!(parent_id: 1, child_id: 11)
 PreReq.create!(parent_id: 9, child_id: 11)
@@ -630,6 +2226,7 @@ PreReq.create!(parent_id: 10, child_id: 12)
 PreReq.create!(parent_id: 12, child_id: 13)
 PreReq.create!(parent_id: 18, child_id: 13)
 
+# chapter 4
 PreReq.create!(parent_id: 1, child_id: 14)
 PreReq.create!(parent_id: 9, child_id: 14)
 PreReq.create!(parent_id: 1, child_id: 15)
@@ -648,9 +2245,131 @@ PreReq.create!(parent_id: 20, child_id: 21)
 PreReq.create!(parent_id: 21, child_id: 22)
 PreReq.create!(parent_id: 21, child_id: 23)
 PreReq.create!(parent_id: 13, child_id: 24)
-# PreReq.create!(parent_id: (5.4), child_id: 24)
-# PreReq.create!(parent_id: (5.2), child_id: 25)
+PreReq.create!(parent_id: 32, child_id: 24)
+PreReq.create!(parent_id: 30, child_id: 25)
 PreReq.create!(parent_id: 28, child_id: 25)
 PreReq.create!(parent_id: 25, child_id: 26)
 PreReq.create!(parent_id: 24, child_id: 27)
-# PreReq.create!(parent_id: (5.3), child_id: 27)
+PreReq.create!(parent_id: 31, child_id: 27)
+
+# chapter 5
+PreReq.create!(parent_id: 17, child_id: 29)
+PreReq.create!(parent_id: 17, child_id: 30)
+PreReq.create!(parent_id: 29, child_id: 30)
+PreReq.create!(parent_id: 16, child_id: 31)
+PreReq.create!(parent_id: 29, child_id: 31)
+PreReq.create!(parent_id: 19, child_id: 32)
+PreReq.create!(parent_id: 30, child_id: 32)
+PreReq.create!(parent_id: 29, child_id: 33)
+PreReq.create!(parent_id: 5, child_id: 34)
+PreReq.create!(parent_id: 29, child_id: 34)
+PreReq.create!(parent_id: 34, child_id: 35)
+PreReq.create!(parent_id: 8, child_id: 36)
+PreReq.create!(parent_id: 17, child_id: 36)
+PreReq.create!(parent_id: 21, child_id: 37)
+PreReq.create!(parent_id: 22, child_id: 37)
+PreReq.create!(parent_id: 30, child_id: 38)
+PreReq.create!(parent_id: 31, child_id: 38)
+PreReq.create!(parent_id: 4, child_id: 39)
+PreReq.create!(parent_id: 26, child_id: 39)
+PreReq.create!(parent_id: 27, child_id: 40)
+PreReq.create!(parent_id: 39, child_id: 40)
+PreReq.create!(parent_id: 27, child_id: 41)
+PreReq.create!(parent_id: 31, child_id: 41)
+PreReq.create!(parent_id: 26, child_id: 42)
+PreReq.create!(parent_id: 27, child_id: 42)
+
+# chapter 6
+PreReq.create!(parent_id: 4, child_id: 43)
+PreReq.create!(parent_id: 29, child_id: 43)
+PreReq.create!(parent_id: 30, child_id: 43)
+PreReq.create!(parent_id: 33, child_id: 44)
+PreReq.create!(parent_id: 43, child_id: 44)
+PreReq.create!(parent_id: 30, child_id: 45)
+PreReq.create!(parent_id: 43, child_id: 45)
+PreReq.create!(parent_id: 31, child_id: 46)
+PreReq.create!(parent_id: 43, child_id: 46)
+PreReq.create!(parent_id: 40, child_id: 47)
+PreReq.create!(parent_id: 42, child_id: 47)
+PreReq.create!(parent_id: 46, child_id: 47)
+
+# chapter 7
+PreReq.create!(parent_id: 45, child_id: 48)
+PreReq.create!(parent_id: 43, child_id: 49)
+PreReq.create!(parent_id: 44, child_id: 49)
+PreReq.create!(parent_id: 46, child_id: 50)
+PreReq.create!(parent_id: 48, child_id: 50)
+
+# chapter 8
+PreReq.create!(parent_id: 19, child_id: 51)
+PreReq.create!(parent_id: 51, child_id: 52)
+PreReq.create!(parent_id: 52, child_id: 53)
+PreReq.create!(parent_id: 23, child_id: 54)
+PreReq.create!(parent_id: 53, child_id: 54)
+PreReq.create!(parent_id: 21, child_id: 55)
+PreReq.create!(parent_id: 51, child_id: 55)
+PreReq.create!(parent_id: 22, child_id: 56)
+PreReq.create!(parent_id: 51, child_id: 56)
+PreReq.create!(parent_id: 23, child_id: 57)
+PreReq.create!(parent_id: 51, child_id: 57)
+
+# chapter 9
+PreReq.create!(parent_id: 14, child_id: 58)
+PreReq.create!(parent_id: 18, child_id: 59)
+PreReq.create!(parent_id: 58, child_id: 59)
+PreReq.create!(parent_id: 51, child_id: 60)
+PreReq.create!(parent_id: 60, child_id: 61)
+PreReq.create!(parent_id: 26, child_id: 62)
+PreReq.create!(parent_id: 60, child_id: 62)
+PreReq.create!(parent_id: 61, child_id: 63)
+PreReq.create!(parent_id: 62, child_id: 63)
+PreReq.create!(parent_id: 27, child_id: 64)
+PreReq.create!(parent_id: 55, child_id: 64)
+PreReq.create!(parent_id: 57, child_id: 65)
+PreReq.create!(parent_id: 63, child_id: 65)
+PreReq.create!(parent_id: 26, child_id: 66)
+PreReq.create!(parent_id: 34, child_id: 66)
+PreReq.create!(parent_id: 55, child_id: 66)
+PreReq.create!(parent_id: 63, child_id: 66)
+PreReq.create!(parent_id: 66, child_id: 67)
+
+
+# chapter 10
+PreReq.create!(parent_id: 29, child_id: 68)
+PreReq.create!(parent_id: 31, child_id: 69)
+PreReq.create!(parent_id: 68, child_id: 69)
+PreReq.create!(parent_id: 30, child_id: 70)
+PreReq.create!(parent_id: 32, child_id: 71)
+PreReq.create!(parent_id: 51, child_id: 71)
+PreReq.create!(parent_id: 68, child_id: 72)
+PreReq.create!(parent_id: 21, child_id: 73)
+PreReq.create!(parent_id: 53, child_id: 73)
+PreReq.create!(parent_id: 42, child_id: 74)
+PreReq.create!(parent_id: 65, child_id: 74)
+
+# chapter 11
+PreReq.create!(parent_id: 29, child_id: 75)
+PreReq.create!(parent_id: 68, child_id: 75)
+PreReq.create!(parent_id: 70, child_id: 75)
+PreReq.create!(parent_id: 31, child_id: 76)
+PreReq.create!(parent_id: 44, child_id: 76)
+PreReq.create!(parent_id: 46, child_id: 77)
+PreReq.create!(parent_id: 71, child_id: 78)
+PreReq.create!(parent_id: 33, child_id: 79)
+PreReq.create!(parent_id: 34, child_id: 79)
+PreReq.create!(parent_id: 35, child_id: 80)
+PreReq.create!(parent_id: 68, child_id: 80)
+PreReq.create!(parent_id: 36, child_id: 81)
+
+# chapter 12
+PreReq.create!(parent_id: 43, child_id: 82)
+PreReq.create!(parent_id: 44, child_id: 83)
+PreReq.create!(parent_id: 45, child_id: 84)
+PreReq.create!(parent_id: 78, child_id: 85)
+PreReq.create!(parent_id: 50, child_id: 86)
+
+# chapter 13
+PreReq.create!(parent_id: 50, child_id: 87)
+PreReq.create!(parent_id: 85, child_id: 87)
+PreReq.create!(parent_id: 48, child_id: 88)
+PreReq.create!(parent_id: 49, child_id: 88)

@@ -33,6 +33,9 @@
 - [ ] better color scheme - less blue :)
 - [ ] user show page shows activity?
 - [ ] refactor login/signup page css for error messages
+- [ ] popcorn in info pages (as well as info pages!)
+- [ ] clean up pattern show texts
+- [ ] fix url on sign-in redirect
 
 
 In the patterns index:

@@ -24,7 +24,7 @@
         <li><a href="#/activity">2 day streak</a></li>
       </ul>
     <% else %>
-      <% if request.fullpath == "/session/new" %>
+      <% if request.fullpath == "/session/new" || request.fullpath == "/session" %>
         <ul class="nav navbar-nav navbar-right welcome">
           <li><%= link_to "Sign Up", new_user_url %></li>
         </ul>

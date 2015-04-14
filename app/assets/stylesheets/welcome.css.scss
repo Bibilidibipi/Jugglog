@@ -15,12 +15,30 @@ body {
   img {
     width: 400px;
     display: inline-block;
+    float: left;
     vertical-align: middle;
+  }
+
+  .error {
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+    color: red;
+    width: 400px;
+    float: right;
+    // margin-bottom: 30px;
+    // background-color: white;
+    // background-image: radial-gradient(closest-side, rgba(255 ,255, 255, 1), rgba(255, 255, 255, 0));
+    background-color: rgba(255, 255, 255, .6);
+    border-image: radial-gradient(rgba(255 ,255, 255, .6), rgba(255, 255, 255, 0)) 15 repeat;
+    border-image-width: 30px;
+    border-width: 30px;
   }
 
   .forms {
     width: 400px;
     display: inline-block;
+    float: right;
     text-align: center;
     vertical-align: middle;
 

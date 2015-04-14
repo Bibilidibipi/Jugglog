@@ -6,9 +6,9 @@
 - [x] add log-in and sign-up links on opposing pages
 - [x] add user gravatars
 - [x] link to all user from users show
-- [ ] patterns should show up right away!
-- [ ] delineate pattern tiers
+- [x] patterns should show up right away!
 - [ ] useful, styled error messages
+- [ ] delineate pattern tiers
 - [ ] add pictures to patterns
 - [ ] add carat to username dropdown
 - [ ] links to followers and followees on users index page (and link back)

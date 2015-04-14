@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
   has_many :is_follower_followings, class_name: :Following, foreign_key: :follower_id
   has_many :followers, through: :is_followee_followings, source: :follower
   has_many :followees, through: :is_follower_followings, source: :followee
+  has_many :comments, as: :commentable
+  has_many :authored_comments, foreign_key: :author_id
 
   attr_reader :password
 

@@ -12,12 +12,12 @@ Backbone. Its design is inspired by Duolingo. Users can:
 
 - [x] Create accounts
 - [x] Create sessions (log in)
-- [ ] View random sample from index of other users
+- [x] View index of other users
 - [x] Follow other users
 - [x] Search for other users by username
 - [x] View prerequisite tree of juggling patterns
-- [ ] View individual juggling patterns and associated comments
-- [ ] Comment on juggling patterns
+- [x] View individual juggling patterns and associated comments
+- [x] Comment on juggling patterns
 - [ ] Log practice of juggling patterns
 - [ ] Log learning of juggling patterns
 - [ ] View history of their logged practice

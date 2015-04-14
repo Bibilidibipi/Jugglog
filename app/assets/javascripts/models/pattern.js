@@ -10,6 +10,10 @@ Jugglog.Models.Pattern = Backbone.Model.extend({
       this.children().set(payload.children);
       delete payload.children;
     }
+    if(payload.comments) {
+      this.comments().set(payload.comments);
+      delete payload.comments;
+    }
 
     return payload;
   },
@@ -23,4 +27,9 @@ Jugglog.Models.Pattern = Backbone.Model.extend({
     this._children = this._children || new Jugglog.Collections.Patterns();
     return this._children;
   },
+
+  comments: function () {
+    this._comments = this._comments || new Jugglog.Collections.Comments();
+    return this._comments;
+  }
 });

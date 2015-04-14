@@ -1,9 +1,10 @@
-Jugglog.Views.UserShow = Backbone.View.extend({
+Jugglog.Views.UserShow = Backbone.CompositeView.extend({
   template: JST['users/show'],
 
   events: {
     'click .switch-follow': 'switchFollow',
-    'click .all-users': 'usersIndex'
+    'click .all-users': 'usersIndex',
+    'click .post-comment': 'postComment'
   },
 
   initialize: function () {
@@ -11,11 +12,30 @@ Jugglog.Views.UserShow = Backbone.View.extend({
     $('.friends').addClass('active');
     this.listenTo(this.model, 'sync', this.render);
     this.listenTo(Jugglog.currentUser.followees(), 'add remove', this.render);
+
+    this.listenTo(this.model.comments(), 'add', this.addCommentIndexItem);
+    this.listenTo(this.model.comments(), 'destroy', this.removeCommentIndexItem);
+    this.model.comments().each(this.addCommentIndexItem.bind(this));
   },
 
   render: function () {
     this.$el.html(this.template({ user: this.model }));
+    this.attachSubviews();
+
     return this;
+  },
+
+  addCommentIndexItem: function (comment) {
+    var indexItemView = new Jugglog.Views.CommentIndexItem({ model: comment });
+    this.addSubview('.comments', indexItemView);
+  },
+
+  removeCommentIndexItem: function (comment) {
+    _(this.subviews('.comments')).each(function (subview) {
+      if(subview.model == comment) {
+        this.removeSubview('.comments', subview);
+      }
+    }.bind(this));
   },
 
   switchFollow: function (event) {
@@ -24,6 +44,17 @@ Jugglog.Views.UserShow = Backbone.View.extend({
     } else {
       Jugglog.currentUser.follow(this.model);
     }
+  },
+
+  postComment: function (event) {
+    var that = this;
+    event.preventDefault();
+    var content = $(event.currentTarget).parent().serializeJSON();
+    var comment = new Jugglog.Models.Comment(content.comment);
+    comment.save({ commentable_id: this.model.id, commentable_type: 'User' }, { success: function () {
+      that.model.comments().add(comment);
+      Backbone.history.navigate('#/users/' + that.model.id, { trigger: true });
+    }});
   },
 
   usersIndex: function (event) {

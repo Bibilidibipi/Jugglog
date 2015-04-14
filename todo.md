@@ -8,6 +8,7 @@
 - [x] link to all user from users show
 - [x] patterns should show up right away!
 - [ ] useful, styled error messages
+- [ ] remove focus styling from login and signup buttons
 - [ ] delineate pattern tiers
 - [ ] add pictures to patterns
 - [ ] add carat to username dropdown
@@ -23,6 +24,7 @@
 - [ ] add diagrams to patterns
 - [ ] user edit profile pic ability
 - [ ] interesting seed profile pics
+- [ ] add welcome message/mini tutorial on guest login
 
 In the patterns index:
 - [x] abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize

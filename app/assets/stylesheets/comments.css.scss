@@ -1,0 +1,99 @@
+#main {
+  .add-comment {
+    .comment-text {
+      display: block;
+      margin: 15px 0;
+    }
+
+    .post-comment {
+      display: inline-block;
+      padding: 6px 12px;
+      line-height: 20px;
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-radius: 100px;
+      color: white;
+      background: rgb(126, 181, 48);
+      margin-bottom: 18px;
+
+      &:hover {
+        color: white;
+        background: #8ee000;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .cancel-comment {
+      display: inline-block;
+      padding: 6px 12px;
+      line-height: 20px;
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-radius: 100px;
+      color: white;
+      background: #b6b6b6;
+      margin-bottom: 18px;
+      margin-left: 8px;
+
+      &:hover {
+        color: white;
+        background: #a7a7a7;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  .comments {
+    .comment-list-item {
+      display: block;
+      clear: left;
+      width: 100%;
+      min-height: 40px;
+      overflow: auto;
+      text-align: left;
+      margin-bottom: 12px;
+      position: relative;
+
+      .author-avatar {
+        display: inline-block;
+        float: left;
+      }
+
+      .comment-body {
+        display: inline-block;
+        float: left;
+        margin-left: 15px;
+        max-width: 350px;
+        word-wrap: break-word;
+      }
+
+      .delete {
+        display: inline-block;
+        float: right;
+        padding: 6px 12px;
+        line-height: 20px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 100px;
+        color: white;
+        background: #b6b6b6;
+        margin-left: 8px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        &:hover {
+          color: white;
+          background: #a7a7a7;
+        }
+
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+}

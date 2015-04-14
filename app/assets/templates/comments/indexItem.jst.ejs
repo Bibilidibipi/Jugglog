@@ -1,2 +1,5 @@
-<%= comment.escape('body') %>
-<button class="delete" type="button">delete</button>
+<img class="author-avatar" src="<%= comment.author().escape('gravatar_url') %>" alt="" />
+<div class="comment-body"><%= comment.escape('body') %></div>
+<% if(parseInt(comment.escape('author_id')) === Jugglog.currentUser.id) {%>
+  <button class="delete" type="button">delete</button>
+<% } %>

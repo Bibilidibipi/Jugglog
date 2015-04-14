@@ -1,6 +1,8 @@
 #main {
   .user-show {
     line-height: 81px;
+    display: block;
+    overflow: auto;
 
     .all-users {
       height: 32px;

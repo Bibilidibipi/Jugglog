@@ -9,7 +9,7 @@ window.Jugglog = {
       $('body').css('background-image', "url('assets/main_page_background.png')");
       var patterns = new Jugglog.Collections.Patterns();
       patterns.fetch();
-      var users = new Jugglog.Collections.Users();
+      var users = Jugglog.users = new Jugglog.Collections.Users();
       users.fetch();
       Jugglog.currentUser = new Jugglog.Models.CurrentUser({ id: currentUserId });
       Jugglog.currentUser.fetch();

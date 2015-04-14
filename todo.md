@@ -7,9 +7,9 @@
 - [x] add user gravatars
 - [x] link to all user from users show
 - [x] patterns should show up right away!
-- [ ] useful, styled error messages
-- [ ] hover-hand on usernames in users index
-- [ ] remove focus styling from login and signup buttons
+- [x] useful, styled error messages
+- [x] hover-hand on usernames in users index
+- [x] remove focus styling from login and signup buttons
 - [ ] delineate pattern tiers
 - [ ] clearer delineation between numJuggler buttons and patterns (maybe add border, too?)
 - [ ] add pictures to patterns
@@ -32,6 +32,7 @@
 - [ ] see-through nav-bar a good idea?
 - [ ] better color scheme - less blue :)
 - [ ] user show page shows activity?
+- [ ] refactor login/signup page css for error messages
 
 
 In the patterns index:

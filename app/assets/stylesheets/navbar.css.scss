@@ -113,6 +113,11 @@
     background-color: white;
     color: rgb(11, 65, 118);
 
+    &:focus {
+      background-color: white;
+      color: rgb(11, 65, 118);
+    }
+
     &:hover {
       color: rgb(11, 65, 118);
       background-color: rgb(230, 230, 230);

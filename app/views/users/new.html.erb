@@ -1,7 +1,8 @@
 <div class="all">
   <img src="/assets/welcome_page_image.png" alt="" />
+  <% num_errors = flash[:errors].try(:length) %>
   <% flash[:errors].try(:each) do |error| %>
-    <div class="error"><%= error %></div>
+    <div class="<%= 'error-' + num_errors.to_s %>"><%= error %></div>
   <% end %>
   <%= render 'shared/form',
     css_class: "new-user",

@@ -1,5 +1,6 @@
 body {
   background-image: image-url('welcome_page_background.png');
+  background-attachment: fixed;
   background-color: #cccccc;
   background-size: 2000px;
   background-repeat: repeat-y;
@@ -19,31 +20,42 @@ body {
     vertical-align: middle;
   }
 
-  .error {
+  .error-2 {
     display: inline-block;
-    text-align: center;
-    font-size: 28px;
+    text-align: left;
+    font-size: 20px;
     color: red;
-    width: 400px;
+    width: 320px;
     float: right;
-    // margin-bottom: 30px;
-    // background-color: white;
-    // background-image: radial-gradient(closest-side, rgba(255 ,255, 255, 1), rgba(255, 255, 255, 0));
-    background-color: rgba(255, 255, 255, .6);
-    border-image: radial-gradient(rgba(255 ,255, 255, .6), rgba(255, 255, 255, 0)) 15 repeat;
-    border-image-width: 30px;
-    border-width: 30px;
+    transform: translate(-35px, 40px);
+    margin-bottom: 10px;
   }
+
+  .error-1 {
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    color: red;
+    width: 320px;
+    float: right;
+    transform: translate(-35px, 105px);
+    margin-bottom: 10px;
+  }
+
 
   .forms {
     width: 400px;
-    display: inline-block;
-    float: right;
     text-align: center;
-    vertical-align: middle;
+    position: absolute;
+    top: 20%;
+    right: 0;
 
     input {
       margin-top: 20px;
+
+      &:focus {
+        outline: 0;
+      }
 
       &:first-child {
         margin-top: 0px;

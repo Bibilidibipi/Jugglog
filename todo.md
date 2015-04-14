@@ -8,9 +8,12 @@
 - [x] link to all user from users show
 - [x] patterns should show up right away!
 - [ ] useful, styled error messages
+- [ ] hover-hand on usernames in users index
 - [ ] remove focus styling from login and signup buttons
 - [ ] delineate pattern tiers
+- [ ] clearer delineation between numJuggler buttons and patterns (maybe add border, too?)
 - [ ] add pictures to patterns
+- [ ] disable switch-follow button while switching (add css spinner?)
 - [ ] add carat to username dropdown
 - [ ] links to followers and followees on users index page (and link back)
 - [ ] recommended patterns (top sidebar)
@@ -25,6 +28,11 @@
 - [ ] user edit profile pic ability
 - [ ] interesting seed profile pics
 - [ ] add welcome message/mini tutorial on guest login
+- [ ] streak should link to... ?
+- [ ] see-through nav-bar a good idea?
+- [ ] better color scheme - less blue :)
+- [ ] user show page shows activity?
+
 
 In the patterns index:
 - [x] abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize

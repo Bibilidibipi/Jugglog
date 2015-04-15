@@ -9,3 +9,7 @@ json.isFollowerFollowings @user.is_follower_followings do |following|
   json.(following, :id, :follower_id, :followee_id)
 end
 json.comments @user.comments, :id, :body, :author_id, :created_at
+json.practices @user.practices, :id, :learning_id
+json.learnings @user.learnings, :id, :user_id, :pattern_id
+json.learnedPatterns @user.learned_patterns
+json.practicedPatterns @user.practiced_patterns

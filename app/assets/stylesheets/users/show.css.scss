@@ -43,21 +43,101 @@
     .switch-follow {
       height: 32px;
       line-height: 20px;
-      background: rgb(32, 166, 231);
+      background: rgb(126, 181, 48);
       color: white;
       border-radius: 100px;
       border: none;
       padding: 6px 12px;
       float: right;
-      margin: 24px 0;
+      margin-bottom: 30px;
 
       &:hover {
-        background: rgb(26, 133, 185);
+        background: #8ee000;
         color: white;
       }
 
       &:focus {
         outline: 0;
+      }
+    }
+  }
+
+  .show-learned-patterns {
+    width: 48%;
+    padding: 15px;
+    display: block;
+    float: left;
+    text-align: center;
+    background: #eeeeee;
+    border-radius: 10px;
+    margin: 20px 0;
+
+    .learned-patterns {
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin: 5px 10px;
+      width: 60px;
+      vertical-align: top;
+      transform: translateY(5px);
+
+      .icon {
+        width: 55px;
+        height: 55px;
+        border-radius: 100px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1) translateY(5px);
+        transition-duration: .2s;
+      }
+    }
+  }
+
+  .show-practiced-patterns {
+    width: 48%;
+    padding: 15px;
+    display: block;
+    float: right;
+    text-align: center;
+    background: #eeeeee;
+    border-radius: 10px;
+    margin: 20px 0;
+
+    .practiced-patterns {
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin: 5px 10px;
+      width: 60px;
+      vertical-align: top;
+      transform: translateY(5px);
+
+      .icon {
+        width: 55px;
+        height: 55px;
+        border-radius: 100px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1) translateY(5px);
+        transition-duration: .2s;
       }
     }
   }

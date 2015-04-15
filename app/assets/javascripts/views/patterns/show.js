@@ -3,7 +3,8 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
 
   events: {
     'click .pattern-tree': 'treeShow',
-    'click .post-comment': 'postComment'
+    'click .post-comment': 'postComment',
+    'click .switch-learned': 'switchLearned'
   },
 
   initialize: function () {
@@ -67,5 +68,35 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
   treeShow: function (event) {
     var numJugglers = this.model.get('num_jugglers');
     Backbone.history.navigate('patterns/' + numJugglers, { trigger: true });
+  },
+
+  switchLearned: function (event) {
+    if(this.model.learned()) {
+      this.unlearn(this.model);
+    } else {
+      this.learn(this.model);
+    }
+  },
+
+  unlearn: function (pattern) {
+    var learning = Jugglog.currentUser.learnings().findWhere({ pattern_id: pattern.id, user_id: Jugglog.currentUser.id });
+    learning.save({ status: 'unlearned' }, { success: function () {
+      Jugglog.currentUser.learnedPatterns().remove(this.model);
+      this.render();
+    }.bind(this)})
+  },
+
+  learn: function (pattern) {
+    var learning = Jugglog.currentUser.learnings().findWhere({
+        pattern_id: pattern.id, user_id: Jugglog.currentUser.id
+      }) ||
+      new Jugglog.Models.Learning({
+        user_id: Jugglog.currentUser.id, pattern_id: this.model.id
+      });
+
+    learning.save({ status: 'learned' }, { success: function () {
+      Jugglog.currentUser.learnedPatterns().add(this.model);
+      this.render();
+    }.bind(this)});
   }
 });

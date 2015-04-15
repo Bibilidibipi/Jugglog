@@ -1,9 +1,17 @@
 <div class="user-show">
   <button class="all-users" type="button">All Users</button>
-  <div class="avatar"><img src="<%= user.escape('gravatar_url') + '?d=wavatar' %>" alt="" /></div>
-  <div class="name"><%= user.escape('username') %></div>
   <% var following_text = Jugglog.currentUser.isFollowing(user) ? "Unfollow" : "Follow" %>
   <button class="switch-follow"><%= following_text %></button>
+  <div class="avatar"><img src="<%= user.escape('gravatar_url') + '?d=wavatar' %>" alt="" /></div>
+  <div class="name"><%= user.escape('username') %></div>
+</div>
+<div class="show-learned-patterns">
+  <p class="heading">Recently learned patterns</p>
+  <ul class="learned-patterns"></ul>
+</div>
+<div class="show-practiced-patterns">
+  <p class="heading">Recently practiced patterns</p>
+  <ul class="practiced-patterns"></ul>
 </div>
 <form class="add-comment">
   <textarea class="comment-text" name="comment[body]" rows="1" cols="40" placeholder="Leave a new Comment"></textarea>

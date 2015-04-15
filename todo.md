@@ -18,6 +18,7 @@
 - [x] add diagrams to patterns
 - [x] timestamps on comments (moment.js)
 - [x] comment gravatars should link to user show page
+- [x] interesting seed profile pics
 - [ ] disable switch-follow button while switching (add css spinner?)
 - [ ] add carat to username dropdown
 - [ ] recommended patterns (top sidebar)
@@ -29,7 +30,6 @@
 - [ ] take and add background photos, find welcome page picture and icon pictures
 - [ ] add logo
 - [ ] user edit profile pic ability
-- [ ] interesting seed profile pics
 - [ ] add welcome message/mini tutorial on guest login
 - [ ] streak should link to... ?
 - [ ] better color scheme - less blue :)
@@ -39,8 +39,8 @@
 - [ ] clean up pattern show texts
 - [ ] fix url on sign-in redirect
 - [ ] make comments form expandable; activate 'cancel' button
-- [ ] comment avatars should link to user show
 - [ ] sharpen pattern diagrams
+- [ ] css spinners everywhere!
 
 - [ ] add embedded video
 - [ ] user show page should have practice and learning info

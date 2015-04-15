@@ -12,8 +12,12 @@ Jugglog.Models.CurrentUser = Jugglog.Models.User.extend({
       this.isFollowerFollowings().set(payload.isFollowerFollowings);
       delete payload.isFollowerFollowings;
     }
+    if(payload.learnings) {
+      this.learnings().set(payload.learnings);
+      delete payload.learnings;
+    }
 
-    return payload;
+    Jugglog.Models.CurrentUser.__super__.parse.call(this, payload);
   },
 
   followees: function () {
@@ -29,6 +33,11 @@ Jugglog.Models.CurrentUser = Jugglog.Models.User.extend({
   isFollowerFollowings: function () {
     this._isFollowerFollowings = this._isFollowerFollowings || new Jugglog.Collections.Followings();
     return this._isFollowerFollowings;
+  },
+
+  learnings: function () {
+    this._learnings = this._learnings || new Jugglog.Collections.Learnings();
+    return this._learnings;
   },
 
   isFollowing: function (otherUser) {

@@ -1,7 +1,8 @@
 #main {
   .add-comment {
     background: #eeeeee;
-
+    display: block;
+    clear: both;
     padding: 20px 30px;
     margin: 20px -30px;
     overflow: auto;

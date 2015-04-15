@@ -1,4 +1,12 @@
-<button class="pattern-tree" type="button">Back to Patterns</button>
+<div class="buttons">
+  <button class="pattern-tree" type="button">Back to Patterns</button>
+  <% var learnedText = pattern.learned() ? 'Learned!' : 'Mark as learned' %>
+  <button class="switch-learned" type="button"><%= learnedText %></button>
+  <button class="log-practice" type="button">Log Practice</button>
+</div>
+
+
+
 <div class="title"><%= pattern.escape('title') %></div>
 <div class="show-parents">
   <p class="heading">Prerequisites</p>

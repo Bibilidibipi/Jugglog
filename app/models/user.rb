@@ -10,6 +10,8 @@ class User < ActiveRecord::Base
   has_many :followees, through: :is_follower_followings, source: :followee
   has_many :comments, as: :commentable
   has_many :authored_comments, foreign_key: :author_id
+  has_many :learnings
+  has_many :practices, through: :learnings, source: :practices
 
   attr_reader :password
 
@@ -38,6 +40,26 @@ class User < ActiveRecord::Base
   def gravatar_url
     gravatar_id = Digest::MD5::hexdigest(email.downcase)
     "https://secure.gravatar.com/avatar/#{gravatar_id}"
+  end
+
+  def learned_learnings
+    self.learnings.where(status: :learned)
+  end
+
+  def learned_patterns
+    return [] if self.learned_learnings.empty?
+    where_string = self.learned_learnings.map(&:pattern_id).join(", ")
+    Pattern.where("id IN (" + where_string + ")")
+  end
+
+  def practiced_learnings
+    self.learnings.select{ |learning| learning.practiced? }
+  end
+
+  def practiced_patterns
+    return [] if self.practiced_learnings.empty?
+    where_string = self.practiced_learnings.map(&:pattern_id).join(", ") 
+    Pattern.where("id IN (" + where_string + ")")
   end
 
   private

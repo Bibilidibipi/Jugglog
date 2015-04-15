@@ -1569,3 +1569,81 @@ LINE 1: ...CT "patterns".* FROM "patterns" WHERE (num_jugglers = 'NaN')
 [04/15/15 11:39:32 -0700 Apps-Mac-mini-90.local (75159)] INFO : Doing deferred dependency-detection before Rack startup
 [04/15/15 11:39:35 -0700 Apps-Mac-mini-90.local (75159)] ERROR : Invalid license key, please contact support@newrelic.com
 [04/15/15 11:39:35 -0700 Apps-Mac-mini-90.local (75159)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[04/15/15 12:24:01 -0700 Apps-Mac-mini-90.local (75159)] INFO : Starting Agent shutdown
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Starting the New Relic agent in "development" environment.
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] WARN : No configuration file found. Working directory = /Users/appacademy/Desktop/Jugglog
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] WARN : Looked in these locations (based on defaults): /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Environment: development
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Dispatcher: webrick
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Application: development
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Installing ActiveJob instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Installing ActiveRecord 4 instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Installing Net instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Installing deferred Rack instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Installing Rack::Builder middleware instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Installing Rails 3+ middleware instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Installing Rails 4 Controller instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Installing Rails 4 view instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Installing Rails 4 Error instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Finished instrumentation
+[04/15/15 13:25:37 -0700 Apps-Mac-mini-90.local (76314)] INFO : Doing deferred dependency-detection before Rack startup
+[04/15/15 13:35:54 -0700 Apps-Mac-mini-90.local (76314)] ERROR : Invalid license key, please contact support@newrelic.com
+[04/15/15 13:35:54 -0700 Apps-Mac-mini-90.local (76314)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[04/15/15 15:02:22 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: compared with non class/module
+[04/15/15 15:03:57 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: compared with non class/module
+[04/15/15 15:05:12 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::SyntaxError: ERROR:  syntax error at or near "1"
+LINE 1: SELECT "patterns".* FROM "patterns" WHERE (id IN 1)
+                                                         ^
+: SELECT "patterns".* FROM "patterns" WHERE (id IN 1)
+[04/15/15 15:05:14 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::SyntaxError: ERROR:  syntax error at or near "1"
+LINE 1: SELECT "patterns".* FROM "patterns" WHERE (id IN 1)
+                                                         ^
+: SELECT "patterns".* FROM "patterns" WHERE (id IN 1)
+[04/15/15 15:05:14 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::SyntaxError: ERROR:  syntax error at or near "1"
+LINE 1: SELECT "patterns".* FROM "patterns" WHERE (id IN 1)
+                                                         ^
+: SELECT "patterns".* FROM "patterns" WHERE (id IN 1)
+[04/15/15 15:05:38 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::SyntaxError: ERROR:  syntax error at or near "1"
+LINE 1: SELECT "patterns".* FROM "patterns" WHERE (id IN 1)
+                                                         ^
+: SELECT "patterns".* FROM "patterns" WHERE (id IN 1)
+[04/15/15 15:36:49 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of bind variables (2 for 1) in: id IN (?)
+[04/15/15 15:37:04 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of bind variables (2 for 1) in: id IN (?)
+[04/15/15 15:38:15 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected ')', expecting :: or '[' or '.'
+...ed_learnings.map(&:pattern_id)))
+...                               ^
+/Users/appacademy/Desktop/Jugglog/app/models/user.rb:72: syntax error, unexpected keyword_end, expecting ')'
+[04/15/15 15:40:04 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected *
+...    Pattern.where("id IN (" + *self.learned_learnings.map(&:...
+...                               ^
+/Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected '+', expecting :: or '[' or '.'
+...d_learnings.map(&:pattern_id) + ")")
+...                               ^
+/Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected ')', expecting keyword_end
+/Users/appacademy/Desktop/Jugglog/app/models/user.rb:72: syntax error, unexpected end-of-input, expecting keyword_end
+[04/15/15 15:40:22 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected *
+...    Pattern.where("id IN (" + *(self.learned_learnings.map(&...
+...                               ^
+/Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected '+', expecting :: or '[' or '.'
+..._learnings.map(&:pattern_id)) + ")")
+...                               ^
+/Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected ')', expecting keyword_end
+/Users/appacademy/Desktop/Jugglog/app/models/user.rb:72: syntax error, unexpected end-of-input, expecting keyword_end
+[04/15/15 15:40:45 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: PG::SyntaxError: ERROR:  syntax error at or near "*"
+LINE 1: ...T "patterns".* FROM "patterns" WHERE ('id IN (' + *(self.lea...
+                                                             ^
+: SELECT "patterns".* FROM "patterns" WHERE ('id IN (' + *(self.learned_learnings.map(&:pattern_id)) + ')')
+[04/15/15 15:41:51 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected *
+...   where_string = "id IN (" + *self.learned_learnings.map(&:...
+...                               ^
+/Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected '+', expecting :: or '[' or '.'
+...d_learnings.map(&:pattern_id) + ")" 
+...                               ^
+[04/15/15 15:42:18 -0700 Apps-Mac-mini-90.local (76314)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected *
+...   where_string = "id IN (" + *self.learned_learnings.map(&:...
+...                               ^
+/Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected '+', expecting :: or '[' or '.'
+...d_learnings.map(&:pattern_id) + ")" 
+...                               ^

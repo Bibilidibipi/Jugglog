@@ -12,5 +12,7 @@ Rails.application.routes.draw do
       get 'groups/:id', on: :collection, to: 'patterns#groups'
     end
     resources :comments, only: [:create, :destroy]
+    resources :learnings, only: [:create, :update, :destroy]
+    resources :practices, only: [:create, :destroy]
   end
 end

@@ -10,9 +10,9 @@
 - [x] useful, styled error messages
 - [x] hover-hand on usernames in users index
 - [x] remove focus styling from login and signup buttons
-- [ ] delineate pattern tiers
-- [ ] clearer delineation between numJuggler buttons and patterns (maybe add border, too?)
+- [x] delineate pattern tiers
 - [ ] add pictures to patterns
+- [ ] clearer delineation between numJuggler buttons and patterns (maybe add border, too?)
 - [ ] disable switch-follow button while switching (add css spinner?)
 - [ ] add carat to username dropdown
 - [ ] links to followers and followees on users index page (and link back)
@@ -42,4 +42,4 @@
 In the patterns index:
 - [x] abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize
 - [x] fetch from database for each pattern tree rather than filtering this.collection
-- [ ] make assignment of tiers breadth-first
+- [ ] fix assignment of tiers

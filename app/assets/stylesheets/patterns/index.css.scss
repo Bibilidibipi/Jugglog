@@ -30,4 +30,50 @@
       display: inline-block;
     }
   }
+
+  .tier {
+    padding: 0;
+    display: block;
+    margin: 0 auto 20px auto;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 10px 20px;
+      width: 90px;
+      vertical-align: top;
+      transform: translateY(10px);
+
+      .icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 100px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1) translateY(10px);
+        transition-duration: .2s;
+      }
+
+      &:nth-child(4n+1) {
+        clear: left;
+      }
+    }
+
+    &:before {
+      display: block;
+      content: '';
+      height: 2px;
+      width: calc(100% + 60px);
+      background-color: rgb(218, 218, 218);
+      transform: translateX(-30px);
+    }
+  }
 }

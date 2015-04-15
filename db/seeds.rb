@@ -17,11 +17,13 @@ numUsers = User.all.length
     retry
   end
 end
+
 # 1  1.1
 Pattern.create!(
   title: 'Cascade',
   num_jugglers: 1,
   num_clubs: 3,
+  diagram_url: '/assets/1-1.png',
   body: "Start with two clubs in your right hand and one club in your left hand.
         Throw one of the two clubs in your right hand so that it makes one
         revolution before landing in your left hand. This single-revolution
@@ -56,6 +58,7 @@ Pattern.create!(
   title: "423",
   num_jugglers: 1,
   num_clubs: 3,
+  diagram_url: '/assets/1-3.png',
   body: "423 is siteswap notation describing a solo juggling rhythm with three
         clubs. Each number is a different type of throw. The first throw is a 4,
         or a heff. A heff is just like a double self, except that it lands in
@@ -77,6 +80,7 @@ Pattern.create!(
   title: "441",
   num_jugglers: 1,
   num_clubs: 3,
+  diagram_url: '/assets/1-4.png',
   body: "441 is siteswap notation describing a solo juggling rhythm with three
         clubs. The first throw is a 4, or a heff. It is the same heff you
         learned with 423. The third throw is a 1, or a zip. A zip is a hand-off
@@ -96,6 +100,7 @@ Pattern.create!(
   title: "531",
   num_jugglers: 1,
   num_clubs: 3,
+  diagram_url: '/assets/1-5.png',
   body: "531 is siteswap notation describing a solo juggling rhythm with three
         clubs. The first throw is a 5, or a triple self. Just like the double
         self, the triple self goes from one hand to the other, but it is thrown
@@ -119,6 +124,7 @@ Pattern.create!(
   title: "Fountain",
   num_jugglers: 1,
   num_clubs: 4,
+  diagram_url: '/assets/2-1.png',
   body: "The
         traditional four club rhythm is called a fountain. Every throw is a
         heff. Start with two clubs in each hand and throw a heff with your right
@@ -144,6 +150,7 @@ Pattern.create!(
   title: "Half-Shower (Doubles)",
   num_jugglers: 1,
   num_clubs: 4,
+  diagram_url: '/assets/2-2.png',
   body: "A popular way to juggle four
         clubs is in a half-shower. In a half-shower, one hand makes high throws
         while the other hand makes low throws. For this rhythm, one hand throws
@@ -169,6 +176,7 @@ Pattern.create!(
   title: "Half-Shower (Triples)",
   num_jugglers: 1,
   num_clubs: 4,
+  diagram_url: '/assets/2-3.png',
   body: "The half-shower
         with triples is similar to the half-shower with doubles; instead of
         throwing a double for the high throw, use a triple. The longer flight
@@ -184,6 +192,7 @@ Pattern.create!(
   title: "Passing a Club",
   num_jugglers: 2,
   num_clubs: 1,
+  # diagram_url: ,
   body: "Throwing a pass is very similar to throwing a self. The difference is
         that you want the club to go forward to your partner. Hold the club by
         the handle and bring it down by the side of your leg. Swing your arm up
@@ -216,6 +225,7 @@ Pattern.create!(
   title: "Ultimates (5 Club)",
   num_jugglers: 2,
   num_clubs: 5,
+  diagram_url: '/assets/3-1.png',
   body: "Five club ultimates is an excellent way to practice
         making a good pass. It is a slow, relaxed rhythm which gives both
         jugglers time to focus on each individual throw. As juggler A, start
@@ -246,6 +256,7 @@ Pattern.create!(
   title: "Two Count",
   num_jugglers: 2,
   num_clubs: 5,
+  diagram_url: '/assets/3-2.png',
   body: "Five club two count is a good rhythm for learning to
         incorporate passing throws and self throws with less pressure than
         passing six clubs. As juggler A, start with two clubs in your right hand
@@ -268,6 +279,7 @@ Pattern.create!(
   title: "672",
   num_jugglers: 2,
   num_clubs: 5,
+  diagram_url: '/assets/3-3.png',
   body: "672 is just like five club ultimates, but you do a self and a
         zip while you wait for your partner’s club to get back to you. It is
         harder than five club ultimates and it forces your throw timing to be
@@ -298,6 +310,7 @@ Pattern.create!(
   title: "Parsnip",
   num_jugglers: 2,
   num_clubs: 5,
+  diagram_url: '/assets/3-4.png',
   body: "As juggler A, start with two clubs in your
         right hand and one club in your left hand. Your sequence of throws is
         pass, pass, zip, pass, zip. The passes are lofty straight single passes.
@@ -313,6 +326,7 @@ Pattern.create!(
   title: "Passing From a Cascade",
   num_jugglers: 2,
   num_clubs: 6,
+  # diagram_url: ,
   body: "Start by facing each other and juggling a three club cascade at the
         same time and speed. Make right hand throws at the same time and make
         left hand throws at the same time. On a passing beat, your right hand
@@ -344,6 +358,7 @@ Pattern.create!(
   title: "Four Count",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-1-1.png',
   body: "The first rhythm that most jugglers
         learn when starting to pass clubs is four count, also known as every
         others, since every other right hand throw is a passing beat. It is
@@ -357,6 +372,7 @@ Pattern.create!(
   title: "Three Count",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-1-2.png',
   body: "Before attempting three count, you should be comfortable making passes with your left hand.
 Three count is popular among jugglers who wish to pass
 with both their right and left hands. Three count is sometimes
@@ -370,6 +386,7 @@ Pattern.create!(
   title: "Two Count",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-1-3.png',
   body: "The two count rhythm is very similar to the four count
 rhythm in that all of the passes are made by the same hand.
 Two count is sometimes referred to as everies since every
@@ -384,6 +401,7 @@ Pattern.create!(
   title: "Double Three Count",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-1-4.png',
   body: "Double three count is sometimes referred to as pass
 pass self because that is the sequence of throws you need
 to make. This is the first rhythm where you have to pass
@@ -404,6 +422,7 @@ Pattern.create!(
   title: "Ultimates (6 Club)",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-1-5.png',
   body: "Ultimates are sometimes referred to as one count; every
 throw you make is a pass to your partner. Your right hand
 and your partner’s left hand are juggling three clubs while
@@ -420,6 +439,7 @@ Pattern.create!(
   title: "78474",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-2.png',
   body: "78474 is a good first six club siteswap. You make three
 throws and then hold for two beats. There is room in the
 pattern to fudge the tempo a little bit if you get ahead or
@@ -449,6 +469,7 @@ Pattern.create!(
   title: "WhyNot",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-3.png',
   body: "WhyNot is a complicated rhythm that uses four different
 types of throws.
 As juggler A, start with two clubs in your right hand and
@@ -470,6 +491,7 @@ Pattern.create!(
   title: "NotWhy",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-4.png',
   body: "NotWhy is very similar to WhyNot. NotWhy uses the
 same combination of throws, but in a different order.
 As juggler A, start with one club in your right hand and
@@ -492,6 +514,7 @@ Pattern.create!(
   title: "Maybe",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-5.png',
   body: "Maybe is another rhythm that is similar to WhyNot. It
 uses the same combination of throws, but in a different order.
 As juggler A, start with two clubs in your right hand and
@@ -510,6 +533,7 @@ Pattern.create!(
   title: "77772",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-6.png',
   body: "77772 is a four hand siteswap that is very similar to
 seven club ultimates except that every fifth throw is a zip
 instead of a pass.
@@ -529,6 +553,7 @@ Pattern.create!(
   title: "75666",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-7.png',
   body: "75666 is a challenging pattern because you must throw
 single passes and joe passes from both hands and either
 your passes or your joes will need to cross depending on
@@ -551,6 +576,7 @@ Pattern.create!(
   title: "756",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-8.png',
   body: "756 is a four hand siteswap that is very similar to 75666
 but with fewer self throws.
 As juggler A, start with two clubs in your right hand and
@@ -573,6 +599,7 @@ Pattern.create!(
   title: "972",
   num_jugglers: 2,
   num_clubs: 6,
+  diagram_url: '/assets/4-9.png',
   body: "972 is a challenging four hand siteswap that requires
 each juggler to make double passes and single passes.
 As juggler A, start with one club in your right hand and
@@ -593,6 +620,7 @@ Pattern.create!(
   title: "Joe",
   num_jugglers: 2,
   num_clubs: 1,
+  # diagram_url: ,
   body: "A joe is a pass that takes less time to get to your partner than a
         single pass. A joe completes about a quarter rotation between leaving
         your hand and arriving in your partner’s hand. To throw a joe, hold the
@@ -609,6 +637,7 @@ Pattern.create!(
   title: "Two Count (Doubles)",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-1.png',
   body: "Two count in doubles is the rhythm to start with for
 passing seven clubs and getting comfortable throwing double
 passes. This might be the first time you throw a double
@@ -636,6 +665,7 @@ Pattern.create!(
   title: "Two Count (Singles)",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-2.png',
   body: "Seven club singles uses a galloped tempo, similar to the
 tempo for juggling four clubs in a half shower with doubles. The time between two right hand passes does not
 change, but the time after a right hand pass before the next
@@ -660,6 +690,7 @@ Pattern.create!(
   title: "Three Count (Doubles)",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-3.png',
   body: "Seven clubs in three count with doubles uses a lofty double
 pass.
 As juggler A, start with two clubs in your right hand and
@@ -684,6 +715,7 @@ Pattern.create!(
   title: "Ultimates",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-4.png',
   body: "Passing seven club ultimtes can be an intimidating pattern
 but it is pretty accessible and very satisfying to juggle.
 Every throw is a lofty single pass.
@@ -703,6 +735,7 @@ Pattern.create!(
   title: "Four Count (Triples)",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-5.png',
   body: "Passing seven clubs in four count is a good rhythm for
 learning to make a triple pass. Just as a double pass spends
 an extra beat in the air and makes one additional rotation compared to a single pass, the triple pass spends two additional
@@ -730,6 +763,7 @@ Pattern.create!(
   title: "Six Count Popcorn",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-6-1.png',
   body: "Six count Popcorn is a visually interesting rhythm and it
 is a lot of fun to juggle. It should also be pretty easy to pick
 up with just a little bit of practice. Your left hand always
@@ -754,6 +788,7 @@ Pattern.create!(
   title: "Five Count Popcorn",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-6-2.png',
   body: "Five count Popcorn is very similar to six count Popcorn
 except you must use both your right hand and left hand to
 make self triples and passes.
@@ -775,6 +810,7 @@ Pattern.create!(
   title: "Four Count Popcorn",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-6-3.png',
   body: "Four count Popcorn offers a particular challenge because
 your right hand alternates between throwing a triple self
 and a single pass. Your tendency will be to put your pass
@@ -796,6 +832,7 @@ Pattern.create!(
   title: "Three Count Popcorn",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-6-4.png',
   body: "Three count Popcorn is also called French three count. It
 does not use the triple-single pair of throws. The extra club
 goes back and forth so often that each juggler only throws a
@@ -817,6 +854,7 @@ Pattern.create!(
   title: "Techno",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-7.png',
   body: "Techno is a simultaneous rhythm. You need to throw a
 pass and a self at the same time on every other beat.
 As juggler A, start with two clubs in your right hand and
@@ -841,6 +879,7 @@ Pattern.create!(
   title: "885",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-8.png',
   body: "As juggler A, start with two clubs in your right hand and
 two clubs in your left hand. Your sequence of throws is heff,
 joe, heff. The joe is crossing. Start with a right hand heff.
@@ -860,6 +899,7 @@ Pattern.create!(
   title: "894",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-9.png',
   body: "As juggler A, start with two clubs in your right hand and
 one club in your left hand. Your sequence of throws is heff,
 hold, pass. The pass is a lofty crossing double pass. Start
@@ -876,6 +916,7 @@ Pattern.create!(
   title: "96677",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-10.png',
   body: "As juggler A, start with two clubs in your right hand and
 two clubs in your left hand. Your sequence of throws is double
 pass, self, single pass, self, single pass. The double pass
@@ -900,6 +941,7 @@ Pattern.create!(
   title: "975",
   num_jugglers: 2,
   num_clubs: 7,
+  diagram_url: '/assets/5-11.png',
   body: "975 can be hard to get your head around at first. All of the throws are passes and there are three very different
 passing throws, some of which cross and some of which are
 straight. Once you get it down, it is a fun rhythm.
@@ -930,6 +972,7 @@ Pattern.create!(
   title: "Two Count (Doubles)",
   num_jugglers: 2,
   num_clubs: 8,
+  diagram_url: '/assets/6-1.png',
   body: "Passing eight clubs in two count with doubles is the first
 rhythm to learn for passing eight clubs. You need to throw
 lofty double passes and lofty single self throws in a galloped
@@ -949,6 +992,7 @@ Pattern.create!(
   title: "Two Count (Triples)",
   num_jugglers: 2,
   num_clubs: 8,
+  diagram_url: '/assets/6-2.png',
   body: "Passing eight clubs in two count with triples is more
 challenging than using doubles, but the even tempo can be
 more relaxing. Once you get comfortable with this rhythm,
@@ -965,6 +1009,7 @@ Pattern.create!(
   title: "Singles",
   num_jugglers: 2,
   num_clubs: 8,
+  diagram_url: '/assets/6-3.png',
   body: "Eight club singles is a fun rhythm where all four hands
 throw at the same time. The synchronous rhythm can be
 challenging. Both jugglers do the same thing at the same
@@ -986,6 +1031,7 @@ Pattern.create!(
   title: "Double Three Count (Doubles)",
   num_jugglers: 2,
   num_clubs: 8,
+  diagram_url: '/assets/6-4.png',
   body: "Double three count with doubles is similar to seven clubs
 in three count with doubles but significantly more challenging.
 You need to have much more consistent double passes
@@ -1009,6 +1055,7 @@ Pattern.create!(
   title: "978",
   num_jugglers: 2,
   num_clubs: 8,
+  diagram_url: '/assets/6-5.png',
   body: "978 is just like 975 except instead of throwing a joe you
 throw a heff. You might find this easier than 975 if you have
 trouble keeping your joes from getting over spun but more
@@ -1031,6 +1078,7 @@ Pattern.create!(
   title: "Double-Single",
   num_jugglers: 2,
   num_clubs: 9,
+  diagram_url: '/assets/7-1.png',
   body: "Nine clubs double-single requires you to make a simultaneous
 pair of throws from your two hands. Your right hand
 makes a double pass to your partner’s left hand as your left
@@ -1060,6 +1108,7 @@ Pattern.create!(
   title: "Triple-Single",
   num_jugglers: 2,
   num_clubs: 9,
+  diagram_url: '/assets/7-2.png',
   body: "You may find nine club triple-single to be easier than
 nine club double-single if you are very comfortable with
 triple passes. This rhythm does not require a simultaneous
@@ -1087,6 +1136,7 @@ Pattern.create!(
   title: "Ultimates",
   num_jugglers: 2,
   num_clubs: 9,
+  diagram_url: '/assets/7-3.png',
   body: "Nine club ultimates is the natural progression from 7
 club three count and eight club double three count.
 It is a visually spectacular rhythm with a lot of clubs flying
@@ -1109,6 +1159,7 @@ Pattern.create!(
   title: "Ultimates",
   num_jugglers: 3,
   num_clubs: 8,
+  # diagram_url: ,
   body: "Eight club ultimates with three people is a fun and relatively
 easy rhythm for getting the feel of passing with three
 people. Every throw is a crossing single pass to the juggler
@@ -1145,6 +1196,7 @@ Pattern.create!(
   title: "9689",
   num_jugglers: 3,
   num_clubs: 8,
+  # diagram_url: ,
   body: "9689 is a good pattern for incorporating the subtle differences
 in throw height between a lofted joe and a self. Orient
 yourselves counter-clockwise in order: juggler A, juggler B,
@@ -1180,6 +1232,7 @@ Pattern.create!(
   title: "96889",
   num_jugglers: 3,
   num_clubs: 8,
+  # diagram_url: ,
   body: "96889 is very similar to 9689 but there is an additional
 pass which makes the rhythm ambidextrous. Orient yourselves
 counter-clockwise in order: juggler A, juggler B, juggler
@@ -1205,6 +1258,7 @@ Pattern.create!(
   title: "86C86",
   num_jugglers: 3,
   num_clubs: 8,
+  # diagram_url: ,
   body: "Orient yourselves counter-clockwise in order: juggler A,
 juggler B, juggler C.
 As juggler A, start with two clubs in your right hand and
@@ -1232,6 +1286,7 @@ Pattern.create!(
   title: "Three Person WhyNot",
   num_jugglers: 3,
   num_clubs: 8,
+  # diagram_url: ,
   body: "Three person WhyNot is the same sequence of throws as
 WhyNot except for the pass which must be made as a quick
 pass or a lofty joe. Orient yourselves counter-clockwise in
@@ -1259,6 +1314,7 @@ Pattern.create!(
   title: "Three Person NotWhy",
   num_jugglers: 3,
   num_clubs: 8,
+  # diagram_url: ,
   body: "Three person NotWhy is the same sequence of throws as
 NotWhy except for the pass which must be made as a quick
 pass or a lofty joe. Orient yourselves counter-clockwise in
@@ -1292,6 +1348,7 @@ Pattern.create!(
   title: "Three Person Maybe",
   num_jugglers: 3,
   num_clubs: 8,
+  # diagram_url: ,
   body: "Three person Maybe is the same sequence of throws as
 Maybe except for the pass which must be made as a quick
 pass or a lofty joe. Orient yourselves counter-clockwise in
@@ -1321,6 +1378,7 @@ Pattern.create!(
   title: "Passing From A Cascade",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "Passing clubs with three people adds another level of
 complexity. With two people, for any given pass you generally
 have two choices: pass to your partner’s left hand or
@@ -1380,6 +1438,7 @@ Pattern.create!(
   title: "Pass Pass Self",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "Pass pass self is a slightly ambiguous name for this
 rhythm. With three people you can all throw insides (or
 all throw outsides) at the same time in a pass, pass, self
@@ -1413,6 +1472,7 @@ Pattern.create!(
   title: "A899",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "A899 is a good first siteswap to explore with three people
 and nine clubs. Everyone has a slightly lofty crossing single
 pass and a lofty crossing joe, along with two self throws. Orient
@@ -1443,6 +1503,7 @@ Pattern.create!(
   title: "A8999",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "A8999 is just like A899, but this is an ambidextrous pattern.
 Orient yourselves counter-clockwise in order: juggler
 A, juggler B, juggler C.
@@ -1474,6 +1535,7 @@ Pattern.create!(
   title: "A8",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "A8 is just like A899 but without any self throws. Throw
 lofty crossing joes with your left hand and lofty single passes
 with your right hand. Orient yourselves counter-clockwise
@@ -1506,6 +1568,7 @@ Pattern.create!(
   title: "89A8A",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "89A8A is a cross between A8 and A8999. Every one
 makes the same throws, but now every one throws two joes
 in a row and two passes in a row, and there is a self every
@@ -1539,6 +1602,7 @@ Pattern.create!(
   title: "ADA39",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "Orient yourselves clockwise in order: juggler A, juggler
 B, juggler C.
 As juggler A, start with one club in your right hand and
@@ -1567,6 +1631,7 @@ Pattern.create!(
   title: "B9CA3",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "B9CA3 is similar to three person maybe except instead of
 throwing your passes as quick single passes, you alternate
 between slightly lofty single passes and loftier single passes.
@@ -1602,6 +1667,7 @@ Pattern.create!(
   title: "F8A3",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "This rhythm combines a self triple throw with a
 joe. Make sure the triple is high and the joe is low to
 maximize your success with F8A3. Orient yourselves
@@ -1637,6 +1703,7 @@ Pattern.create!(
   title: "F8A39",
   num_jugglers: 3,
   num_clubs: 9,
+  # diagram_url: ,
   body: "F8A39 is very similar to F8A3, but there is an extra
 self throw which makes this rhythm alternate sides. Orient
 yourselves counter-clockwise in order: juggler A, juggler
@@ -1667,6 +1734,7 @@ Pattern.create!(
   title: "Four Count (Doubles)",
   num_jugglers: 3,
   num_clubs: 10,
+  # diagram_url: ,
   body: "Ten clubs in four count with doubles makes an excellent
 introduction to numbers club passing with three people.
 Orient yourselves clockwise in order: juggler A, juggler
@@ -1698,6 +1766,7 @@ Pattern.create!(
   title: "Three Count (Doubles)",
   num_jugglers: 3,
   num_clubs: 10,
+  # diagram_url: ,
   body: "Everyone starts at the same time with a right hand
 throw. Every third throw is a crossing double pass. Orient
 yourselves clockwise in order: juggler A, juggler B, juggler
@@ -1721,6 +1790,7 @@ Pattern.create!(
   title: "Two Count (Singles)",
   num_jugglers: 3,
   num_clubs: 10,
+  # diagram_url: ,
   body: "Ten clubs in two count with singles is a quick, fun,
 rhythm, with lots of clubs flying through the air. All of the
 passes are lofty straight right hand single passes. Orient
@@ -1752,6 +1822,7 @@ Pattern.create!(
   title: "Ultimates",
   num_jugglers: 3,
   num_clubs: 10,
+  # diagram_url: ,
   body: "Everyone throws lofty crossing single passes to the juggler
 on his or her left. Orient yourselves clockwise in order:
 juggler A, juggler B, juggler C.
@@ -1781,6 +1852,7 @@ Pattern.create!(
   title: "Rotating Ten Club Feed",
   num_jugglers: 3,
   num_clubs: 10,
+  # diagram_url: ,
   body: "This rhythm is a ten club feed in singles while rotating
 the feeder as frequently as possible. This is a right handed
 rhythm. Every left hand throw is a self. The descriptions
@@ -1815,6 +1887,7 @@ Pattern.create!(
   title: "C99AA",
   num_jugglers: 3,
   num_clubs: 10,
+  # diagram_url: ,
   body: "C99AA is similar to 96889 except the passes are lofty and
 there is a heff instead of a hold. Orient yourselves clockwise
 in order: juggler A, juggler B, juggler C. As juggler A, start with two clubs in your right hand and
@@ -1839,6 +1912,7 @@ Pattern.create!(
   title: "B9CA8",
   num_jugglers: 3,
   num_clubs: 10,
+  # diagram_url: ,
   body: "B9CA8 is very similar to B9CA3 with a quick single pass
 instead of a zip. Orient yourselves clockwise in order: juggler
 A, juggler B, juggler C.
@@ -1869,6 +1943,7 @@ Pattern.create!(
   title: "Two Count (Doubles)",
   num_jugglers: 3,
   num_clubs: 11,
+  # diagram_url: ,
   body: "Passing eleven clubs in two count with doubles is the
 natural step up from ten clubs in four count. Orient yourselves
 clockwise in order: juggler A, juggler B, juggler C.
@@ -1898,6 +1973,7 @@ Pattern.create!(
   title: "Three Count (Triples)",
   num_jugglers: 3,
   num_clubs: 11,
+  # diagram_url: ,
   body: "Everyone starts at the same time with right hand
 throws. Orient yourselves counter-clockwise in order:
 juggler A, juggler B, juggler C.
@@ -1922,6 +1998,7 @@ Pattern.create!(
   title: "Double Three Count (Doubles)",
   num_jugglers: 3,
   num_clubs: 11,
+  # diagram_url: ,
   body: "Everyone starts at the same time with right hand
 throws. Orient yourselves clockwise in order: juggler A,
 juggler B, juggler C.
@@ -1942,6 +2019,7 @@ Pattern.create!(
   title: "Ultimates",
   num_jugglers: 3,
   num_clubs: 11,
+  # diagram_url: ,
   body: "Everyone throws very lofty straight single passes. Orient
 yourselves counter-clockwise in order: juggler A, juggler
 B, juggler C.
@@ -1965,6 +2043,7 @@ Pattern.create!(
   title: "Six Count Popcorn",
   num_jugglers: 3,
   num_clubs: 11,
+  # diagram_url: ,
   body: "Six count Popcorn with eleven clubs is very similar to the
 seven club variety except all left hand throws are self throws
 and the pass is a triple pass. The sequence of throws indicated
@@ -1990,6 +2069,7 @@ Pattern.create!(
   title: "Five Count Popcorn",
   num_jugglers: 3,
   num_clubs: 11,
+  # diagram_url: ,
   body: "Five count Popcorn with eleven clubs will feel very similar
 to five count Popcorn with seven clubs except the passes
 are double passes. Orient yourselves clockwise in order: juggler
@@ -2020,6 +2100,7 @@ Pattern.create!(
   title: "Four Count Popcorn",
   num_jugglers: 3,
   num_clubs: 11,
+  # diagram_url: ,
   body: "Eleven club four count Popcorn is similar to seven club
 four count Popcorn except the pass is a very lofty single. Orient
 yourselves counter-clockwise in order: juggler A, juggler
@@ -2051,6 +2132,7 @@ Pattern.create!(
   title: "Two Count (Doubles)",
   num_jugglers: 3,
   num_clubs: 12,
+  # diagram_url: ,
   body: "Twelve club two count in doubles is identical to eight club
 two count in doubles. With three people, pass to a different
 person than passes to you. Everyone does the same thing
@@ -2070,6 +2152,7 @@ Pattern.create!(
   title: "Two Count (Triples)",
   num_jugglers: 3,
   num_clubs: 12,
+  # diagram_url: ,
   body: "Twelve clubs in two count with triples is identical to
 eight clubs in two count with triples. With three people,
 pass to a different person than passes to you. Everyone
@@ -2086,6 +2169,7 @@ Pattern.create!(
   title: "Singles",
   num_jugglers: 3,
   num_clubs: 12,
+  # diagram_url: ,
   body: "Twelve club singles is identical to eight clubs in singles.
 With three people, pass to a different person than passes to
 you. Everyone does the same thing at the same time. Orient
@@ -2104,6 +2188,7 @@ Pattern.create!(
   title: "Ultimates",
   num_jugglers: 3,
   num_clubs: 12,
+  # diagram_url: ,
   body: "Everyone does the same thing at the same time. Orient
 yourselves clockwise in order: juggler A, juggler B, juggler
 C.
@@ -2117,6 +2202,7 @@ Pattern.create!(
   title: "Triple Four Count",
   num_jugglers: 3,
   num_clubs: 12,
+  # diagram_url: ,
   body: "Triple four count uses double passes and single selves in
 a pass, pass, pass, self sequence. Orient yourselves counterclockwise
 in order: juggler A, juggler B, juggler C.
@@ -2144,6 +2230,7 @@ Pattern.create!(
   title: "Ultimates",
   num_jugglers: 3,
   num_clubs: 13,
+  # diagram_url: ,
   body: "Orient yourselves counter-clockwise in order: juggler A,
 juggler B, juggler C.
 As juggler A, start with three clubs in your right hand
@@ -2166,6 +2253,7 @@ Pattern.create!(
   title: "Double-Single",
   num_jugglers: 3,
   num_clubs: 13,
+  # diagram_url: ,
   body: "Passing thirteen clubs in double-singles requires simultaneous
 throws from your right and left hands. You may notice that the causal diagram indicates heavily galloped
 but non-simultaneous throws. I describe the rhythm using simultaneous
@@ -2200,6 +2288,7 @@ his or her second pair of throws."
 #   title: "",
 #   num_jugglers: 3,
 #   num_clubs: 13,
+  # diagram_url: ,
 #   body: ""
 # )
 

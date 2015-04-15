@@ -25,6 +25,6 @@ class Api::PatternsController < ApplicationController
   private
 
   def pattern_params
-    params.require(:pattern).permit(:title, :body)
+    params.require(:pattern).permit(:title, :body, :diagram_url)
   end
 end

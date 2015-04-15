@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150414163501) do
+ActiveRecord::Schema.define(version: 20150415035257) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20150414163501) do
     t.datetime "updated_at",               null: false
     t.integer  "num_jugglers", default: 1, null: false
     t.integer  "num_clubs",    default: 0
+    t.string   "diagram_url"
   end
 
   add_index "patterns", ["num_jugglers"], name: "index_patterns_on_num_jugglers", using: :btree

@@ -72,6 +72,10 @@
     }
 
     .dropdown {
+      .name:hover {
+        cursor: default;
+      }
+
       &:hover {
         > a {
           background-color: inherit;

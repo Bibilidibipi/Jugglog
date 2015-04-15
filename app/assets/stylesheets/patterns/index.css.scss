@@ -72,4 +72,12 @@
       transform: translateX(-30px);
     }
   }
+
+  .pattern-show {
+    color: #dd3813;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

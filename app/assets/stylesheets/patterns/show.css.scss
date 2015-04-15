@@ -107,6 +107,16 @@
     }
   }
 
+  .diagram {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    img {
+      margin-top: 15px;
+    }
+  }
+
   .body {
     display: block;
     clear: both;

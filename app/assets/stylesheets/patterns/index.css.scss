@@ -61,10 +61,6 @@
         transform: scale(1.1) translateY(10px);
         transition-duration: .2s;
       }
-
-      &:nth-child(4n+1) {
-        clear: left;
-      }
     }
 
     &:before {

@@ -21,11 +21,7 @@
   .title {
     text-align: center;
     font-size: 36px;
-  }
-
-  .body {
-    display: block;
-    clear: both;
+    margin-bottom: 15px;
   }
 
   .heading {
@@ -34,26 +30,86 @@
   }
 
   .show-parents {
-    width: 50%;
+    width: 48%;
     padding: 15px;
     display: block;
     float: left;
+    text-align: center;
+    background: #eeeeee;
+    border-radius: 10px;
+
+    .parents {
+      padding: 0;
+    }
 
     li {
       display: inline-block;
-      width: 33%;
+      margin: 5px 10px;
+      width: 60px;
+      vertical-align: top;
+      transform: translateY(5px);
+
+      .icon {
+        width: 55px;
+        height: 55px;
+        border-radius: 100px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1) translateY(5px);
+        transition-duration: .2s;
+      }
     }
   }
 
   .show-children {
-    width: 50%;
+    width: 48%;
     padding: 15px;
     display: block;
     float: right;
+    text-align: center;
+    background: #eeeeee;
+    border-radius: 10px;
+
+    .children {
+      padding: 0;
+    }
 
     li {
       display: inline-block;
-      width: 33%;
+      margin: 5px 10px;
+      width: 60px;
+      vertical-align: top;
+      transform: translateY(5px);
+
+      .icon {
+        width: 55px;
+        height: 55px;
+        border-radius: 100px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1) translateY(5px);
+        transition-duration: .2s;
+      }
     }
+  }
+
+  .body {
+    display: block;
+    clear: both;
+    padding-top: 15px;
   }
 }

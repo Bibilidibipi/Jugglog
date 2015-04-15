@@ -65,14 +65,10 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   },
 
   listFollowees: function (event) {
-    this.removeSubviews('.users');
-    Jugglog.currentUser.followees().each(this.addUserIndexItem.bind(this));
-    Backbone.history.navigate('followees');
+    Backbone.history.navigate('followees', { trigger: true });
   },
 
   listFollowers: function (event) {
-    this.removeSubviews('.users');
-    Jugglog.currentUser.followers().each(this.addUserIndexItem.bind(this));
-    Backbone.history.navigate('followers');
+    Backbone.history.navigate('followers', { trigger: true });
   }
 });

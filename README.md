@@ -77,14 +77,14 @@ view a history of the days they've practiced.
 [Details][phase-five]
 
 ### Bonus Features (TBD)
+- [x] Typeahead search bar
+- [x] Submission of alternate names for patterns (No - pattern names should be common)
 - [ ] User avatars
 - [ ] User bio
 - [ ] 'Streak' indicator (consecutive days of logged practice)
 - [ ] User rank based on logged practice among those they follow
 - [ ] Infinite scroll for other users index
-- [x] Typeahead search bar
 - [ ] Search for patterns by name
-- [ ] Submission of alternate names for patterns
 - [ ] Users can view patterns they're learning
 - [ ] Users can view suggested patterns
 - [ ] Users can view the pattern tree of users they follow

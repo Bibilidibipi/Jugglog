@@ -6,7 +6,8 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     'pattern/:id': 'patternShow',
     'users': 'usersIndex',
     'users/:id': 'userShow',
-    'profile': 'profile'
+    'followees': 'followees',
+    'followers': 'followers',
   },
 
   initialize: function (options) {
@@ -38,6 +39,16 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     this._swapView(view);
   },
 
+  followees: function () {
+    var view = new Jugglog.Views.UsersIndex({ collection: Jugglog.currentUser.followees() });
+    this._swapView(view);
+  },
+
+  followers: function () {
+    var view = new Jugglog.Views.UsersIndex({ collection: Jugglog.currentUser.followers() });
+    this._swapView(view);
+  },
+
   userShow: function (id) {
     var user = this.users.getOrFetch(id);
     var view = new Jugglog.Views.UserShow({ model: user });
@@ -48,12 +59,8 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     Backbone.history.navigate('patterns/1', { trigger: true });
   },
 
-  profile: function () {
-    Jugglog.currentUser;
-  },
 
   activity: function () {
     Backbone.history.navigate('users', { trigger: true });
-  },
-
+  }
 });

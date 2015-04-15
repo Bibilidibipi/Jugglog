@@ -16,6 +16,8 @@
 - [x] (see-through nav-bar a good idea?) Yes!
 - [x] links to followers and followees on users index page
 - [x] add diagrams to patterns
+- [x] timestamps on comments (moment.js)
+- [x] comment gravatars should link to user show page
 - [ ] disable switch-follow button while switching (add css spinner?)
 - [ ] add carat to username dropdown
 - [ ] recommended patterns (top sidebar)
@@ -41,8 +43,6 @@
 - [ ] sharpen pattern diagrams
 
 - [ ] add embedded video
-- [ ] timestamps on comments (moment.js)
-- [ ] comment gravatars should link to user show page
 - [ ] user show page should have practice and learning info
 - [ ] pre-cascade patterns???
 

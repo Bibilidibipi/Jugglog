@@ -14,9 +14,10 @@
 - [x] add pictures to patterns
 - [x] clearer delineation between numJuggler buttons and patterns (maybe add border, too?)
 - [x] (see-through nav-bar a good idea?) Yes!
+- [x] links to followers and followees on users index page
+- [x] add diagrams to patterns
 - [ ] disable switch-follow button while switching (add css spinner?)
 - [ ] add carat to username dropdown
-- [ ] links to followers and followees on users index page (and link back)
 - [ ] recommended patterns (top sidebar)
 - [ ] leaderboard (bottom sidebar)
 - [ ] add animated loading icon
@@ -25,7 +26,6 @@
 - [ ] write profile and activity route functions
 - [ ] take and add background photos, find welcome page picture and icon pictures
 - [ ] add logo
-- [ ] add diagrams to patterns
 - [ ] user edit profile pic ability
 - [ ] interesting seed profile pics
 - [ ] add welcome message/mini tutorial on guest login
@@ -38,6 +38,13 @@
 - [ ] fix url on sign-in redirect
 - [ ] make comments form expandable; activate 'cancel' button
 - [ ] comment avatars should link to user show
+- [ ] sharpen pattern diagrams
+
+- [ ] add embedded video
+- [ ] timestamps on comments (moment.js)
+- [ ] comment gravatars should link to user show page
+- [ ] user show page should have practice and learning info
+- [ ] pre-cascade patterns???
 
 In the patterns index:
 - [x] abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize

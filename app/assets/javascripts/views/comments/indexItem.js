@@ -4,7 +4,9 @@ Jugglog.Views.CommentIndexItem = Backbone.View.extend({
   className: 'comment-list-item',
 
   events: {
-    'click .delete': 'destroyComment'
+    'click .delete': 'destroyComment',
+    'click .author-avatar': 'authorShow',
+    'click .author': 'authorShow'
   },
 
   initialize: function () {
@@ -20,5 +22,9 @@ Jugglog.Views.CommentIndexItem = Backbone.View.extend({
 
   destroyComment: function (event) {
     this.model.destroy();
+  },
+
+  authorShow: function (event) {
+    Backbone.history.navigate('users/' + this.model.get('author_id'), { trigger: true });
   }
 });

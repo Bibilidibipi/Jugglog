@@ -1,8 +1,61 @@
 #main {
-  .search {
-  }
+  .top {
+    display: block;
+    width: 100%;
+    text-align: justify;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+
+    .search {
+    }
+
+    .see-followees {
+      display: inline-block;
+      padding: 6px 12px;
+      line-height: 20px;
+      border: 1px solid rgba(0, 0, 0, 0);
+      margin-bottom: 15px;
+      border-radius: 100px;
+      background: rgb(126, 181, 48);
+      color: white;
+
+      &:hover {
+        background: #8ee000;
+        color: white;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .see-followers {
+      display: inline-block;
+      padding: 6px 12px;
+      line-height: 20px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-radius: 100px;
+      background: rgb(32, 166, 231);
+      color: white;
+
+      &:hover {
+        background: rgb(26, 133, 185);
+        color: white;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+}
 
   .users {
     text-align: left;
+    padding: 0;
   }
 }

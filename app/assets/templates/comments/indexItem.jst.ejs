@@ -1,5 +1,9 @@
-<img class="author-avatar" src="<%= comment.author().escape('gravatar_url') %>" alt="" />
+<img class="author-avatar" src="<%= comment.author().escape('gravatar_url') + '?d=wavatar' %>" alt="" />
 <div class="comment-body"><%= comment.escape('body') %></div>
+<div class="time-and-author">
+  posted <%= moment(comment.escape('created_at')).fromNow() %>
+  by <div class="author"><%= comment.author().escape('username') %></div>
+</div>
 <% if(parseInt(comment.escape('author_id')) === Jugglog.currentUser.id) {%>
   <button class="delete" type="button">delete</button>
 <% } %>

@@ -3,7 +3,11 @@ Jugglog.Views.UserIndexItem = Backbone.View.extend({
   template: JST['users/indexItem'],
 
   events: {
-    'click .username': 'showUser'
+    'click': 'showUser'
+  },
+
+  initialize: function () {
+    this.listenTo(this.model, 'sync', this.render);
   },
 
   render: function () {

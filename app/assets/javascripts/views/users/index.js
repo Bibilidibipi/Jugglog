@@ -2,7 +2,9 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   template: JST['users/index'],
 
   events: {
-    'input .search': 'handleSearchInput'
+    'input .search': 'handleSearchInput',
+    'click .see-followees': 'listFollowees',
+    'click .see-followers': 'listFollowers'
   },
 
   initialize: function (options) {
@@ -21,6 +23,7 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   },
 
   addUserIndexItem: function (user) {
+    user.fetch();
     var view = new Jugglog.Views.UserIndexItem({ model: user });
     this.addSubview('.users', view);
   },
@@ -59,5 +62,17 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
         }
       });
     }
+  },
+
+  listFollowees: function (event) {
+    this.removeSubviews('.users');
+    Jugglog.currentUser.followees().each(this.addUserIndexItem.bind(this));
+    Backbone.history.navigate('followees');
+  },
+
+  listFollowers: function (event) {
+    this.removeSubviews('.users');
+    Jugglog.currentUser.followers().each(this.addUserIndexItem.bind(this));
+    Backbone.history.navigate('followers');
   }
 });

@@ -1,19 +1,27 @@
 #main {
   .add-comment {
+    background: #eeeeee;
+
+    padding: 20px 30px;
+    margin: 20px -30px;
+    overflow: auto;
+
     .comment-text {
-      display: block;
-      margin: 15px 0;
+      display: inline-block;
+      float: left;
+      transform: translateY(3px);
     }
 
     .post-comment {
       display: inline-block;
+      float: left;
       padding: 6px 12px;
+      margin-left: 10px;
       line-height: 20px;
       border: 1px solid rgba(0, 0, 0, 0);
       border-radius: 100px;
       color: white;
       background: rgb(126, 181, 48);
-      margin-bottom: 18px;
 
       &:hover {
         color: white;
@@ -26,7 +34,10 @@
     }
 
     .cancel-comment {
-      display: inline-block;
+      // display: inline-block;
+
+      display: none;
+
       padding: 6px 12px;
       line-height: 20px;
       border: 1px solid rgba(0, 0, 0, 0);
@@ -49,7 +60,7 @@
 
   .comments {
     padding: 0;
-    
+
     .comment-list-item {
       display: block;
       clear: left;
@@ -63,6 +74,11 @@
       .author-avatar {
         display: inline-block;
         float: left;
+        width: 50px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
 
       .comment-body {
@@ -71,6 +87,31 @@
         margin-left: 15px;
         max-width: 350px;
         word-wrap: break-word;
+        margin-bottom: 15px;
+
+        &:hover {
+          cursor: default;
+        }
+      }
+
+      .time-and-author {
+        color: rgb(205, 205, 205);
+        float: left;
+        clear: both;
+        transform: translate(65px, -15px);
+
+        &:hover {
+          cursor: default;
+        }
+
+        .author {
+          display: inline-block;
+          color: rgb(295, 75, 25);
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
 
       .delete {
@@ -84,7 +125,7 @@
         background: #b6b6b6;
         margin-left: 8px;
         position: absolute;
-        bottom: 0;
+        bottom: 15px;
         right: 0;
 
         &:hover {

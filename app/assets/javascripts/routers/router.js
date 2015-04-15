@@ -33,6 +33,7 @@ Jugglog.Routers.Router = Backbone.Router.extend({
   },
 
   usersIndex: function () {
+    this.users.fetch();
     var view = new Jugglog.Views.UsersIndex({ collection: this.users });
     this._swapView(view);
   },

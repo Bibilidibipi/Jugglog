@@ -18,8 +18,8 @@ Backbone. Its design is inspired by Duolingo. Users can:
 - [x] View prerequisite tree of juggling patterns
 - [x] View individual juggling patterns and associated comments
 - [x] Comment on juggling patterns
-- [ ] Log practice of juggling patterns
-- [ ] Log learning of juggling patterns
+- [x] Log practice of juggling patterns
+- [x] Log learning of juggling patterns
 - [ ] View history of their logged practice
 
 ## Design Docs
@@ -79,7 +79,8 @@ view a history of the days they've practiced.
 ### Bonus Features (TBD)
 - [x] Typeahead search bar
 - [x] Submission of alternate names for patterns (No - pattern names should be common)
-- [ ] User avatars
+- [x] User avatars
+- [x] Users can view the learned and practiced patterns of users they follow
 - [ ] User bio
 - [ ] 'Streak' indicator (consecutive days of logged practice)
 - [ ] User rank based on logged practice among those they follow
@@ -87,7 +88,6 @@ view a history of the days they've practiced.
 - [ ] Search for patterns by name
 - [ ] Users can view patterns they're learning
 - [ ] Users can view suggested patterns
-- [ ] Users can view the pattern tree of users they follow
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md

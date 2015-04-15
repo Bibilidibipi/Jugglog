@@ -19,34 +19,35 @@
 - [x] timestamps on comments (moment.js)
 - [x] comment gravatars should link to user show page
 - [x] interesting seed profile pics
-- [ ] disable switch-follow button while switching (add css spinner?)
-- [ ] add carat to username dropdown
+- [x] user show page should have practice and learning info
+- [x] in patterns index, abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize
+- [x] in patterns index, fetch from database for each pattern tree rather than filtering this.collection
+- [ ] disable log-practice button after one use for the day
 - [ ] recommended patterns (top sidebar)
 - [ ] leaderboard (bottom sidebar)
-- [ ] add animated loading icon
 - [ ] paginate users index (limit number of shown users for index and search)
-- [ ] randomize users shown on null search
-- [ ] write profile and activity route functions
-- [ ] take and add background photos, find welcome page picture and icon pictures
-- [ ] add logo
-- [ ] user edit profile pic ability
-- [ ] add welcome message/mini tutorial on guest login
-- [ ] streak should link to... ?
-- [ ] better color scheme - less blue :)
-- [ ] user show page shows activity?
-- [ ] refactor and fix login/signup page css for error messages
-- [ ] popcorn in info pages (also, info pages!)
-- [ ] clean up pattern show texts
-- [ ] fix url on sign-in redirect
-- [ ] make comments form expandable; activate 'cancel' button
-- [ ] sharpen pattern diagrams
 - [ ] css spinners everywhere!
+- [ ] order and limit patterns on user show page
+- [ ] fix assignment of tiers in patterns index
+- [ ] add welcome message/mini tutorial on guest login
 
 - [ ] add embedded video
-- [ ] user show page should have practice and learning info
-- [ ] pre-cascade patterns???
+- [ ] user edit profile pic ability
+- [ ] refactor and fix login/signup page css for error messages
+- [ ] fix url on sign-in redirect
+- [ ] user show page shows activity?
+- [ ] disable switch-follow button while switching (add css spinner?)
+- [ ] popup (modal) confirmation on un-learning pattern
 
-In the patterns index:
-- [x] abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize
-- [x] fetch from database for each pattern tree rather than filtering this.collection
-- [ ] fix assignment of tiers
+- [ ] make comments form expandable; activate 'cancel' button
+- [ ] add carat to username dropdown
+- [ ] randomize users shown on null search
+- [ ] write activity route function
+- [ ] take and add background photos, find welcome page picture and icon pictures
+- [ ] add logo
+- [ ] streak should link to... ?
+- [ ] better color scheme - less blue :)
+- [ ] popcorn in info pages (also, info pages!)
+- [ ] clean up pattern show texts
+- [ ] sharpen pattern diagrams
+- [ ] pre-cascade patterns???

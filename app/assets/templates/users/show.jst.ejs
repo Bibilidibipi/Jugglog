@@ -1,7 +1,9 @@
 <div class="user-show">
   <button class="all-users" type="button">All Users</button>
-  <% var following_text = Jugglog.currentUser.isFollowing(user) ? "Unfollow" : "Follow" %>
-  <button class="switch-follow"><%= following_text %></button>
+  <% if(user.id !== Jugglog.currentUser.id) { %>
+    <% var following_text = Jugglog.currentUser.isFollowing(user) ? "Unfollow" : "Follow" %>
+    <button class="switch-follow"><%= following_text %></button>
+  <% } %>
   <div class="avatar"><img src="<%= user.escape('gravatar_url') + '?d=wavatar' %>" alt="" /></div>
   <div class="name"><%= user.escape('username') %></div>
 </div>

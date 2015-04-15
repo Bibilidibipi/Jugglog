@@ -4,7 +4,8 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
   events: {
     'click .pattern-tree': 'treeShow',
     'click .post-comment': 'postComment',
-    'click .switch-learned': 'switchLearned'
+    'click .switch-learned': 'switchLearned',
+    'click .log-practice': 'findLearningAndLogPractice'
   },
 
   initialize: function () {
@@ -97,6 +98,30 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
     learning.save({ status: 'learned' }, { success: function () {
       Jugglog.currentUser.learnedPatterns().add(this.model);
       this.render();
+    }.bind(this)});
+  },
+
+  findLearningAndLogPractice: function (event) {
+    var learning = Jugglog.currentUser.learnings().findWhere({
+      pattern_id: this.model.id, user_id: Jugglog.currentUser.id
+    })
+    if(learning) {
+      this.logPractice(learning);
+    } else {
+      learning = new Jugglog.Models.Learning({
+        user_id: Jugglog.currentUser.id, pattern_id: this.model.id
+      });
+      learning.save({ status: 'unlearned' }, { success: function () {
+        this.logPractice(learning);
+      }.bind(this)})
+    }
+  },
+
+  logPractice: function (learning) {
+    var practice = new Jugglog.Models.Practice({ learning_id: learning.id });
+    practice.save({}, { success: function () {
+      Jugglog.currentUser.practices().add(practice);
+      Jugglog.currentUser.practicedPatterns().add(this.model);
     }.bind(this)});
   }
 });

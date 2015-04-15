@@ -11,8 +11,9 @@
 - [x] hover-hand on usernames in users index
 - [x] remove focus styling from login and signup buttons
 - [x] delineate pattern tiers
-- [ ] add pictures to patterns
-- [ ] clearer delineation between numJuggler buttons and patterns (maybe add border, too?)
+- [x] add pictures to patterns
+- [x] clearer delineation between numJuggler buttons and patterns (maybe add border, too?)
+- [x] (see-through nav-bar a good idea?) Yes!
 - [ ] disable switch-follow button while switching (add css spinner?)
 - [ ] add carat to username dropdown
 - [ ] links to followers and followees on users index page (and link back)
@@ -22,14 +23,13 @@
 - [ ] paginate users index (limit number of shown users for index and search)
 - [ ] randomize users shown on null search
 - [ ] write profile and activity route functions
-- [ ] take and add background photos, find welcome page picture
+- [ ] take and add background photos, find welcome page picture and icon pictures
 - [ ] add logo
 - [ ] add diagrams to patterns
 - [ ] user edit profile pic ability
 - [ ] interesting seed profile pics
 - [ ] add welcome message/mini tutorial on guest login
 - [ ] streak should link to... ?
-- [ ] see-through nav-bar a good idea?
 - [ ] better color scheme - less blue :)
 - [ ] user show page shows activity?
 - [ ] refactor and fix login/signup page css for error messages

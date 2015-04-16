@@ -1,4 +1,4 @@
-Jugglog.Routers.Router = Backbone.Router.extend({
+Jugglog.Routers.MainRouter = Backbone.Router.extend({
   routes: {
     '': 'redirect',
     'activity': 'activity',
@@ -59,8 +59,8 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     Backbone.history.navigate('patterns/1', { trigger: true });
   },
 
-
   activity: function () {
-    Backbone.history.navigate('users', { trigger: true });
+    var view = new Jugglog.Views.UserActivity({ model: Jugglog.currentUser });
+    this._swapView(view);
   }
 });

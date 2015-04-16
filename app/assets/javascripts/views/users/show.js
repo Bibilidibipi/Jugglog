@@ -9,8 +9,12 @@ Jugglog.Views.UserShow = Backbone.CompositeView.extend({
 
   initialize: function () {
     $('.active').removeClass('active');
-    $('.friends').addClass('active');
-    
+    if(this.model.id == Jugglog.currentUser.id) {
+      $('.profile').addClass('active');
+    } else {
+      $('.friends').addClass('active');
+    }
+
     this.model.comments().each(this.addCommentIndexItem.bind(this));
     this.model.learnedPatterns().each(this.addLearnedPatternIndexItem.bind(this));
     this.model.practicedPatterns().each(this.addPracticedPatternIndexItem.bind(this));

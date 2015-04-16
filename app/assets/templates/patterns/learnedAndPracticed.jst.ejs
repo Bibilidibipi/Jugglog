@@ -1,0 +1,13 @@
+<% if(Jugglog.currentUser.id === user.id) { %>
+  <% var name = 'Your' %>
+<% } else { %>
+  <% var name = user.escape('username') + "'s" %>
+<% } %>
+<div class="learned">
+  <p class="heading"><%= name %> learned patterns</p>
+  <ul class="learned-patterns"></ul>
+</div>
+<div class="practiced">
+  <p class="heading">Recently practiced</p>
+  <ul class="practiced-patterns"></ul>
+</div>

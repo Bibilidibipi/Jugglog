@@ -16,13 +16,11 @@ Jugglog.Views.UserShow = Backbone.CompositeView.extend({
     }
 
     this.model.comments().each(this.addCommentIndexItem.bind(this));
-    this.model.practicedPatterns().each(this.addPracticedPatternIndexItem.bind(this));
 
     this.listenTo(this.model, 'sync', this.render);
     this.listenTo(Jugglog.currentUser.followees(), 'add remove', this.render);
     this.listenTo(this.model.comments(), 'add', this.addCommentIndexItem);
     this.listenTo(this.model.comments(), 'destroy', this.removeCommentIndexItem);
-    this.listenTo(this.model.practicedPatterns(), 'add', this.addPracticedPatternIndexItem);
   },
 
   render: function () {

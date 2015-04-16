@@ -67,7 +67,7 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     var user = this.users.getOrFetch(id);
 
     var mainView = new Jugglog.Views.UserShow({ model: user });
-    var sidebarTopView = new Jugglog.Views.LearnedPatterns({ model: user });
+    var sidebarTopView = new Jugglog.Views.LearnedAndPracticedPatterns({ model: user });
 
     this._swapMainView(mainView);
     this._swapSidebarTopView(sidebarTopView);

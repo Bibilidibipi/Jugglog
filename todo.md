@@ -30,6 +30,7 @@
 - [ ] order and limit patterns on user show page
 - [ ] fix assignment of tiers in patterns index
 - [ ] add welcome message/mini tutorial on guest login
+- [ ] make wavatars optional
 
 - [ ] add embedded video
 - [ ] user edit profile pic ability

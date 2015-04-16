@@ -1,13 +1,13 @@
 Jugglog.Routers.MainRouter = Backbone.Router.extend({
   routes: {
-    '': 'redirect',
-    'activity': 'activity',
-    'patterns/:numJugglers': 'patternsIndex',
-    'pattern/:id': 'patternShow',
-    'users': 'usersIndex',
-    'users/:id': 'userShow',
-    'followees': 'followees',
-    'followers': 'followers',
+    // '': 'redirect',
+    // 'activity': 'activity',
+    // 'patterns/:numJugglers': 'patternsIndex',
+    // 'pattern/:id': 'patternShow',
+    // 'users': 'usersIndex',
+    // 'users/:id': 'userShow',
+    // 'followees': 'followees',
+    // 'followers': 'followers'
   },
 
   initialize: function (options) {

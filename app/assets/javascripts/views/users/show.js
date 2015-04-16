@@ -16,14 +16,12 @@ Jugglog.Views.UserShow = Backbone.CompositeView.extend({
     }
 
     this.model.comments().each(this.addCommentIndexItem.bind(this));
-    this.model.learnedPatterns().each(this.addLearnedPatternIndexItem.bind(this));
     this.model.practicedPatterns().each(this.addPracticedPatternIndexItem.bind(this));
 
     this.listenTo(this.model, 'sync', this.render);
     this.listenTo(Jugglog.currentUser.followees(), 'add remove', this.render);
     this.listenTo(this.model.comments(), 'add', this.addCommentIndexItem);
     this.listenTo(this.model.comments(), 'destroy', this.removeCommentIndexItem);
-    this.listenTo(this.model.learnedPatterns(), 'add', this.addLearnedPatternIndexItem);
     this.listenTo(this.model.practicedPatterns(), 'add', this.addPracticedPatternIndexItem);
   },
 
@@ -45,11 +43,6 @@ Jugglog.Views.UserShow = Backbone.CompositeView.extend({
         this.removeSubview('.comments', subview);
       }
     }.bind(this));
-  },
-
-  addLearnedPatternIndexItem: function (pattern) {
-    var indexItemView = new Jugglog.Views.PatternIndexItem({ model: pattern });
-    this.addSubview('.learned-patterns', indexItemView);
   },
 
   addPracticedPatternIndexItem: function (pattern) {

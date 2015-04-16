@@ -15,18 +15,25 @@ window.Jugglog = {
       users.fetch();
       Jugglog.currentUser = new Jugglog.Models.CurrentUser({ id: currentUserId });
       Jugglog.currentUser.fetch();
-      new Jugglog.Routers.MainRouter({
-        $rootEl: $main,
-        users: users,
-        patterns: patterns
-      });
-      new Jugglog.Routers.SidebarTopRouter({
-        $rootEl: $sidebarTop,
-        users: users,
-        patterns: patterns
-      });
-      new Jugglog.Routers.SidebarBottomRouter({
-        $rootEl: $sidebarBottom,
+      // new Jugglog.Routers.MainRouter({
+      //   $rootEl: $main,
+      //   users: users,
+      //   patterns: patterns
+      // });
+      // new Jugglog.Routers.SidebarTopRouter({
+      //   $rootEl: $sidebarTop,
+      //   users: users,
+      //   patterns: patterns
+      // });
+      // new Jugglog.Routers.SidebarBottomRouter({
+      //   $rootEl: $sidebarBottom,
+      //   users: users,
+      //   patterns: patterns
+      // });
+      new Jugglog.Routers.Router({
+        $main: $main,
+        $sidebarTop: $sidebarTop,
+        $sidebarBottom: $sidebarBottom,
         users: users,
         patterns: patterns
       });

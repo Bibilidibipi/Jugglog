@@ -37,9 +37,9 @@ class User < ActiveRecord::Base
     self.session_token
   end
 
-  def gravatar_url
+  def wavatar_url
     gravatar_id = Digest::MD5::hexdigest(email.downcase)
-    "https://secure.gravatar.com/avatar/#{gravatar_id}"
+    "https://secure.gravatar.com/avatar/#{gravatar_id}" + "?d=wavatar"
   end
 
   def learned_learnings
@@ -58,7 +58,7 @@ class User < ActiveRecord::Base
 
   def practiced_patterns
     return [] if self.practiced_learnings.empty?
-    where_string = self.practiced_learnings.map(&:pattern_id).join(", ") 
+    where_string = self.practiced_learnings.map(&:pattern_id).join(", ")
     Pattern.where("id IN (" + where_string + ")")
   end
 

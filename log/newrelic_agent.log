@@ -1647,3 +1647,47 @@ LINE 1: ...T "patterns".* FROM "patterns" WHERE ('id IN (' + *(self.lea...
 /Users/appacademy/Desktop/Jugglog/app/models/user.rb:51: syntax error, unexpected '+', expecting :: or '[' or '.'
 ...d_learnings.map(&:pattern_id) + ")" 
 ...                               ^
+[04/15/15 18:01:44 -0700 Apps-Mac-mini-90.local (76314)] INFO : Starting Agent shutdown
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Starting the New Relic agent in "development" environment.
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] WARN : No configuration file found. Working directory = /Users/appacademy/Desktop/Jugglog
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] WARN : Looked in these locations (based on defaults): /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Environment: development
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Dispatcher: webrick
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Application: development
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Installing ActiveJob instrumentation
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Installing ActiveRecord 4 instrumentation
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Installing Net instrumentation
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Installing deferred Rack instrumentation
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Installing Rack::Builder middleware instrumentation
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Installing Rails 3+ middleware instrumentation
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Installing Rails 4 Controller instrumentation
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Installing Rails 4 view instrumentation
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Installing Rails 4 Error instrumentation
+[04/16/15 09:03:02 -0700 Apps-Mac-mini-90.local (79773)] INFO : Finished instrumentation
+[04/16/15 09:03:03 -0700 Apps-Mac-mini-90.local (79773)] INFO : Doing deferred dependency-detection before Rack startup
+[04/16/15 09:13:16 -0700 Apps-Mac-mini-90.local (79773)] ERROR : Invalid license key, please contact support@newrelic.com
+[04/16/15 09:13:16 -0700 Apps-Mac-mini-90.local (79773)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[04/16/15 09:14:24 -0700 Apps-Mac-mini-90.local (79773)] INFO : Starting Agent shutdown
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Starting the New Relic agent in "development" environment.
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] WARN : No configuration file found. Working directory = /Users/appacademy/Desktop/Jugglog
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] WARN : Looked in these locations (based on defaults): /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/Desktop/Jugglog/config/newrelic.yml, /Users/appacademy/Desktop/Jugglog/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Environment: development
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Dispatcher: webrick
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Application: development
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Installing ActiveJob instrumentation
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Installing ActiveRecord 4 instrumentation
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Installing Net instrumentation
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Installing deferred Rack instrumentation
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Installing Rack::Builder middleware instrumentation
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Installing Rails 3+ middleware instrumentation
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Installing Rails 4 Controller instrumentation
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Installing Rails 4 view instrumentation
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Installing Rails 4 Error instrumentation
+[04/16/15 09:14:37 -0700 Apps-Mac-mini-90.local (79914)] INFO : Finished instrumentation
+[04/16/15 09:14:38 -0700 Apps-Mac-mini-90.local (79914)] INFO : Doing deferred dependency-detection before Rack startup
+[04/16/15 09:14:41 -0700 Apps-Mac-mini-90.local (79914)] ERROR : Invalid license key, please contact support@newrelic.com
+[04/16/15 09:14:41 -0700 Apps-Mac-mini-90.local (79914)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

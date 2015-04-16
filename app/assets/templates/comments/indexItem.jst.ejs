@@ -1,4 +1,4 @@
-<img class="author-avatar" src="<%= comment.author().escape('gravatar_url') + '?d=wavatar' %>" alt="" />
+<img class="author-avatar" src="<%= comment.author().escape('wavatar_url') %>" alt="" />
 <div class="comment-body"><%= comment.escape('body') %></div>
 <div class="time-and-author">
   posted <%= moment(comment.escape('created_at')).fromNow() %>

@@ -4,7 +4,9 @@ window.Jugglog = {
   Views: {},
   Routers: {},
   initialize: function() {
-    var $rootEl = $('div#all');
+    var $main = $('div#main');
+    var $sidebarTop = $('div#sidebar-top');
+    var $sidebarBottom = $('div#sidebar-bottom');
     if(currentUserId !== -1) {
       $('body').css('background-image', "url('assets/main_page_background.png')");
       var patterns = new Jugglog.Collections.Patterns();

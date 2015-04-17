@@ -24,15 +24,16 @@
 - [x] in patterns index, fetch from database for each pattern tree rather than filtering this.collection
 - [x] disable log-practice button after one use for the day
 - [x] css spinners everywhere!
+- [x] order and limit patterns on sidebar
 - [ ] recommended patterns (top sidebar)
 - [ ] leaderboard (bottom sidebar)
-- [ ] order and limit patterns on sidebar
 - [ ] fix assignment of tiers in patterns index
 - [ ] add welcome message/mini tutorial on guest login
 - [ ] paginate users index (limit number of shown users for index and search)
 - [ ] write activity route function
 - [ ] take and add background photos, find welcome page picture and icon pictures
 - [ ] streak should link to... ?
+- [ ] don't re-render entire user show view on follow/unfollow
 
 - [ ] fix url on sign-in redirect
 - [ ] refactor and fix login/signup page css for error messages
@@ -41,6 +42,7 @@
 - [ ] make wavatars optional
 - [ ] disable switch-follow button while switching (add css spinner?)
 - [ ] popup (modal) confirmation on un-learning pattern
+- [ ] fix 7th pattern in sidebar showing up on logging practice
 
 - [ ] make comments form expandable; activate 'cancel' button
 - [ ] add carat to username dropdown

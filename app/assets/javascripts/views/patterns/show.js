@@ -75,7 +75,7 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
   },
 
   switchLearned: function (event) {
-    if(this.model.learned()) {
+    if(this.model.get('learned') === true) {
       this.unlearn(this.model);
     } else {
       this.learn(this.model);
@@ -85,7 +85,9 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
   unlearn: function (pattern) {
     var learning = Jugglog.currentUser.learnings().findWhere({ pattern_id: pattern.id, user_id: Jugglog.currentUser.id });
     learning.save({ status: 'unlearned' }, { success: function () {
-      Jugglog.currentUser.learnedPatterns().remove(this.model);
+      Jugglog.currentUser.fetch({ success: function () {
+        Jugglog.router.patternShow(this.model.id);
+      }.bind(this)});
       this.render();
     }.bind(this)})
   },
@@ -99,7 +101,9 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
       });
 
     learning.save({ status: 'learned' }, { success: function () {
-      Jugglog.currentUser.learnedPatterns().add(this.model);
+      Jugglog.currentUser.fetch({ success: function () {
+        Jugglog.router.patternShow(this.model.id);
+      }.bind(this)});
       this.render();
     }.bind(this)});
   },
@@ -126,9 +130,9 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
       this.model.set({ practiced: true });
       $('.log-practice').removeClass('enabled');
       $('.log-practice').addClass('logged-transition');
-      Jugglog.currentUser.learnings().add(learning)
-      Jugglog.currentUser.practices().add(practice);
-      Jugglog.currentUser.practicedPatterns().add(this.model);
+      Jugglog.currentUser.fetch({ success: function () {
+        Jugglog.router.sidePatternShow(this.model.id);
+      }.bind(this)});
     }.bind(this)});
   },
 

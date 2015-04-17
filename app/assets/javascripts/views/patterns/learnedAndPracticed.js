@@ -5,10 +5,10 @@ Jugglog.Views.LearnedAndPracticedPatterns = Backbone.CompositeView.extend({
   initialize: function (options) {
     this.listenTo(this.model, 'sync', this.render);
 
-    this.model.learnedPatterns().each(this.addLearnedPatternIndexItem.bind(this));
-    this.listenTo(this.model.learnedPatterns(), 'add', this.addLearnedPatternIndexItem);
-    this.model.practicedPatterns().each(this.addPracticedPatternIndexItem.bind(this));
-    this.listenTo(this.model.practicedPatterns(), 'add', this.addPracticedPatternIndexItem);
+    this.model.recentlyLearnedPatterns().each(this.addLearnedPatternIndexItem.bind(this));
+    this.listenTo(this.model.recentlyLearnedPatterns(), 'add', this.addLearnedPatternIndexItem);
+    this.model.recentlyPracticedPatterns().each(this.addPracticedPatternIndexItem.bind(this));
+    this.listenTo(this.model.recentlyPracticedPatterns(), 'add', this.addPracticedPatternIndexItem);
   },
 
   render: function () {

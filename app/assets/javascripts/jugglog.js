@@ -8,7 +8,7 @@ window.Jugglog = {
     var $sidebarTop = $('div#sidebar-top');
     var $sidebarBottom = $('div#sidebar-bottom');
     if(currentUserId !== -1) {
-      $('body').css('background-image', "url('assets/main_page_background.png')");
+      $('body').css('background-image', "url('assets/main_page_background.jpg')");
       var patterns = new Jugglog.Collections.Patterns();
       patterns.fetch();
       var users = Jugglog.users = new Jugglog.Collections.Users();

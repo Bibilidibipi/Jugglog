@@ -1,8 +1,8 @@
 <div class="buttons">
   <button class="pattern-tree" type="button">Back to Patterns</button>
-  <% var learnedText = pattern.learned() ? 'Learned!' : 'Mark as learned' %>
+  <% var learnedText = pattern.escape('learned') === 'true' ? 'Learned!' : 'Mark as learned' %>
   <button class="switch-learned" type="button"><%= learnedText %></button>
-  <% if(!pattern.learned()) { %>
+  <% if(pattern.escape('learned') === 'false') { %>
     <% if(pattern.escape('practiced') === 'false') { %>
       <% var enabledClass = 'enabled'; %>
     <% } %>

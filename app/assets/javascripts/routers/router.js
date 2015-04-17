@@ -22,34 +22,48 @@ Jugglog.Routers.Router = Backbone.Router.extend({
   _swapMainView: function (view) {
     this._currentMainView && this._currentMainView.remove();
     this._currentMainView = view;
-    this.$main.html(view.render().$el);
+    this.$main.html(view.$el);
+    view.render();
   },
 
   _swapSidebarTopView: function (view) {
     this._currentSidebarTopView && this._currentSidebarTopView.remove();
     this._currentSidebarTopView = view;
-    this.$sidebarTop.html(view.render().$el);
+    this.$sidebarTop.html(view.$el);
+    view.render();
   },
 
-  _swapSidebrBottomView: function (view) {
+  _swapSidebarBottomView: function (view) {
     this._currentSidebarBottomView && this._currentSidebarBottomView.remove();
     this._currentSidebarBottomView = view;
-    this.$sidebarBottom.html(view.render().$el);
+    this.$sidebarBottom.html(view.$el);
+    view.render();
   },
 
   patternsIndex: function (numJugglers) {
     var mainView = new Jugglog.Views.PatternsIndex({ collection: this.patterns, numJugglers: numJugglers });
+    var sidebarTopView = new Jugglog.Views.LearnedAndPracticedPatterns({ model: Jugglog.currentUser });
+
     this._swapMainView(mainView);
+    this._swapSidebarTopView(sidebarTopView);
   },
 
   patternShow: function (id) {
     var pattern = this.patterns.getOrFetch(id);
     var mainView = new Jugglog.Views.PatternShow({ model: pattern });
+    var sidebarTopView = new Jugglog.Views.LearnedAndPracticedPatterns({ model: Jugglog.currentUser });
+
     this._swapMainView(mainView);
+    this._swapSidebarTopView(sidebarTopView);
+  },
+
+  sidePatternShow: function (id) {
+    var pattern = this.patterns.getOrFetch(id);
+    var sidebarTopView = new Jugglog.Views.LearnedAndPracticedPatterns({ model: Jugglog.currentUser });
+    this._swapSidebarTopView(sidebarTopView);
   },
 
   usersIndex: function () {
-    console.log('route');
     this.users.fetch();
     var mainView = new Jugglog.Views.UsersIndex({ collection: this.users });
     this._swapMainView(mainView);
@@ -81,6 +95,9 @@ Jugglog.Routers.Router = Backbone.Router.extend({
 
   activity: function () {
     var mainView = new Jugglog.Views.UserActivity({ model: Jugglog.currentUser });
+    var sidebarTopView = new Jugglog.Views.LearnedAndPracticedPatterns({ model: Jugglog.currentUser });
+
     this._swapMainView(mainView);
+    this._swapSidebarTopView(sidebarTopView);
   }
 });

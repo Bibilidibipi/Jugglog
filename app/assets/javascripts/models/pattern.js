@@ -31,9 +31,5 @@ Jugglog.Models.Pattern = Backbone.Model.extend({
   comments: function () {
     this._comments = this._comments || new Jugglog.Collections.Comments();
     return this._comments;
-  },
-
-  learned: function () {
-    return !!Jugglog.currentUser.learnedPatterns().get(this.id);
   }
 });

@@ -10,7 +10,11 @@ class Pattern < ActiveRecord::Base
   has_many :learnings
   has_many :practices, through: :learnings, source: :practices
 
-  def practiced
-    self.practices.where('practices.created_at > ?', 1.day.ago).length > 0
+  def practiced(user_id)
+    self.practices.where('learnings.user_id = ?', user_id).where('practices.created_at > ?', 1.day.ago).length > 0
+  end
+
+  def learned(user_id)
+    self.learnings.where('learnings.user_id = ?', user_id).where('learnings.status = ?', 'learned').length > 0
   end
 end

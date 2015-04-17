@@ -10,13 +10,13 @@ Jugglog.Models.User = Backbone.Model.extend({
       this.practices().set(payload.practices);
       delete payload.practices;
     }
-    if(payload.learnedPatterns) {
-      this.learnedPatterns().set(payload.learnedPatterns);
-      delete payload.learnedPatterns;
+    if(payload.recentlyLearnedPatterns) {
+      this.recentlyLearnedPatterns().set(payload.recentlyLearnedPatterns);
+      delete payload.recentlyLearnedPatterns;
     }
-    if(payload.practicedPatterns) {
-      this.practicedPatterns().set(payload.practicedPatterns);
-      delete payload.practicedPatterns;
+    if(payload.recentlyPracticedPatterns) {
+      this.recentlyPracticedPatterns().set(payload.recentlyPracticedPatterns);
+      delete payload.recentlyPracticedPatterns;
     }
 
     return payload;
@@ -32,13 +32,13 @@ Jugglog.Models.User = Backbone.Model.extend({
     return this._practices;
   },
 
-  learnedPatterns: function () {
-    this._learnedPatterns = this._learnedPatterns || new Jugglog.Collections.Patterns();
-    return this._learnedPatterns;
+  recentlyLearnedPatterns: function () {
+    this._recentlyLearnedPatterns = this._recentlyLearnedPatterns || new Jugglog.Collections.Patterns();
+    return this._recentlyLearnedPatterns;
   },
 
-  practicedPatterns: function () {
-    this._practicedPatterns = this._practicedPatterns || new Jugglog.Collections.Patterns();
-    return this._practicedPatterns;
+  recentlyPracticedPatterns: function () {
+    this._recentlyPracticedPatterns = this._recentlyPracticedPatterns || new Jugglog.Collections.Patterns();
+    return this._recentlyPracticedPatterns;
   }
 });

@@ -1,18 +1,10 @@
 .sk-spinner-double-bounce {
-  &.sk-spinner-large {
+  &.sk-spinner {
     width: 50%;
     height: 50%;
     padding: 0;
     border: 0;
     border-style: none;
-
-    position: relative;
-    margin: 0 auto;
-  }
-
-  &.sk-spinner-small {
-    width: 20px;
-    height: 20px;
 
     position: relative;
     margin: 0 auto;

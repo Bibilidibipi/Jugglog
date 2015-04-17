@@ -15,7 +15,7 @@ window.Jugglog = {
       users.fetch();
       Jugglog.currentUser = new Jugglog.Models.CurrentUser({ id: currentUserId });
       Jugglog.currentUser.fetch();
-      new Jugglog.Routers.Router({
+      Jugglog.router = new Jugglog.Routers.Router({
         $main: $main,
         $sidebarTop: $sidebarTop,
         $sidebarBottom: $sidebarBottom,

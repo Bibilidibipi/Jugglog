@@ -44,11 +44,6 @@ Jugglog.Views.UserShow = Backbone.CompositeView.extend({
     }.bind(this));
   },
 
-  addPracticedPatternIndexItem: function (pattern) {
-    var indexItemView = new Jugglog.Views.PatternIndexItem({ model: pattern });
-    this.addSubview('.practiced-patterns', indexItemView);
-  },
-
   switchFollow: function (event) {
     if(Jugglog.currentUser.isFollowing(this.model)) {
       Jugglog.currentUser.unfollow(this.model);

@@ -1691,3 +1691,8 @@ LINE 1: ...T "patterns".* FROM "patterns" WHERE ('id IN (' + *(self.lea...
 [04/16/15 09:14:38 -0700 Apps-Mac-mini-90.local (79914)] INFO : Doing deferred dependency-detection before Rack startup
 [04/16/15 09:14:41 -0700 Apps-Mac-mini-90.local (79914)] ERROR : Invalid license key, please contact support@newrelic.com
 [04/16/15 09:14:41 -0700 Apps-Mac-mini-90.local (79914)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[04/16/15 22:47:43 -0700 Apps-Mac-mini-90.local (79914)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Invalid CSS after "          width": expected ";", was ": 50px;"
+[04/17/15 00:14:58 -0700 Apps-Mac-mini-90.local (79914)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: 
+[04/17/15 00:15:32 -0700 Apps-Mac-mini-90.local (79914)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: 
+[04/17/15 00:16:17 -0700 Apps-Mac-mini-90.local (79914)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: 
+[04/17/15 00:26:00 -0700 Apps-Mac-mini-90.local (79914)] INFO : Starting Agent shutdown

@@ -1,53 +1,52 @@
 <script charset="utf-8">
   function loading() {
-    document.getElementById('o-loader').style.display='block';
+    document.getElementById('o-loader').style.display = 'block';
   }
 </script>
 
 <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">jugglog</a>
+      <a onclick="javascript:loading()" class="navbar-brand" href="#">jugglog</a>
       <div id="o-loader" class="loader">Loading...</div>
     </div>
-
     <% if !!current_user %>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-left">
         <li class="patterns active">
-          <a href="#patterns/1" onclick="javascript:loading();">Patterns</a>
+          <a onclick="javascript:loading()" href="#patterns/1" >Patterns</a>
         </li>
         <li class="profile">
           <a
+            onclick="javascript:loading()"
             href="<%= '#users/' + current_user.id.to_s %>"
-            onclick="javascript:loading();"
           >Profile</a>
         </li>
         <li class="activity">
-          <a href="#activity" onclick="javascript:loading();">Activity</a>
+          <a onclick="javascript:loading()" href="#activity" >Activity</a>
           </li>
         <li class="friends">
-          <a href="#users" onclick="javascript:loading();">Friends</a>
+          <a onclick="javascript:loading()" href="#users" >Friends</a>
         </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a class="name" href="javascript:void(0)" role="button">
+          <a onclick="javascript:loading()" class="name" href="javascript:void(0)" role="button">
             <%= current_user.username %> <span class="caret"></span>
           </a>
           <ul class="dropdown-menu" role="menu">
             <li>
               <a
+                onclick="javascript:loading()"
                 href="<%= '#users/' + current_user.id.to_s %>"
-                onclick="javascript:loading();"
               >Your Profile</a>
             </li>
             <li><%= link_to "Log Out", session_url, method: :delete %></li>
           </ul>
         </li>
         <li>
-          <a href="#activity" onclick="javascript:loading();">2 day streak</a>
+          <a onclick="javascript:loading()" href="#activity" >2 day streak</a>
         </li>
       </ul>
     <% else %>
@@ -61,7 +60,6 @@
         </ul>
       <% end %>
     <% end %>
-
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

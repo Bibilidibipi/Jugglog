@@ -1,4 +1,21 @@
+<script charset="utf-8">
+  function onLoad(img) {
+    $(img).parent().find('.sk-double-bounce1').css('display', 'none');
+    $(img).parent().find('.sk-double-bounce2').css('display', 'none');
+    $(img).css('opacity', '1');
+  }
+</script>
+
 <li>
-  <div class="avatar"><img src="<%= user.escape('wavatar_url') %>" alt="" /></div>
+  <div class="avatar sk-spinner-double-bounce sk-spinner">
+    <div class="sk-double-bounce1"></div>
+    <div class="sk-double-bounce2"></div>
+    <img
+      src="<%= user.escape('wavatar_url') %>"
+      onload="javascript:onLoad(this);"
+      alt=""
+      style="opacity: 0;"
+    />
+  </div>
   <div class="username"><%= user.escape('username') %></div>
 </li>

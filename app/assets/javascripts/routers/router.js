@@ -14,6 +14,7 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     this.$main = options.$main;
     this.$sidebarTop = options.$sidebarTop;
     this.$sidebarBottom = options.$sidebarBottom;
+
     this.users = options.users;
     this.patterns = options.patterns;
   },
@@ -48,6 +49,7 @@ Jugglog.Routers.Router = Backbone.Router.extend({
   },
 
   usersIndex: function () {
+    console.log('route');
     this.users.fetch();
     var mainView = new Jugglog.Views.UsersIndex({ collection: this.users });
     this._swapMainView(mainView);

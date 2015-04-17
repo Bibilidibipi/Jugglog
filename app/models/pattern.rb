@@ -8,4 +8,9 @@ class Pattern < ActiveRecord::Base
   has_many :children, through: :is_parent_pre_reqs, source: :child
   has_many :comments, as: :commentable
   has_many :learnings
+  has_many :practices, through: :learnings, source: :practices
+
+  def practiced
+    self.practices.where('practices.created_at > ?', 1.day.ago).length > 0
+  end
 end

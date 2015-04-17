@@ -8,11 +8,11 @@
 
 <div class="user-show">
   <button class="all-users" type="button">All Users</button>
-  <% if(user.id !== Jugglog.currentUser.id) { %>
+  <% if(parseInt(user.id) !== Jugglog.currentUser.id) { %>
     <% var followingText = Jugglog.currentUser.isFollowing(user) ? "Unfollow" : "Follow" %>
     <button class="switch-follow"><%= followingText %></button>
   <% } %>
-  <div class="avatar sk-spinner-double-bounce sk-spinner-large">
+  <div class="avatar sk-spinner-double-bounce sk-spinner">
     <div class="sk-double-bounce1"></div>
     <div class="sk-double-bounce2"></div>
     <img

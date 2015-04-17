@@ -1,7 +1,9 @@
-<% if(Jugglog.currentUser.id === user.id) { %>
-  <% var name = 'Your' %>
+<% if(Jugglog.currentUser.id === parseInt(user.id)) { %>
+  <% var name = 'Your'; %>
+<% } else if(user.escape('username')) { %>
+  <% var name = user.escape('username') + "'s"; %>
 <% } else { %>
-  <% var name = user.escape('username') + "'s" %>
+  <% var name = ''; %>
 <% } %>
 <div class="learned">
   <p class="heading"><%= name %> learned patterns</p>

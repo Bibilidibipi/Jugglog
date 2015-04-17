@@ -18,7 +18,7 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   render: function () {
     this.$el.html(this.template());
     this.attachSubviews();
-    document.getElementById('o-loader').style.display='none';
+    document.getElementById('o-loader').style.display = 'none';
 
     return this;
   },
@@ -39,8 +39,14 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   },
 
   handleSearchInput: function (event) {
-    var that = this;
+    if(Backbone.history.fragment !== 'users') { Backbone.history.navigate('users') };
     var string = $(event.currentTarget).val();
+
+    this.search(string);
+  },
+
+  search: function (string) {
+    var that = this;
 
     if(string === '') {
       var allUsers = new Jugglog.Collections.Users();
@@ -66,10 +72,18 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   },
 
   listFollowees: function (event) {
-    Backbone.history.navigate('followees', { trigger: true });
+    if(Backbone.history.fragment === 'followees') {
+      Jugglog.router.followees();
+    } else {
+      Backbone.history.navigate('followees', { trigger: true });
+    }
   },
 
   listFollowers: function (event) {
-    Backbone.history.navigate('followers', { trigger: true });
+    if(Backbone.history.fragment === 'followers') {
+      Jugglog.router.followers();
+    } else {
+      Backbone.history.navigate('followers', { trigger: true });
+    }
   }
 });

@@ -25,18 +25,45 @@
       border: 1px solid rgba(0, 0, 0, 0);
       border-radius: 100px;
       color: white;
-      background: rgb(126, 181, 48);
+      background: #cccccc;
       margin-bottom: 18px;
       display: inline-block;
       float: right;
 
       &:hover {
-        color: white;
-        background: #8ee000;
+        cursor: default;
       }
 
       &:focus {
         outline: 0;
+      }
+
+      &.enabled {
+        background: rgb(126, 181, 48);
+
+        &:hover {
+          color: white;
+          background: #8ee000;
+          cursor: pointer;
+        }
+      }
+
+      &:after {
+        content: 'Practice logged!';
+        color: #aaaaaa;
+        float: left;
+        position: absolute;
+        width: 400px;
+        left: 113px;
+        opacity: 0;
+        transition: all .5s;
+      }
+
+      &.logged-transition {
+        &:after {
+          opacity: 1;
+          content: 'Practice logged!';
+        }
       }
     }
 

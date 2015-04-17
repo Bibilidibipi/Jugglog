@@ -22,33 +22,35 @@
 - [x] user show page should have practice and learning info
 - [x] in patterns index, abstract away event-to-num_jugglers logic, than call the new method (taking an integer argument) in initialize
 - [x] in patterns index, fetch from database for each pattern tree rather than filtering this.collection
-- [ ] disable log-practice button after one use for the day
+- [x] disable log-practice button after one use for the day
+- [x] css spinners everywhere!
 - [ ] recommended patterns (top sidebar)
 - [ ] leaderboard (bottom sidebar)
-- [ ] paginate users index (limit number of shown users for index and search)
-- [ ] css spinners everywhere!
-- [ ] order and limit patterns on user show page
+- [ ] order and limit patterns on sidebar
 - [ ] fix assignment of tiers in patterns index
 - [ ] add welcome message/mini tutorial on guest login
-- [ ] make wavatars optional
+- [ ] paginate users index (limit number of shown users for index and search)
+- [ ] write activity route function
+- [ ] take and add background photos, find welcome page picture and icon pictures
+- [ ] streak should link to... ?
 
+- [ ] fix url on sign-in redirect
+- [ ] refactor and fix login/signup page css for error messages
 - [ ] add embedded video
 - [ ] user edit profile pic ability
-- [ ] refactor and fix login/signup page css for error messages
-- [ ] fix url on sign-in redirect
-- [ ] user show page shows activity?
+- [ ] make wavatars optional
 - [ ] disable switch-follow button while switching (add css spinner?)
 - [ ] popup (modal) confirmation on un-learning pattern
 
 - [ ] make comments form expandable; activate 'cancel' button
 - [ ] add carat to username dropdown
 - [ ] randomize users shown on null search
-- [ ] write activity route function
-- [ ] take and add background photos, find welcome page picture and icon pictures
 - [ ] add logo
-- [ ] streak should link to... ?
 - [ ] better color scheme - less blue :)
 - [ ] popcorn in info pages (also, info pages!)
 - [ ] clean up pattern show texts
 - [ ] sharpen pattern diagrams
 - [ ] pre-cascade patterns???
+
+- [ ] disable search bar on showing of followers/followees?
+- [ ] fix flickering pointer on log practice button

@@ -3,7 +3,13 @@
   <% var learnedText = pattern.learned() ? 'Learned!' : 'Mark as learned' %>
   <button class="switch-learned" type="button"><%= learnedText %></button>
   <% if(!pattern.learned()) { %>
-    <button class="log-practice" type="button">Log Practice</button>
+    <% if(pattern.escape('practiced') === 'false') { %>
+      <% var enabledClass = 'enabled'; %>
+    <% } %>
+    <button
+      class="log-practice <%= enabledClass %>"
+      type="button"
+    >Log Practice</button>
   <% } %>
 </div>
 <div class="title"><%= pattern.escape('title') %></div>

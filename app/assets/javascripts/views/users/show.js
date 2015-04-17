@@ -4,7 +4,7 @@ Jugglog.Views.UserShow = Backbone.CompositeView.extend({
   events: {
     'click .switch-follow': 'switchFollow',
     'click .all-users': 'usersIndex',
-    'click .post-comment': 'postComment'
+    'click .post-comment': 'postComment',
   },
 
   initialize: function () {
@@ -26,6 +26,7 @@ Jugglog.Views.UserShow = Backbone.CompositeView.extend({
   render: function () {
     this.$el.html(this.template({ user: this.model }));
     this.attachSubviews();
+    document.getElementById('o-loader').style.display='none';
 
     return this;
   },

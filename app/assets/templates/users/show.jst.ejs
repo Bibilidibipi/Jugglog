@@ -1,12 +1,30 @@
+<script charset="utf-8">
+  function onLoad(img) {
+    $(img).parent().find('.sk-double-bounce1').css('display', 'none');
+    $(img).parent().find('.sk-double-bounce2').css('display', 'none');
+    $(img).css('opacity', '1');
+  }
+</script>
+
 <div class="user-show">
   <button class="all-users" type="button">All Users</button>
   <% if(user.id !== Jugglog.currentUser.id) { %>
-    <% var following_text = Jugglog.currentUser.isFollowing(user) ? "Unfollow" : "Follow" %>
-    <button class="switch-follow"><%= following_text %></button>
+    <% var followingText = Jugglog.currentUser.isFollowing(user) ? "Unfollow" : "Follow" %>
+    <button class="switch-follow"><%= followingText %></button>
   <% } %>
-  <div class="avatar"><img src="<%= user.escape('wavatar_url') %>" alt="" /></div>
+  <div class="avatar sk-spinner-double-bounce sk-spinner-large">
+    <div class="sk-double-bounce1"></div>
+    <div class="sk-double-bounce2"></div>
+    <img
+      src="<%= user.escape('wavatar_url') %>"
+      onload="javascript:onLoad(this);"
+      alt=""
+      style="opacity: 0;"
+    />
+  </div>
   <div class="name"><%= user.escape('username') %></div>
 </div>
+
 <form class="add-comment">
   <textarea class="comment-text" name="comment[body]" rows="1" cols="40" placeholder="Leave a new Comment"></textarea>
   <button class="post-comment" type="button">Post</button>

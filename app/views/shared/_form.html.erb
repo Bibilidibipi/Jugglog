@@ -3,12 +3,12 @@
     <%= render 'shared/csrf' %>
     <input class="username" type="text" name="user[username]" value="<%= user.username %>" placeholder="Username">
     <input class="password" type="password" name="user[password]" placeholder="Password">
-    <input class="submit" type="submit" value="<%= action_text %>">
+    <input class="submit" onclick="javascript:document.getElementById('o-loader').style.display='block';" type="submit" value="<%= action_text %>">
   </form>
   <form class="<% css_class %>" action="<%= session_url %>" method="post">
     <%= render 'shared/csrf' %>
     <input type="hidden" name="user[username]" value="Guest">
     <input type="hidden" name="user[password]" value="password">
-    <input class="submit guest" type="submit" value="Log In as Guest">
+    <input class="submit guest" onclick="javascript:document.getElementById('o-loader').style.display='block';" type="submit" value="Log In as Guest">
   </form>
 </div>

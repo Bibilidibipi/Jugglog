@@ -29,6 +29,8 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
     this.$el.html(this.template({ pattern: this.model }));
     this.attachSubviews();
     // this.attachSubviews('.children');
+    document.getElementById('o-loader').style.display='none';
+
     return this;
   },
 

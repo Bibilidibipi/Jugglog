@@ -18,6 +18,7 @@ Jugglog.Views.PatternsIndex = Backbone.CompositeView.extend({
     this.$el.html(this.template());
     this.setTemplateTiers();
     this.attachSubviews();
+    document.getElementById('o-loader').style.display='none';
 
     return this;
   },

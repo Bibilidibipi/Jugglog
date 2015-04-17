@@ -1,0 +1,46 @@
+.sk-spinner-double-bounce {
+  &.sk-spinner-large {
+    width: 50%;
+    height: 50%;
+    padding: 0;
+    border: 0;
+    border-style: none;
+
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &.sk-spinner-small {
+    width: 20px;
+    height: 20px;
+
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .sk-double-bounce1, .sk-double-bounce2 {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: rgb(295, 75, 25);
+    opacity: 0.6;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+
+    animation: sk-doubleBounce 2.0s infinite ease-in-out;
+    -webkit-animation: sk-doubleBounce 2.0s infinite ease-in-out;
+  }
+
+  .sk-double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+  }
+}
+@-webkit-keyframes sk-doubleBounce {
+  0%, 100% { transform: scale(0.0) }
+  50% { transform: scale(1.0) }
+}
+@keyframes sk-doubleBounce {
+  0%, 100% { transform: scale(0.0) }
+  50% { transform: scale(1.0) }
+}

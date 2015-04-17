@@ -18,6 +18,7 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
   render: function () {
     this.$el.html(this.template());
     this.attachSubviews();
+    document.getElementById('o-loader').style.display='none';
 
     return this;
   },
@@ -30,7 +31,7 @@ Jugglog.Views.UsersIndex = Backbone.CompositeView.extend({
 
   removeUserIndexItem: function (user) {
     var that = this;
-    this.subviews('.users').each( function (view) {
+    _(this.subviews('.users')).each( function (view) {
       if(view.model === user) {
         that.removeSubview('.users', view);
       }

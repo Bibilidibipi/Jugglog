@@ -7,7 +7,8 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     'users': 'usersIndex',
     'users/:id': 'userShow',
     'followees': 'followees',
-    'followers': 'followers'
+    'followers': 'followers',
+    'info': 'info'
   },
 
   initialize: function (options) {
@@ -97,6 +98,14 @@ Jugglog.Routers.Router = Backbone.Router.extend({
     var mainView = new Jugglog.Views.UserActivity({ model: Jugglog.currentUser });
     var sidebarTopView = new Jugglog.Views.LearnedAndPracticedPatterns({ model: Jugglog.currentUser });
 
+    this._swapMainView(mainView);
+    this._swapSidebarTopView(sidebarTopView);
+  },
+
+  info: function () {
+    var mainView = new Jugglog.Views.Info();
+    var sidebarTopView = new Jugglog.Views.LearnedAndPracticedPatterns({ model: Jugglog.currentUser });
+    
     this._swapMainView(mainView);
     this._swapSidebarTopView(sidebarTopView);
   }

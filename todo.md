@@ -25,18 +25,19 @@
 - [x] disable log-practice button after one use for the day
 - [x] css spinners everywhere!
 - [x] order and limit patterns on sidebar
-- [ ] recommended patterns (top sidebar)
-- [ ] leaderboard (bottom sidebar)
-- [ ] fix assignment of tiers in patterns index
-- [ ] add welcome message/mini tutorial on guest login
-- [ ] paginate users index (limit number of shown users for index and search)
-- [ ] write activity route function
+- [x] write activity route function
+- [x] after log practice, back to patterns broken - hover selects both?!?
+- [x] practiced and learned patterns (top sidebar)
+- [x] add info page
 - [ ] take and add background photos, find welcome page picture and icon pictures
 - [ ] streak should link to... ?
-- [ ] don't re-render entire user show view on follow/unfollow
+- [ ] add welcome message/mini tutorial on guest login
 - [ ] 'practice logged' css text not working on heroku
-
-- [ ] after log practice, back to patterns brocken - hver selects both?!?
+- [ ] fix assignment of tiers in patterns index
+- [ ] paginate users index (limit number of shown users for index and search)
+- [ ] leaderboard (bottom sidebar)
+- [ ] recommended patterns sidebar?
+- [ ] don't re-render entire user show view on follow/unfollow
 
 - [ ] fix url on sign-in redirect
 - [ ] refactor and fix login/signup page css for error messages

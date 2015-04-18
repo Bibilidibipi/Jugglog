@@ -12,7 +12,7 @@ end
 
 json.comments @user.comments, :id, :body, :author_id, :created_at
 json.practices @user.practices, :id, :learning_id, :created_at
-json.learnings @user.learnings, :id, :user_id, :pattern_id, :updated_at
+json.learnings @user.learnings, :id, :user_id, :pattern_id, :updated_at, :status
 
 if @user.learned_patterns.length > 0
   json.recentlyLearnedPatterns @user.learned_patterns.reorder('updated_at DESC').limit(6)

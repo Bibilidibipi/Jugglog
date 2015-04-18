@@ -34,6 +34,9 @@
 - [ ] take and add background photos, find welcome page picture and icon pictures
 - [ ] streak should link to... ?
 - [ ] don't re-render entire user show view on follow/unfollow
+- [ ] 'practice logged' css text not working on heroku
+
+- [ ] after log practice, back to patterns brocken - hver selects both?!?
 
 - [ ] fix url on sign-in redirect
 - [ ] refactor and fix login/signup page css for error messages

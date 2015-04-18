@@ -129,7 +129,7 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
     practice.save({}, { success: function () {
       this.model.set({ practiced: true });
       $('.log-practice').removeClass('enabled');
-      $('.log-practice').addClass('logged-transition');
+      $('.buttons').addClass('logged-transition');
       Jugglog.currentUser.fetch({ success: function () {
         Jugglog.router.sidePatternShow(this.model.id);
       }.bind(this)});
@@ -138,7 +138,7 @@ Jugglog.Views.PatternShow = Backbone.CompositeView.extend({
 
   removeTransitionText: function (event) {
     setTimeout(function () {
-      $('.log-practice').removeClass('logged-transition');
+      $('.buttons').removeClass('logged-transition');
     }, 1000)
   }
 });

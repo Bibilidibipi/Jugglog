@@ -24,6 +24,10 @@ default: &default
 development:
   <<: *default
   database: Jugglog_development
+  host: ec2-52-8-64-2.us-west-1.compute.amazonaws.com
+  port: 5432
+  username: 'judy'
+  password: 'judyjudy'
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

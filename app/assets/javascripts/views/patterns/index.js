@@ -10,8 +10,6 @@ Jugglog.Views.PatternsIndex = Backbone.CompositeView.extend({
     $('.patterns').addClass('active');
     var numJugglers = options.numJugglers || 1;
     this.showPatternsFromNum(numJugglers);
-    // this.listenTo(this.patterns, 'add', this.addPatternIndexItem);
-    // this.listenTo(this.patterns, 'remove', this.removePatternIndexItem);
   },
 
   render: function () {
@@ -45,15 +43,6 @@ Jugglog.Views.PatternsIndex = Backbone.CompositeView.extend({
     this.addSubview('.tier-' + pattern.tier, view);
   },
 
-  // removePatternIndexItem: function (pattern) {
-  //   var that = this;
-  //   this.subviews('.patterns').each(function (view) {
-  //     if(view.model === pattern) {
-  //       that.removeSubview('.patterns', view);
-  //     }
-  //   });
-  // },
-
   assignTiers: function () {
     var that = this;
     this.highTier = 0;
@@ -71,7 +60,6 @@ Jugglog.Views.PatternsIndex = Backbone.CompositeView.extend({
     }
 
     this.patterns.each(function (pattern) {
-      // if(pattern.parents().length === 0) {
       if(pattern.tier === undefined) {
         assignTier(pattern, 1);
       }

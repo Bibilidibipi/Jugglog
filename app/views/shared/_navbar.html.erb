@@ -48,9 +48,9 @@
             <li><%= link_to "Log Out", session_url, method: :delete %></li>
           </ul>
         </li>
-        <li>
+        <!-- <li>
           <a onclick="javascript:loading()" href="#activity" >2 day streak</a>
-        </li>
+        </li> -->
       </ul>
     <% else %>
       <% if request.fullpath == "/session/new" || request.fullpath == "/session" %>

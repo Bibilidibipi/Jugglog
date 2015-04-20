@@ -21,8 +21,8 @@ Jugglog.Views.UserActivity = Backbone.View.extend({
       var numPractices = _.filter(this.model.practices().models, function (practice) {
         var time = practice.get('created_at');
         return moment(time).isBetween(
-          moment().subtract(i + 1, 'days').startOf('day'),
-          moment().subtract(i, 'days').startOf('day')
+          moment().subtract(i, 'days').startOf('day'),
+          moment().subtract(i - 1, 'days').startOf('day')
         );
       }).length;
       for(var j = 0; j < numPractices; j++) {
@@ -33,8 +33,8 @@ Jugglog.Views.UserActivity = Backbone.View.extend({
         var time = learning.get('updated_at');
         if(learning.get('status') == 'unlearned') { return false };
         return moment(time).isBetween(
-          moment().subtract(i + 1, 'days').startOf('day'),
-          moment().subtract(i, 'days').startOf('day')
+          moment().subtract(i, 'days').startOf('day'),
+          moment().subtract(i - 1, 'days').startOf('day')
         );
       }).length;
       for(var j = 0; j < numLearnings; j++) {

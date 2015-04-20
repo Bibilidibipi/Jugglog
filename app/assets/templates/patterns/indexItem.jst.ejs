@@ -1,4 +1,5 @@
 <a class="pattern-show" href="javascript:void(0)">
-  <div class="icon"><img src="/assets/pattern_icon.jpeg" alt="" /></div>
+  <%= console.log(pattern) %>
+  <div class="icon"><img src="<%= '/assets/' + pattern.escape('num_clubs') + '_clubs.jpg' %>" alt="" /></div>
   <%= pattern.escape('title') %>
 </a>

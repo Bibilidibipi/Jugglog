@@ -5,7 +5,7 @@ class Learning < ActiveRecord::Base
 
   belongs_to :user
   belongs_to :pattern
-  has_many :practices
+  has_many :practices, dependent: :destroy
 
   def practiced?
     self.practices.length > 0

@@ -20,7 +20,7 @@ class Api::LearningsController < ApplicationController
     end
   end
 
-  def delete
+  def destroy
     @learning = Learning.find(params[:id])
 
     @learning.destroy

@@ -2,13 +2,19 @@
   <form class="<%= css_class %>" action="<%= action_url %>" method="post">
     <%= render 'shared/csrf' %>
     <input class="username" type="text" name="user[username]" value="<%= user.username %>" placeholder="Username">
+    <% if action_url == users_url %>
+      <input class="email" type="text" name="user[email]" value="<% user.email %>" placeholder="Email">
+    <% end %>
     <input class="password" type="password" name="user[password]" placeholder="Password">
+    <input type="hidden" name="user[guest]" value="false">
     <input class="submit" onclick="javascript:document.getElementById('o-loader').style.display='block';" type="submit" value="<%= action_text %>">
   </form>
-  <form class="<% css_class %>" action="<%= session_url %>" method="post">
+  <form class="<% css_class %>" action="<%= users_url %>" method="post">
     <%= render 'shared/csrf' %>
-    <input type="hidden" name="user[username]" value="Guest">
+    <input type="hidden" name="user[username]" value="<%= User.guest_username %>">
+    <input type="hidden" name="user[email]" value="<%= User.guest_email %>">
     <input type="hidden" name="user[password]" value="password">
+    <input type="hidden" name="user[guest]" value="true">
     <input class="submit guest" onclick="javascript:document.getElementById('o-loader').style.display='block';" type="submit" value="Log In as Guest">
   </form>
 </div>

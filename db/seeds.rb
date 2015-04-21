@@ -1,18 +1,18 @@
-User.create!(username: 'pipit', password: 'password', email: Faker::Internet.safe_email)
-User.create!(username: 'Guest', password: 'password', email: Faker::Internet.safe_email)
+User.create!(
+  username: 'pipit',
+  password: 'password',
+  email: Faker::Internet.safe_email,
+  guest: false
+)
 
-50.times do
+20.times do
   begin
-    User.create!(username: Faker::Internet.user_name, password: 'password', email: Faker::Internet.safe_email)
-  rescue
-    retry
-  end
-end
-
-numUsers = User.all.length
-200.times do
-  begin
-    Following.create!(follower_id: rand(numUsers) + 1, followee_id: rand(numUsers) + 1)
+    User.create!(
+      username: Faker::Internet.user_name,
+      password: 'password',
+      email: Faker::Internet.safe_email,
+      guest: false
+    )
   rescue
     retry
   end
@@ -2485,5 +2485,3 @@ numLearnings = Learning.all.length
     retry
   end
 end
-
-# Comment.create!(body: , author_id: , commentable_type: , commentable_id: )

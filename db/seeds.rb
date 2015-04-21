@@ -17,6 +17,7 @@ User.create!(
     retry
   end
 end
+num_users = User.all.length
 
 # 1  1.1
 Pattern.create!(
@@ -2289,7 +2290,7 @@ his or her second pair of throws."
 #   body: ""
 # )
 
-numPatterns = Pattern.all.length
+num_patterns = Pattern.all.length
 
 
 # chapter 1
@@ -2460,25 +2461,24 @@ PreReq.create!(parent_id: 85, child_id: 87)
 PreReq.create!(parent_id: 48, child_id: 88)
 PreReq.create!(parent_id: 49, child_id: 88)
 
-200.times do |i|
+50.times do |i|
   begin
-    status = rand(2) == 1 ? 'learned' : 'unlearned'
     Learning.create!(
-      user_id: rand(numUsers) + 1,
-      pattern_id: rand(numPatterns) + 1,
-      status: status,
+      user_id: rand(num_users) + 1,
+      pattern_id: rand(num_patterns) + 1,
+      status: 'learned',
       updated_at: Time.at(1.week.ago + rand(Time.now - 1.week.ago))
     )
   rescue
     retry
   end
 end
-numLearnings = Learning.all.length
+num_learnings = Learning.all.length
 
-200.times do |i|
+30.times do |i|
   begin
     Practice.create!(
-      learning_id: rand(numLearnings) + 1,
+      learning_id: rand(num_learnings) + 1,
       created_at: Time.at(1.week.ago + rand(Time.now - 1.week.ago))
     )
   rescue

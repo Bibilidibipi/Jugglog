@@ -1,8 +1,8 @@
 # Jugglog
 
-[Heroku link][heroku]
+[link][heroku]
 
-[heroku]: http://jugglog.herokuapp.com
+[heroku]: http://jugglog.com
 
 ## Minimum Viable Product
 Jugglog is a juggling pattern practice assistance app, built on Rails and
